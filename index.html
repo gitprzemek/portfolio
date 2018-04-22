@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portfolio Przemysława Szczepańskiego, font-end developera z Polski" />
+    <meta name="keywords" content="przemysław, szczepański, przemysław szczepański, web design, font-end developer, websites, freelance, developer, junior" />
+    <meta name="robots" content="index, follow" />
+
+    <title>Przemysław Szczepański Frond-end Developer</title>
+
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700%7CRoboto:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav id="nav">
+       <div class="logonav"><a id="logonav" href="#">P</a></div>
+        <ul class="topnav" id="myTopnav">
+            <li><a href="#header" id="start">Start</a></li>
+            <li><a href="#about" id="omnie">O mnie</a></li>
+            <li><a href="#cert" id="kursy">Kursy</a></li>
+            <li><a href="#skills" id="umiejetnosci">Umiejętności</a></li>
+            <li><a href="#projects" id="projekty">Projekty</a></li>
+            <li><a href="#contact" id="kontakt">Kontakt</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <header id="header">
+        
+           <div id="name-container">
+                   <div id="text-slider" class="first_col">
+                    <ul>
+                        <li>Cześć !</li>
+                        <li>Hello !</li>
+                        <li>Salut !</li>
+                        <li>Ciao !</li>
+                        <li>Priwiet !</li>
+                    </ul>
+                   </div>
+                   <p class="sec_col">Mam na imię <span>PRZEMEK</span></p>
+                   <p class="th_col"></p>
+                   <p class="four_col">Jestem Front-end developerem</p>
+            </div>
+        
+
+    </header>
+    <section id="about">
+        <h2>O mnie</h2>
+        <figure class="about-content about-left">
+           <div class="rotate-div">
+           <div id="img-slide1" class="hidden-images position1"></div>
+           <div id="img-slide2" class="hidden-images position1"></div>
+           <div id="img-slide3" class="hidden-images"></div>
+           <div id="img-slide4" class="hidden-images"></div>
+            <img src="img/Przemek-Szczepanski1.jpg" alt="Przemysław Szczepański">
+            </div>
+        </figure>
+        <div class="about-content about-right">
+            <div>
+                <p>CZEŚĆ!<br> Nazywam się PRZEMYSŁAW SZCZEPAŃSKI i jestem font-end developerem.</p><br>Absolwent Politechniki Świętokrzyskiej I stopnia.  Zawsze chciałem zajmować się tym co lubię, a zatem robię wszystko by to robić! W wolnej chwili relaksuję się przy oglądaniu komedii np. z <span class="secret-slide" id="jim">Jimem Carreyem</span> lub dbam o to by ciało nadal wyglądało i pasowało do moich starych ubrań. Oprócz tego wielki fan firmy <span class="secret-slide" id="blizzard">Blizzard</span>, a w szczególności ich klasycznych tytułów.</div>
+                
+        </div>
+        
+    </section>
+    <hr>
+    <section id="cert">
+        <h2>Kursy i osiągnięcia</h2>
+        <div class="cert-container">
+           <figure class="slider-side">
+              <button id="prev" class="btn-navi"></button>
+               <div id="my-image-slider"></div>
+               <button id="next" class="btn-navi"></button>
+           </figure>
+           <article class="slider-side" id="slider-article">
+               <!--<h3>asdasd</h3>
+               <p>sdsadasdsadsa</p>-->
+           </article>
+        </div>
+    </section>
+    <hr>
+<section id="skills">
+    <h2>Umiejętności</h2>
+    <div id="icons-container">
+        <div class="animated icons"><img class="img-icons" src="img/HTML5_badge.png" alt="html5_badge"></div>
+        <div class="animated icons"><img class="img-icons" src="img/CSS_badge.png" alt="css_badge"></div>
+        <div class="animated icons"><img class="img-icons" src="img/JS-logo.png" alt="js_badge"></div>
+        <div class="animated icons"><img class="img-icons" src="img/jquery-badge.png" alt="jquery_badge"></div>
+        <div class="animated icons"><img class="img-icons" src="img/git-logo.png" alt="git_badge"></div>
+        <div class="animated icons"><img class="img-icons" src="img/bootstrap-logo.png" alt="bootstrap_badge"></div>
+        <div class="animated icons"><img class="img-icons" src="img/wordpress-logo.png" alt="wp_badge"></div>
+        <div class="animated icons"><img class="img-icons" src="img/sass-logo.png" alt="sass_badge"></div>
+    </div>
+</section>
+   <hr>
+<section id="projects">
+<h2>Projekty</h2>
+<div class="project-container">
+    <figure class="hero-grid effect-move">
+        <img class="hero-grid-image effect-image" src="img/test%20projekt.jpg" alt="" />
+        <figcaption class="hero-grid-content">
+            <span class="hero-tag effect-target">Category</span>
+            <h2 class="hero-grid-title effect-target">The Rain In Spain</h2>
+            <p class="hero-grid-text effect-target effect-text">Falls mainly on the plain.</p>
+            <a class="hero-grid-link" href="#">sdsdsdsdsds</a>
+            
+        </figcaption>
+    </figure>
+  <figure class="hero-grid effect-move">
+        <img class="hero-grid-image effect-image" src="img/test%20projekt.jpg" alt="" />
+        <figcaption class="hero-grid-content">
+            <span class="hero-tag effect-target">Category</span>
+            <h2 class="hero-grid-title effect-target">The Rain In Spain</h2>
+            <p class="hero-grid-text effect-target effect-text">Falls mainly on the plain.</p>
+            <a class="hero-grid-link" href="#">sdsdsdsdsds</a>
+        </figcaption>
+    </figure>
+    <figure class="hero-grid effect-move">
+        <img class="hero-grid-image effect-image" src="img/test%20projekt.jpg" alt="" />
+        <figcaption class="hero-grid-content">
+            <span class="hero-tag effect-target">Category</span>
+            <h2 class="hero-grid-title effect-target">The Rain In Spain</h2>
+            <p class="hero-grid-text effect-target effect-text">Falls mainly on the plain.</p>
+            <a class="hero-grid-link" href="#">sdsdsdsdsds</a>
+        </figcaption>
+    </figure>
+</div>
+        
+</section>
+    <section id="contact">
+        	<h2>Kontakt</h2>
+				<h3>Masz pytanie? Napisz do mnie.</h3>
+				<address>
+				<p><a href="mailto:przemekorn@gmail.com">przemekorn@gmail.com</a></p>
+			</address>
+			<hr>
+			<div class="social-icons">
+				<a href="https://www.linkedin.com/in/przemyslaw-szczepanski-in/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+				<a href="https://github.com/gitprzemek?tab=repositories" target="_blank" class="social-icon"><i class="fab fa-github-square"></i></a>
+			</div>
+			<hr>
+			<p>Lub skontaktuj się bezpośrednio przez formularz kontaktowy:</p>
+            <form method="post" action="https://usebasin.com/f/8bfa23353632" class="form">
+                <input name="name" type="text" placeholder="Imię i nazwisko" required>
+                <input name="email" type="email" placeholder="Adres email" required>
+                <textarea name="message" placeholder="Wiadomość" required></textarea>
+                <input id="submit" name="submit" type="submit" value="Wyślij">
+            </form>
+        
+    </section>
+    <footer class="copyrights">
+        Copyright &#169; Przemysław Szczepański
+    </footer>
+    
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="js/jquery.vticker-min.js"></script>
+
+<script src="js/jquery.waypoints.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

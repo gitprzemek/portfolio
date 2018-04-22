@@ -1,0 +1,207 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+    /*ABOUT SECTION*/
+    #about {
+        padding: 40px 5% 60px 5%;
+    }
+    #about .about-content{
+    flex: 1 40%;
+}
+    .about-right > * {
+        font-size: 0.8em;
+        padding: 0 0 0 1em;
+    }
+    #about .about-content.about-left {
+        padding: 0 2em 0 0;
+    }
+}
+ 
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+    /*HEADER*/
+    #header {
+        padding: 0 5%;
+    }
+    /*SKILLS SECTION*/
+    #skills {
+    padding: 40px 5%;   
+}  
+    #about figure .rotate-div{
+        max-width: 350px;
+    }
+    #about figure .rotate-div img{
+    max-width: 350px;
+    max-height: 100%;
+    border: 20px solid white;
+}
+    /*CONTACT LINE*/
+    #contact hr{
+    max-width: 100%; 
+}
+}
+ 
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    /*NAVIGATION*/
+    .topnav li:not(:last-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    nav ul li:last-child {
+        display: block;
+        order: -1;
+    }
+    .topnav.responsive {
+        position: relative;
+        transition: all .3s;
+    }
+    .topnav.responsive li {
+        display: block;
+    }
+    .topnav.responsive li:not(:last-child):hover {
+        background-color: rgba(34, 34, 34, 0.98);
+    }
+    nav ul.responsive {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.98);
+        padding: 0 0 10px 0;
+    }
+    nav ul li a:after {
+        display: none;
+    }
+    nav ul.responsive li a:after {
+        display: none;
+    }
+  
+
+    /*HEADER*/
+    #header {
+        padding: 0 5%;
+    }
+
+    #header #name-container {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+
+        font-size: 2.5em;
+    }
+
+    #header #name-container ul {
+        left: 0.2em;
+        text-align: left;
+    }
+
+    /*ABOUT SECTION*/
+    #about {
+        padding: 40px 5% 60px 5%;
+    }
+
+    #about .about-content {
+        flex: 1 40%;
+    }
+
+    .about-right > * {
+        font-size: 0.6em;
+        padding: 0 0 0 1em;
+    }
+
+    #about .about-content.about-left {
+        padding: 11px;
+    }
+    #about figure .rotate-div{
+        max-width: 230px;
+        max-height: 100%;
+    }
+    #about figure .rotate-div img{
+    width: 100%;
+    max-height: 100%;
+    border: 10px solid white;
+}
+    #img-slide1, #img-slide2, #img-slide3, #img-slide4{
+    width: 100%;
+    height: 110px;
+}
+    /*SLIDER SECTION*/
+    #cert .slider-side {
+        flex: 1 100%;
+    }
+
+    #cert #slider-article {
+        height: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 1em;
+    }
+    #cert #slider-article>*{
+        margin: 0.5em 0;
+    }
+    /*SKILLS SECTION*/
+   #icons-container .img-icons{
+    width: auto;  
+    height: 90px;
+}
+}
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    /* HEADER*/
+    
+    #header {
+    padding: 0;
+}
+    #header #name-container{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+}
+    #header #name-container ul{
+    left: 0.2em;
+    text-align: left;
+}
+     /*ABOUT SECTION*/
+    #about {
+        padding: 20px 3% 40px 3%;
+    }
+
+    #about .about-content {
+        flex: 1 100%;
+    }
+
+    .about-right > * {
+        font-size: 0.5em;
+        padding: 0 1em 0 1em;
+    }
+
+    #about .about-content.about-left {
+        padding: 1em 3em 3em 3em;
+    }
+    #img-slide1, #img-slide2, #img-slide3, #img-slide4{
+    width: 100%;
+    height: 95px;
+}
+    /* CERT */
+    #cert .cert-container{
+        padding: 0 5%;
+    }
+    /*SKILL SECTION*/
+     #icons-container .img-icons{
+    width: 100%;  
+    height: auto;
+}
+#icons-container .icons{
+    padding: 1em 1em;
+    flex: 1 50%;
+    height: auto;
+    width: 130px;
+}
+}
