@@ -435,139 +435,65 @@ nav.scrolling{
     padding: 40px 5% 60px 5%;
 }
 
-.project-container {
+.project-container{
 	position: relative;
 	clear: both;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;	
-    overflow: hidden;
+    /* overflow: hidden; */
 }
-.hero-grid {
-  position: relative;
-  overflow: hidden;
-  background: rgba(29, 29, 29, 0.856);
-  cursor: pointer;
-  margin: 10px;
-  max-width: 300px;
-  max-height: 333px;
+.fig-project{
+    position: relative;
+    height: 400px;
+    width: 270px;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
+-moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
+box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
+    transition: all 0.4s;
 }
-
-.hero-grid-image {
-  position: relative;
-  display: block;
-  min-height: 100%;
-  max-width: 100%;
+.fig-project:hover{
+    transform: translate(8px, -12px);
+    -webkit-box-shadow: -8px 11px 13px 0px rgba(0,0,0,0.15);
+-moz-box-shadow: -8px 11px 13px 0px rgba(0,0,0,0.15);
+box-shadow: -8px 11px 13px 0px rgba(0,0,0,0.15);
 }
-
-.hero-grid-content {
-  padding: 2em;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-    
+.img-project{
+    height: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
-
-.hero-grid-link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  white-space: nowrap;
-  font-size: 0;
-  opacity: 0;
-    
+.clock{
+    background-image: url(../img/warcraft-clock.JPG);
 }
-
-.hero-grid-title {
-  letter-spacing: -1px;
-  font-weight: 300;
-  margin: 0;
-  padding: 0.25em 0;
-  line-height: 1;
-  color: #d6d6d6;
+.to_do_list{
+    background-image: url(../img/to_do_list.JPG);
+}
+.super_slider{
+    background-image: url(../img/super_slider.JPG);
+}
+.fig-project figcaption{
+    height: 40%;
+    background-color: rgb(255, 255, 255);
+}
+.fig-project h3{
+    margin: 0;
+    padding: 1em 0 0 0;
+}
+.fig-project p{
+    color: #6e6e6e;
+    font-size: 0.9em; 
+}
+.fig-project a{
+    position: absolute;
+    transform: translateX(-50%);
+    font-size: 2em;
+    color: #000000;
+    bottom: 15px;
 }
 
-.hero-tag {
-  display: inline-block;
-  font-size: 1.6em;
-  padding: .2em;
-  /*background: #b72c19;*/
-  color: #b72c19;
-    font-weight: 300;
-    border-bottom: 1px solid #b72c19;
-    
-}
-
-.hero-grid p {
-  letter-spacing: 1px;
-  font-size: 68.5%;
-  height: 2.25em;
-  overflow: hidden;
-    
-}
-
-.effect-image {
-  max-width: none;
-  width: -webkit-calc(100% + 50px);
-  width: calc(100% + 50px);
-  opacity: 0.2;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-40px, 0, 0);
-  transform: translate3d(-40px, 0, 0);
-}
-
-.effect-target {
-  -webkit-transform: translate3d(0, 40px, 0);
-  transform: translate3d(0, 40px, 0);
-}
-
-.effect-target {
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-}
-
-.effect-text {
-  color: rgba(255, 255, 255, 0.8);
-  opacity: 0;
-  -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
-  transition: opacity 0.2s, transform 0.35s;
-}
-
-.effect-move:hover .effect-image,
-.effect-move:hover .effect-text{
-  opacity: 1;
-}
-.effect-move:hover .hero-grid-title{
-    color: black;
-}
-.effect-move:hover .hero-tag{
-    background-color: #ffffff;
-    color: black;
-    border-bottom: 1px solid red;
-    transition: all .35s;
-}
-.effect-move:hover .effect-target,
-.effect-move:hover .effect-image {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.effect-move:hover .effect-text {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
-  -webkit-transition-duration: 0.35s;
-  transition-duration: 0.35s;
-}
 
 /*---------------------CONTACT*/
 #contact{

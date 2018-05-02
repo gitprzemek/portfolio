@@ -38,6 +38,21 @@
     #contact hr{
     max-width: 100%; 
 }
+    /* PROJECT SECTION */
+    .fig-project{
+        height: 330px;
+        width: 220px;
+        margin: 15px 15px;
+    }
+    .fig-project h3{
+        font-size: 0.9em;   
+    }
+    .fig-project p{
+        font-size: 0.8em;  
+    }
+    .fig-project a{
+        font-size: 1.6em;
+    }
 }
  
 /* Small Devices, Tablets */
@@ -204,4 +219,20 @@
     height: auto;
     width: 130px;
 }
+    /* PROJECT SECTION */
+.fig-project{
+    height: 180px;
+    width: 120px;
+    margin: 5px 5px;
+}
+.fig-project h3{
+    font-size: 0.8em;   
+}
+.fig-project p{
+    display: none;   
+}
+.fig-project a{
+    font-size: 1.2em;
+}
+
 }
