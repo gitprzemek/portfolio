@@ -25,7 +25,7 @@ $(window).scroll(function(){
     }    
 });
 
-/*RESPONSIVE NAVIGATION*/
+/*RESPONSIVE NAVIGATION- show li block after click*/
 
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -36,7 +36,16 @@ function myFunction() {
     }
 }
 
-/*SETTINGS FOR TICKER*/
+/* remove class after click li(hide nav) */
+
+var $link = $(".topnav li:not(:last-child)");
+$link.click(function(){
+    if ($("#myTopnav").hasClass("responsive")){
+        $("#myTopnav").removeClass("responsive");
+}
+})
+
+/*SETTINGS FOR vTICKER*/
 $('.first_col').vTicker({
    speed: 500,
    pause: 3000,

@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    <!-- NAVIGATION SECTION -->
     <nav id="nav">
        <div class="logonav"><a id="logonav" href="#">P</a></div>
         <ul class="topnav" id="myTopnav">
@@ -35,6 +36,7 @@
             <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
         </ul>
     </nav>
+    <!-- HEADER SECTION -->
     <header id="header">
         
            <div id="name-container">
@@ -54,6 +56,7 @@
         
 
     </header>
+    <!-- ABOUT ME SECTION -->
     <section id="about">
         <h2>O mnie</h2>
         <figure class="about-content about-left">
@@ -73,6 +76,7 @@
         
     </section>
     <hr>
+    <!-- CONTACT SECTION -->
     <section id="cert">
         <h2>Kursy i osiągnięcia</h2>
         <div class="cert-container">
@@ -88,29 +92,71 @@
         </div>
     </section>
     <hr>
+    <!-- SKILL SECTION -->
 <section id="skills">
     <h2>Umiejętności</h2>
     <div id="icons-container">
-        <div class="animated icons"><img class="img-icons" src="img/HTML5_badge.png" alt="html5_badge"></div>
-        <div class="animated icons"><img class="img-icons" src="img/CSS_badge.png" alt="css_badge"></div>
-        <div class="animated icons"><img class="img-icons" src="img/JS-logo.png" alt="js_badge"></div>
-        <div class="animated icons"><img class="img-icons" src="img/jquery-badge.png" alt="jquery_badge"></div>
-        <div class="animated icons"><img class="img-icons" src="img/git-logo.png" alt="git_badge"></div>
-        <div class="animated icons"><img class="img-icons" src="img/bootstrap-logo.png" alt="bootstrap_badge"></div>
-        <div class="animated icons"><img class="img-icons" src="img/wordpress-logo.png" alt="wp_badge"></div>
-        <div class="animated icons"><img class="img-icons" src="img/sass-logo.png" alt="sass_badge"></div>
+        <div class="animated icons">
+            <div class="div-icon">
+                <img class="img-icons" src="img/HTML5_badge.png" alt="html5_badge">
+                <img class="img-icons" src="img/CSS_badge.png" alt="css_badge">
+                <img class="img-icons" src="img/JS-logo.png" alt="js_badge">
+            </div>
+            <div class="about-icon">
+                <h3>HTML5 | CSS3 | JavaScript</h3>
+                <p>Dobra znajomość języków i technologii umożliwiające tworzenie interaktywnych i świetnie wyglądających stron w standardzie HTML5</p>
+            </div>
+        </div>
+       
+        <div class="animated icons">
+            <div class="div-icon">
+                <img class="img-icons" src="img/jquery-badge.png" alt="jquery_badge">
+                <img class="img-icons" src="img/git-logo.png" alt="git_badge">
+                <img class="img-icons" src="img/bootstrap-logo.png" alt="bootstrap_badge">
+                <img class="img-icons" src="img/sass-logo.png" alt="sass_badge">
+                <img class="img-icons" src="img/gulp.png" alt="gulp_badge">
+            </div>
+            <div class="about-icon">
+                <h3>JQuery | Git | Bootstrap | SASS | Gulp</h3>
+                <p>Znajomość solidnych podstaw technologii ułatwiających i usprawniających tworzenie stron.</p>
+            </div>
+        </div>
+        <div class="animated icons">
+            <div class="div-icon">
+                <img class="img-icons" src="img/wordpress-logo.png" alt="wp_badge">
+                <img class="img-icons" src="img/Photoshop_CC_icon.png" alt="photoshop_logo">
+                <img class="img-icons" src="img/raect.png" alt="react_logo">
+            </div>
+            <div class="about-icon">
+                <h3>Worpress | Photoshop | React</h3>
+                <p>Podstawowa znajomość tworzenia stron przy pomocy Wordpressa | Praca w PS umożliwiająca modyfikacje grafik | W trakcie poznawania frameworków takich jak React</p>
+            </div>
+        </div>
     </div>
 </section>
    <hr>
+   <!-- PROJECTS SECTION -->
 <section id="projects">
 <h2>Projekty</h2>
 <div class="project-container">
+    <figure class="fig-project">
+        <div class="img-project memory-game"></div>
+        <figcaption>
+            <h3>Avengers vs Thanos</h3>
+            <p>Gra typu Memory card z motywem z filmu Avengers: Infinity War</p>
+            <a href="https://github.com/gitprzemek/avengers-memory-card" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+        </figcaption>
+    </figure>
     <figure class="fig-project">
         <div class="img-project clock"></div>
         <figcaption>
             <h3>Warcraft clock</h3>
             <p>Zegar tarczowy w stylu gry WoW.</p>
-            <a href="https://github.com/gitprzemek/wow-horde-clock" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/gitprzemek/wow-horde-clock" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
         </figcaption>
     </figure>
     <figure class="fig-project">
@@ -118,7 +164,9 @@
         <figcaption>
             <h3>To do list</h3>
             <p>Prosta aplikacja do planowania zadań lub czynności do zrobienia.</p>
-            <a href="https://github.com/gitprzemek/to_do_list" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/gitprzemek/to_do_list" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
         </figcaption>
     </figure>
     <figure class="fig-project">
@@ -126,20 +174,24 @@
         <figcaption>
             <h3>Simple slider</h3>
             <p>Slider zdjęć z dołączonymi opisami w osobnym kontenerze.</p>
-            <a href="https://github.com/gitprzemek/super-simple-slider" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/gitprzemek/super-simple-slider" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
         </figcaption>
     </figure>
     <figure class="fig-project">
-        <div class="img-project"></div>
+        <div class="img-project slodkie-wypieki"><div class="img-project under-con"></div></div>
         <figcaption>
-            <h3>Simple slider</h3>
-            <p>Slider zdjęc z dołączonym opisem w osobnym kontenerze.</p>
-            <a href="https://github.com/gitprzemek?tab=repositories" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <h3>Słodkie wypieki</h3>
+            <p>Strona miejscowej cukierni (w trakcie tworzenia)</p>
+            <a href="https://github.com/gitprzemek/Slodkie-wypieki" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
         </figcaption>
     </figure>
 
 </div>
-        
+<!-- FOOTER CONTACT -->
 </section>
     <section id="contact">
         	<h2>Kontakt</h2>

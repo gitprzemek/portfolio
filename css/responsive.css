@@ -53,6 +53,10 @@
     .fig-project a{
         font-size: 1.6em;
     }
+    /* SKILL SECTION */
+    #icons-container .img-icons{
+        margin: 0 auto;
+    }
 }
  
 /* Small Devices, Tablets */
@@ -60,6 +64,7 @@
     /*NAVIGATION*/
     .topnav li:not(:last-child) {
         display: none;
+        padding: 0;
     }
     .topnav a.icon {
         float: right;
@@ -79,13 +84,17 @@
     .topnav.responsive li:not(:last-child):hover {
         background-color: rgba(34, 34, 34, 0.98);
     }
+    .topnav.responsive li:not(:last-child) a{
+        display: block;
+        padding: 15px 0 15px 0;
+    }
     nav ul.responsive {
         float: none;
         display: flex;
         flex-direction: column;
         text-align: center;
         background-color: rgba(0, 0, 0, 0.98);
-        padding: 0 0 10px 0;
+        padding: 0 10px 10px 10px;
     }
     nav ul li a:after {
         display: none;
@@ -160,14 +169,15 @@
     }
     /*SKILLS SECTION*/
    #icons-container .img-icons{
-    width: auto;  
-    height: 90px;
+    width: 90px;
+    
 }
 }
 
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
+
     /* HEADER*/
     
     #header {
@@ -210,19 +220,23 @@
     }
     /*SKILL SECTION*/
      #icons-container .img-icons{
-    width: 100%;  
-    height: auto;
+    width: 60px;  
 }
 #icons-container .icons{
-    padding: 1em 1em;
-    flex: 1 50%;
+    padding: 0;
+    margin: 0;
+    flex: 1 100%;
     height: auto;
-    width: 130px;
+    font-size: 0.8em;
+    /* width: auto; */
 }
     /* PROJECT SECTION */
+    #projects{
+        padding: 20px 2%;
+    }
 .fig-project{
-    height: 180px;
-    width: 120px;
+    height: 200px;
+    width: 140px;
     margin: 5px 5px;
 }
 .fig-project h3{

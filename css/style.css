@@ -17,8 +17,10 @@ body{
 h2 {
     font-size: 2.5em;
     color: rgb(32, 8, 8);
+    color: #3b3b3b;
     margin: 1em;
     padding: 0;
+    
 }
 section{
     padding: 40px 10% 40px 10%;
@@ -410,7 +412,7 @@ nav.scrolling{
 /*----------------------SKILLS SECTION*/
 #skills {
     height: auto;
-    padding: 40px 15%;
+    padding: 40px 10%;
     
 }
 #icons-container{
@@ -422,17 +424,45 @@ nav.scrolling{
     
 }
 #icons-container .icons{
-    padding: 2em 0;
-    flex: 1 21%;
+    padding: 0;
+    height: auto;
+    margin: 10px 10px;
+    /* flex: 1 100; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
 }
+.div-icon{
+    /* flex: 1 40%; */
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.about-icon{
+    height: auto;
+    flex: 1 100%;
+    /* border-left: 2px solid #b72c19; */
+    position: relative;
+    /* text-align: center; */
+    color: #686f72;  
+}
+.about-icon h3{
+    color: #b72c19;
+}
+
 #icons-container .img-icons{
-    width: auto;  
-    height: 130px;
+    width: 100px;  
+    height: 100%;
+    margin: 0 2em;
 }
 /*--------------------PROJECTS SECTIONS*/
 #projects{
     height: auto;
-    padding: 40px 5% 60px 5%;
+    padding: 40px 10% 60px 10%;
 }
 
 .project-container{
@@ -442,28 +472,32 @@ nav.scrolling{
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;	
-    /* overflow: hidden; */
 }
 .fig-project{
     position: relative;
     height: 400px;
     width: 270px;
+    margin: auto auto 3em auto;
     -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
 -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
 box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
     transition: all 0.4s;
 }
 .fig-project:hover{
-    transform: translate(8px, -12px);
-    -webkit-box-shadow: -8px 11px 13px 0px rgba(0,0,0,0.15);
--moz-box-shadow: -8px 11px 13px 0px rgba(0,0,0,0.15);
-box-shadow: -8px 11px 13px 0px rgba(0,0,0,0.15);
+    transform: translate(0px, -8px);
+    -webkit-box-shadow: -0px 11px 13px 0px rgba(0,0,0,0.15);
+-moz-box-shadow: -0px 11px 13px 0px rgba(0,0,0,0.15);
+box-shadow: -0px 11px 13px 0px rgba(0,0,0,0.15);
 }
 .img-project{
     height: 60%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    position: relative;
+}
+.memory-game{
+    background-image: url(../img/memorygame.JPG);
 }
 .clock{
     background-image: url(../img/warcraft-clock.JPG);
@@ -473,6 +507,18 @@ box-shadow: -8px 11px 13px 0px rgba(0,0,0,0.15);
 }
 .super_slider{
     background-image: url(../img/super_slider.JPG);
+}
+.slodkie-wypieki{
+    background-image: url(../img/slodkie-wypieki.JPG);
+}
+.under-con{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40%;
+    width: 40%;
+    background-image: url(../img/underconstruct.png);
 }
 .fig-project figcaption{
     height: 40%;
