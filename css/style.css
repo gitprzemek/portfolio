@@ -358,11 +358,11 @@ nav.scrolling{
     box-shadow: -6px 10px 27px -10px rgba(0, 0, 0, 0.75);
     border: 10px solid #d8d8d8;
 }
-#cert #my-image-slider:active{
+/* #cert #my-image-slider:active{
     transform: scale(1.7);
     z-index: 2;
     cursor:zoom-out;
-}
+} */
 #cert #my-image-slider .opacImg,
 #cert #slider-article h3,
 #cert #slider-article p{
@@ -458,6 +458,8 @@ nav.scrolling{
     width: 100px;  
     height: 100%;
     margin: 0 2em;
+    align-self: center;
+    
 }
 /*--------------------PROJECTS SECTIONS*/
 #projects{
