@@ -47,13 +47,13 @@ $link.click(function(){
 
 /*SETTINGS FOR vTICKER*/
 $('.first_col').vTicker({
-   speed: 500,
+   speed: 300,
    pause: 3000,
    showItems: 1,
    animation: 'fade',
    mousePause: false,
-   height: 0,
-   direction: 'up'
+   height: "70px",
+   direction: 'down'
 });
 
 /*-----------HOVER ON TEXT in ABOUT SECTION*/
@@ -95,17 +95,33 @@ $(document).ready(function(){
     });
 });
 
-
+// WAYPOINT EFFECTS
+/*ABOUT EFFECT*/
+$(document).ready(function(){
+    // hide our element on page load
+    $('.about').css('opacity', 0);
+   
+    $('.about').waypoint(function() {
+        $('.about').addClass('fadeInUp');
+    }, { offset: '60%' });
+  });
+// CERTYFICAT EFFECT
+  $(document).ready(function(){
+    // hide our element on page load
+    $('.cert').css('opacity', 0);
+   
+    $('.cert').waypoint(function() {
+        $('.cert').addClass('fadeInUp');
+    }, { offset: '60%' });
+  });
 /* SKILLS ICON EFFECT*/
 $(document).ready(function(){
- 
   // hide our element on page load
-  $('.icons').css('opacity', 0);
+  $('.skills').css('opacity', 0);
  
-  $('.icons').waypoint(function() {
-      $('.icons').addClass('fadeInLeft');
+  $('.skills').waypoint(function() {
+      $('.skills').addClass('fadeInUp');
   }, { offset: '60%' });
- 
 });
 
 /*SLIDER IN CERT SECTION*/
@@ -113,6 +129,10 @@ $(document).ready(function(){
 
 var images = [];
 images.push("<img src ='img/dyploms/Akademia108.jpg' class = 'opacImg'>");
+images.push("<img src ='img/dyploms/javascript.jpg' class = 'opacImg'>");
+images.push("<img src ='img/dyploms/front-end.jpg' class = 'opacImg'>");
+images.push("<img src ='img/dyploms/PSDtoHTML.jpg' class = 'opacImg'>");
+images.push("<img src ='img/dyploms/gitvsc.jpg' class = 'opacImg'>");
 images.push("<img src ='img/dyploms/angielski.jpg' class = 'opacImg'>");
 images.push("<img src ='img/dyploms/MTM-UAS1.jpg' class = 'opacImg'>");
 images.push("<img src ='img/dyploms/MTM-UAS2.jpg' class = 'opacImg'>");
@@ -166,6 +186,10 @@ prevBtn.addEventListener("click", function () {
 
 var articles = [];
 articles.push("<h3>Szkoła programowania</h3><br><p>Kurs bootcamp Front-end developer w szkole Akademia 108</p>");
+articles.push("<h3>Kurs JavaScript</h3><br><p>Kurs bootcamp Front-end developer w szkole Akademia 108</p>");
+articles.push("<h3>Kurs Front-end</h3><br><p>Kurs bootcamp Front-end developer w szkole Akademia 108</p>");
+articles.push("<h3>Kurs PSD do HTML</h3><br><p>Kurs bootcamp Front-end developer w szkole Akademia 108</p>");
+articles.push("<h3>Kurs Git w Virtual Studio Code</h3><br><p>Kurs bootcamp Front-end developer w szkole Akademia 108</p>");
 articles.push("<h3>Kurs języka angielskiego</h3><br><p>Ukończenie kursu języka angielskiego poziom B1+</p>");
 articles.push("<h3>Certyfikat MTM-UAS</h3><br><p>Uzyskanie kwalifikacji do zastosowania systemu modułów MTM-UAS</p>");
 articles.push("<h3>MTM-1</h3><br><p>Uzyskanie kwalifikacji do zastosowania bloków procesowych MTM</p>");
