@@ -11,9 +11,8 @@
 
     <title>Przemysław Szczepański Front-end Developer</title>
 
-    
+    <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -26,7 +25,14 @@
 <body>
     <!-- NAVIGATION SECTION -->
     <nav id="nav">
-       <div class="logonav"><a id="logonav" href="#">P</a></div>
+        <div id="logonav">
+            <div>
+                <a class="logonav" href="#">P</a>
+                <img src="img/gear.png" alt="gear-icon" id="img-scroll">
+            </div>
+            <a class="button-nav" href="https://www.linkedin.com/in/przemyslaw-szczepanski-in/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="button-nav" href="https://github.com/gitprzemek?tab=repositories" target="_blank"><i class="fab fa-github-alt"></i></a>
+        </div>
         <ul class="topnav" id="myTopnav">
             <li><a href="#header" id="start">Start</a></li>
             <li><a href="#about" id="omnie">O mnie</a></li>
@@ -75,14 +81,14 @@
         </figure>
         <div class="about-content about-right">
             <div>
-                <p>CZEŚĆ! Nazywam się PRZEMYSŁAW SZCZEPAŃSKI i jestem front-end developerem.</p><br>Absolwent Politechniki Świętokrzyskiej I stopnia.  Zawsze chciałem zajmować się tym co lubię, a zatem robię wszystko by to robić! W wolnej chwili relaksuję się przy oglądaniu komedii np. z <span class="secret-slide" id="jim">Jimem Carreyem</span> lub dbam o to by ciało nadal wyglądało i pasowało do moich starych ubrań. Oprócz tego wielki fan firmy <span class="secret-slide" id="blizzard">Blizzard</span>, <br>a w szczególności ich klasycznych tytułów.</div>      
+                <p>CZEŚĆ! Nazywam się PRZEMYSŁAW SZCZEPAŃSKI i jestem front-end developerem.<br>Absolwent Politechniki Świętokrzyskiej I stopnia.  Zawsze chciałem zajmować się tym co lubię, a zatem robię wszystko by to robić! W wolnej chwili relaksuję się przy oglądaniu komedii np. z <span class="secret-slide" id="jim">Jimem Carreyem</span> lub dbam o to by ciało nadal wyglądało i pasowało do moich starych ubrań. Oprócz tego wielki fan firmy <span class="secret-slide" id="blizzard">Blizzard</span>, <br>a w szczególności ich klasycznych tytułów.</p></div>      
         </div>
     </section>
     <!-- <hr> -->
     <!-- CERTIFICATE SECTION -->
     <section id="cert" class="animated cert">
         <div class="cert-block"> 
-            <h2>Kursy i osiągnięcia</h2>
+            <h2><span class="head-letter">K</span>ursy i osiągnięcia</h2>
             <div class="cert-container">
             <figure class="slider-side">
               <button id="prev" class="btn-navi"></button>
@@ -112,20 +118,33 @@
                 <p>Dobra znajomość języków i technologii umożliwiające tworzenie interaktywnych i świetnie wyglądających stron w standardzie HTML5</p>
             </div>
         </div>
-       
+       <hr>
         <div class="animated icons">
             <div class="div-icon">
                 <img class="img-icons" src="img/jquery-badge.png" alt="jquery_badge">
-                <img class="img-icons" src="img/git-logo.png" alt="git_badge">
                 <img class="img-icons" src="img/bootstrap-logo.png" alt="bootstrap_badge">
                 <img class="img-icons" src="img/sass-logo.png" alt="sass_badge">
-                <img class="img-icons" src="img/gulp.png" alt="gulp_badge">
+                <img class="img-icons" src="img/nodejs-npm.png" alt="gulp_badge">
             </div>
             <div class="about-icon">
-                <h3>JQuery | Git | Bootstrap | SASS | Gulp</h3>
+                <h3>JQuery | Bootstrap | SASS | Node.js+npm</h3>
                 <p>Znajomość solidnych podstaw technologii ułatwiających i usprawniających tworzenie stron.</p>
             </div>
         </div>
+        <hr>
+        <div class="animated icons">
+            <div class="div-icon">
+                <img class="img-icons" src="img/git-logo.png" alt="git_badge">
+                <img class="img-icons" src="img/trello.png" alt="trello-logo">
+                <img class="img-icons" src="img/jira-blue.png" alt="jira-logo">
+                
+            </div>
+            <div class="about-icon">
+                <h3>Git | Trello | JIRA</h3>
+                <p>Praca ze zdalnym repozytorium, a także korzystanie z aplikacji i narzędzi usprawniających zarządzanie zadaniami i projektami.</p>
+            </div>
+        </div>
+        <hr>
         <div class="animated icons">
             <div class="div-icon">
                 <img class="img-icons" src="img/wordpress-logo.png" alt="wp_badge">
@@ -134,7 +153,7 @@
             </div>
             <div class="about-icon">
                 <h3>Worpress | Photoshop | React</h3>
-                <p>Podstawowa znajomość tworzenia stron przy pomocy WordPress | Praca w PS umożliwiająca modyfikacje grafik | W trakcie poznawania frameworków takich jak React</p>
+                <p>Podstawowa znajomość tworzenia stron przy pomocy WordPress | Praca w PS umożliwiająca modyfikacje grafik oraz kodowanie plików PSD do HTML | W trakcie poznawania frameworków takich jak React</p>
             </div>
         </div>
         </div>
@@ -144,58 +163,81 @@
     <section id="projects">
         <h2>Projekty</h2>
         <div class="project-container">
-        <figure class="fig-project">
-            <div class="img-project memory-game"></div>
-            <figcaption>
-                <h3>Avengers vs Thanos</h3>
-                <p>Gra typu Memory card z motywem z filmu Avengers: Infinity War</p>
-                <div>
-                    <a href="https://github.com/gitprzemek/avengers-memory-card" target="_blank" class="social-icon">
-                        <i class="fab fa-github"></i>
+            <figure class="fig-project">
+                <div class="img-project memory-game"></div>
+                <figcaption>
+                    <h3>Avengers vs Thanos</h3>
+                    <p>Gra typu Memory card z motywem z filmu Avengers: Infinity War</p>
+                    <div>
+                        <a href="https://github.com/gitprzemek/avengers-memory-card" target="_blank" class="social-icon">
+                            <button>CODE</button></a>
+                        <a href="https://gitprzemek.github.io/avengers-memory-card/" target="_blank" class="social-icon">
+                            <button>DEMO</button>
+                        </a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="fig-project">
+                <div class="img-project clock"></div>
+                <figcaption>
+                    <h3>Warcraft clock</h3>
+                    <p>Zegar tarczowy w stylu gry WoW.</p>
+                    <a href="https://github.com/gitprzemek/wow-horde-clock" target="_blank" class="social-icon">
+                        <button>CODE</button></a>
+                    <a href="https://gitprzemek.github.io/wow-horde-clock/" target="_blank" class="social-icon">
+                        <button>DEMO</button>
                     </a>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="fig-project">
-            <div class="img-project clock"></div>
-            <figcaption>
-                <h3>Warcraft clock</h3>
-                <p>Zegar tarczowy w stylu gry WoW.</p>
-                <a href="https://github.com/gitprzemek/wow-horde-clock" target="_blank" class="social-icon">
-                    <i class="fab fa-github"></i>
-                </a>
-            </figcaption>
-        </figure>
-        <figure class="fig-project">
-            <div class="img-project to_do_list"></div>
-            <figcaption>
-                <h3>To do list</h3>
-                <p>Prosta aplikacja do planowania zadań lub czynności do zrobienia.</p>
-                <a href="https://github.com/gitprzemek/to_do_list" target="_blank" class="social-icon">
-                    <i class="fab fa-github"></i>
-                </a>
-            </figcaption>
-        </figure>
-        <figure class="fig-project">
-            <div class="img-project super_slider"></div>
-            <figcaption>
-                <h3>Simple slider</h3>
-                <p>Slider zdjęć z dołączonymi opisami w osobnym kontenerze.</p>
-                <a href="https://github.com/gitprzemek/super-simple-slider" target="_blank" class="social-icon">
-                    <i class="fab fa-github"></i>
-                </a>
-            </figcaption>
-        </figure>
-        <figure class="fig-project">
-            <div class="img-project slodkie-wypieki"><div class="img-project under-con"></div></div>
-            <figcaption>
-                <h3>Słodkie wypieki</h3>
-                <p>Strona miejscowej cukierni (w trakcie tworzenia)</p>
-                <a href="https://github.com/gitprzemek/Slodkie-wypieki" target="_blank" class="social-icon">
-                    <i class="fab fa-github"></i>
-                </a>
-            </figcaption>
-        </figure>
+                </figcaption>
+            </figure>
+            <figure class="fig-project">
+                <div class="img-project slodkie-wypieki"><div class="img-project under-con"></div></div>
+                <figcaption>
+                    <h3>Słodkie wypieki</h3>
+                    <p>Strona miejscowej cukierni (w trakcie tworzenia)</p>
+                    <a href="https://github.com/gitprzemek/Slodkie-wypieki" target="_blank" class="social-icon">
+                        <button>CODE</button></a>
+                    <a href="" target="_blank" class="social-icon">
+                        <button>DEMO</button>
+                    </a>
+                </figcaption>
+            </figure>
+            <figure class="fig-project">
+                <div class="img-project to_do_list"></div>
+                <figcaption>
+                    <h3>To do list</h3>
+                    <p>Prosta aplikacja do planowania zadań lub czynności do zrobienia.</p>
+                    <a href="https://github.com/gitprzemek/to_do_list" target="_blank" class="social-icon">
+                        <button>CODE</button></a>
+                    <a href="https://gitprzemek.github.io/to_do_list/" target="_blank" class="social-icon">
+                        <button>DEMO</button>
+                    </a>
+                </figcaption>
+            </figure>
+            <figure class="fig-project">
+                <div class="img-project super_slider"></div>
+                <figcaption>
+                    <h3>Simple slider</h3>
+                    <p>Slider zdjęć z dołączonymi opisami w osobnym kontenerze.</p>
+                    <a href="https://github.com/gitprzemek/super-simple-slider" target="_blank" class="social-icon">
+                        <button>CODE</button></a>
+                    <a href="https://gitprzemek.github.io/super-simple-slider/" target="_blank" class="social-icon">
+                        <button>DEMO</button>
+                    </a>
+                </figcaption>
+            </figure>
+            <figure class="fig-project">
+                <div class="img-project slodkie-wypieki"><div class="img-project under-con"></div></div>
+                <figcaption>
+                    <h3>Słodkie wypieki</h3>
+                    <p>Strona miejscowej cukierni (w trakcie tworzenia)</p>
+                    <a href="https://github.com/gitprzemek/Slodkie-wypieki" target="_blank" class="social-icon">
+                        <button>CODE</button></a>
+                    <a href="https://gitprzemek.github.io/Slodkie-wypieki/" target="_blank" class="social-icon">
+                        <button>DEMO</button>
+                    </a>
+                </figcaption>
+            </figure>
+            
         </div>
     </section>
     <!-- CONTACT SECTION -->

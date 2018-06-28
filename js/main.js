@@ -25,6 +25,26 @@ $(window).scroll(function(){
     }    
 });
 
+// ROTATE LOGO AFTER SCROLLING
+
+
+    $(window).scroll(function() {
+
+        // get how far we've scrolled from the top of our screen
+        var offset = $(window).scrollTop();
+        offset     = offset * 1;
+
+        // apply the offset as a css transform to our buttons
+        $('#img-scroll').css({
+            '-moz-transform': 'rotate(' + offset + 'deg)',
+            '-webkit-transform': 'rotate(' + offset + 'deg)',
+            '-o-transform': 'rotate(' + offset + 'deg)',
+            '-ms-transform': 'rotate(' + offset + 'deg)',
+            'transform': 'rotate(' + offset + 'deg)',
+        });
+
+    });
+
 /*RESPONSIVE NAVIGATION- show li block after click*/
 
 function myFunction() {
