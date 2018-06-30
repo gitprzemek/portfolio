@@ -274,6 +274,7 @@
   
     #header figure{
         width: 70%;
+        padding-top: 5%;
     }
     #header::before{
         width: 90%;
