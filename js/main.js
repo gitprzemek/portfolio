@@ -115,6 +115,17 @@ $(document).ready(function(){
     });
 });
 
+// ADD SCROLL ON MOBILE TO PHOTO
+
+
+    $(".secret-slide").click(function() {
+        if(window.innerWidth < 500) {
+        $('html, body').animate({
+            scrollTop: $("#about").offset().top
+        }, 300);
+        }}
+    );
+    
 // WAYPOINT EFFECTS
 /*ABOUT EFFECT*/
 $(document).ready(function(){
@@ -123,7 +134,7 @@ $(document).ready(function(){
    
     $('.about').waypoint(function() {
         $('.about').addClass('fadeInUp');
-    }, { offset: '60%' });
+    }, { offset: '50%' });
   });
 // CERTYFICAT EFFECT
   $(document).ready(function(){
@@ -132,7 +143,7 @@ $(document).ready(function(){
    
     $('.cert').waypoint(function() {
         $('.cert').addClass('fadeInUp');
-    }, { offset: '60%' });
+    }, { offset: '50%' });
   });
 /* SKILLS ICON EFFECT*/
 $(document).ready(function(){
@@ -141,8 +152,17 @@ $(document).ready(function(){
  
   $('.skills').waypoint(function() {
       $('.skills').addClass('fadeInUp');
-  }, { offset: '60%' });
+  }, { offset: '50%' });
 });
+// PROJECTS EFFECT
+$(document).ready(function(){
+    // hide our element on page load
+    $('.projects').css('opacity', 0);
+   
+    $('.projects').waypoint(function() {
+        $('.projects').addClass('fadeInUp');
+    }, { offset: '50%' });
+  });
 
 /*SLIDER IN CERT SECTION*/
 

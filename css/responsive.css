@@ -1,5 +1,34 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+    /* HEADER */
+    /* section{
+        width: 992px;
+    } */
+    #header #welcome-container span{
+        font-size: 40px;
+    }
+    #header #welcome-container{
+        font-size: 28px;
+    }
+    /* #header #name-container #text-slider{
+        width: 160px;
+    } */
+    #header #name-container .first_col li{
+        font-size: 42px;
+        line-height: 1.5em;
+    }
+    #header #name-container .sec_col{
+        font-size: 28px;
+    }
+    /* #header figure img{
+        height: 580px;
+    } */
+    #header::before{
+        width: 60%;
+        height: 60%;
+        top: 50%;
+        left: 45%;
+    }
     /*ABOUT SECTION*/
     #about {
         padding: 40px 5% 60px 5%;
@@ -14,6 +43,17 @@
     #about .about-content.about-left {
         padding: 0 2em 0 0;
     }
+    /* SKILLS SECTION */
+    #skills {
+        width: 992px;
+    }
+    /* PROJECT SECTION */
+    .project-container{
+        width: auto;
+    }
+    .fig-project{
+        margin: 15px 15px;
+    }
 }
  
 /* Medium Devices, Desktops */
@@ -21,11 +61,14 @@
     /*HEADER*/
     #header {
         padding: 0 5%;
+        
     }
     /*SKILLS SECTION*/
     #skills {
-    padding: 40px 5%;   
-}  
+    padding: 40px 5%; 
+    width: 100%;  
+    }
+    /* ABOUT */
     #about figure .rotate-div{
         max-width: 350px;
     }
@@ -39,10 +82,13 @@
     max-width: 100%; 
 }
     /* PROJECT SECTION */
+    .project-container{
+        width: auto;
+    }
     .fig-project{
         height: 330px;
         width: 220px;
-        margin: 15px 15px;
+        /* margin: 15px 15px; */
     }
     .fig-project h3{
         font-size: 0.9em;   
@@ -87,6 +133,7 @@
     .topnav.responsive li:not(:last-child) a{
         display: block;
         padding: 15px 0 15px 0;
+        color: white;
     }
     nav ul.responsive {
         float: none;
@@ -108,20 +155,40 @@
     #header {
         padding: 0 5%;
     }
-
     #header #name-container {
-        padding: 1em;
-        display: flex;
+        position: relative;
+        display: block;
         flex-direction: column;
-
+        text-align: left;
         font-size: 2.5em;
+        top: 12vh;   
     }
-
     #header #name-container ul {
         left: 0.2em;
         text-align: left;
+        left: 0;
     }
-
+    #header figure{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+    }
+    #header #welcome-container{
+        position: relative;
+        width: 50%;
+        display: block;
+        text-align: right;
+        top: 80vh;   
+    }
+    #header #welcome-container p>br{
+        display: none;
+    }
+    #header::before{
+        width: 85%;
+        height: 85%;
+    }
     /*ABOUT SECTION*/
     #about {
         padding: 40px 5% 60px 5%;
@@ -162,7 +229,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        padding: 1em;
+        padding: 0 1em 1em 1em;
     }
     #cert #slider-article>*{
         margin: 0.5em 0;
@@ -178,21 +245,61 @@
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
 
+    h2{
+        font-size: 1.8em;
+    }
+    h3{
+        font-size: 20px;
+    }
     /* HEADER*/
     
     #header {
     padding: 0;
+    display: block;
 }
-    #header #name-container{
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    font-size: 2em;
+#header #name-container{
+    display: inline-block;
+    height: 100px;
+    width: 70%;
+    text-align: center;
 }
-    #header #name-container ul{
-    left: 0.2em;
-    text-align: left;
+#header #name-container h1{
+    display: none;
 }
+#header #name-container li{
+    /* width: 50%; */
+    text-align: center;
+    margin: 0;
+}
+  
+    #header figure{
+        width: 70%;
+    }
+    #header::before{
+        width: 90%;
+        height: 90%;
+        left: 47%;
+    }
+
+    #header #welcome-container{
+        position: relative;
+        top: 65vh;
+        /* font-size: 20px; */
+        width: 100%;
+        height: 150px; 
+        padding: 0 5px;
+    }
+    #header #welcome-container p,
+    #header #welcome-container span{
+        font-size: 22px; 
+        text-align: center;
+        line-height: 30px;
+        /* transform: translateY(-100%); */
+    }
+    #header #welcome-container span{
+        font-size: 28px;
+    }
+
      /*ABOUT SECTION*/
     #about {
         padding: 20px 3% 40px 3%;
@@ -202,9 +309,14 @@
         flex: 1 100%;
     }
 
-    .about-right > * {
-        font-size: 0.5em;
-        padding: 0 1em 0 1em;
+    .about-right div {
+        font-size: 16px;
+        padding: 0;
+        line-height: 26px;
+        text-align: justify;
+    }
+    .about-right div br{
+        display: none;
     }
 
     #about .about-content.about-left {
@@ -213,10 +325,20 @@
     #img-slide1, #img-slide2, #img-slide3, #img-slide4{
     width: 100%;
     height: 95px;
-}
+    }
+    .about-icon p{
+        font-size: 17px;
+    }
     /* CERT */
     #cert .cert-container{
         padding: 0 5%;
+    }
+    #cert article > h3{
+        font-size: 20px;
+    }
+    #cert article > p {
+        font-size: 17px;
+        line-height: 26px;
     }
     /*SKILL SECTION*/
      #icons-container .img-icons{
@@ -246,7 +368,29 @@
     display: none;   
 }
 .fig-project a{
-    font-size: 1.2em;
+    font-size: 14px;
 }
+.project-container button{
+    width: 60px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid #dfdfdf;
+    
+    margin: 6px 2px 2px 2px;
+    
+}
+
+}
+@media only screen and (max-width : 350px) {
+    #header #welcome-container p,
+    #header #welcome-container span{
+        font-size: 18px; 
+        line-height: 28px;
+        /* transform: translateY(-100%); */
+    }
+    #header #welcome-container span{
+        font-size: 20px;
+    }
+
 
 }
