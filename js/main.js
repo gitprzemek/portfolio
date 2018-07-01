@@ -134,7 +134,7 @@ $(document).ready(function(){
    
     $('.about').waypoint(function() {
         $('.about').addClass('fadeInUp');
-    }, { offset: '50%' });
+    }, { offset: '70%' });
   });
 // CERTYFICAT EFFECT
   $(document).ready(function(){
@@ -143,7 +143,7 @@ $(document).ready(function(){
    
     $('.cert').waypoint(function() {
         $('.cert').addClass('fadeInUp');
-    }, { offset: '50%' });
+    }, { offset: '70%' });
   });
 /* SKILLS ICON EFFECT*/
 $(document).ready(function(){
@@ -152,7 +152,7 @@ $(document).ready(function(){
  
   $('.skills').waypoint(function() {
       $('.skills').addClass('fadeInUp');
-  }, { offset: '50%' });
+  }, { offset: '70%' });
 });
 // PROJECTS EFFECT
 $(document).ready(function(){
@@ -161,10 +161,10 @@ $(document).ready(function(){
    
     $('.projects').waypoint(function() {
         $('.projects').addClass('fadeInUp');
-    }, { offset: '50%' });
+    }, { offset: '70%' });
   });
 
-/*SLIDER IN CERT SECTION*/
+/*SLIDER IN CERT S4ECTION*/
 
 
 var images = [];

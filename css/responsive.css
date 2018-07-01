@@ -10,9 +10,6 @@
     #header #welcome-container{
         font-size: 28px;
     }
-    /* #header #name-container #text-slider{
-        width: 160px;
-    } */
     #header #name-container .first_col li{
         font-size: 42px;
         line-height: 1.5em;
@@ -20,9 +17,6 @@
     #header #name-container .sec_col{
         font-size: 28px;
     }
-    /* #header figure img{
-        height: 580px;
-    } */
     #header::before{
         width: 60%;
         height: 60%;
@@ -76,11 +70,11 @@
     max-width: 350px;
     max-height: 100%;
     border: 20px solid white;
-}
+    }
     /*CONTACT LINE*/
     #contact hr{
     max-width: 100%; 
-}
+    }
     /* PROJECT SECTION */
     .project-container{
         width: auto;
@@ -149,7 +143,6 @@
     nav ul.responsive li a:after {
         display: none;
     }
-  
 
     /*HEADER*/
     #header {
@@ -193,16 +186,13 @@
     #about {
         padding: 40px 5% 60px 5%;
     }
-
     #about .about-content {
         flex: 1 40%;
     }
-
     .about-right > * {
         font-size: 0.6em;
         padding: 0 0 0 1em;
     }
-
     #about .about-content.about-left {
         padding: 11px;
     }
@@ -214,16 +204,15 @@
     width: 100%;
     max-height: 100%;
     border: 10px solid white;
-}
+    }
     #img-slide1, #img-slide2, #img-slide3, #img-slide4{
     width: 100%;
     height: 110px;
-}
+    }
     /*SLIDER SECTION*/
     #cert .slider-side {
         flex: 1 100%;
     }
-
     #cert #slider-article {
         height: 210px;
         display: flex;
@@ -236,42 +225,36 @@
     }
     /*SKILLS SECTION*/
    #icons-container .img-icons{
-    width: 90px;
-    
+    width: 90px;   
+    }
 }
-}
-
 
 /* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 480px) {
-
-    h2{
-        font-size: 1.8em;
+    @media only screen and (max-width : 480px) {
+        h2{
+            font-size: 1.8em;
+        }
+        h3{
+            font-size: 20px;
+        }
+        /* HEADER*/
+        #header {
+        padding: 0;
+        display: block;
     }
-    h3{
-        font-size: 20px;
+    #header #name-container{
+        display: inline-block;
+        height: 100px;
+        width: 70%;
+        text-align: center;
     }
-    /* HEADER*/
-    
-    #header {
-    padding: 0;
-    display: block;
-}
-#header #name-container{
-    display: inline-block;
-    height: 100px;
-    width: 70%;
-    text-align: center;
-}
-#header #name-container h1{
-    display: none;
-}
-#header #name-container li{
-    /* width: 50%; */
-    text-align: center;
-    margin: 0;
-}
-  
+    #header #name-container h1{
+        display: none;
+    }
+    #header #name-container li{
+        text-align: center;
+        margin: 0;
+    }
     #header figure{
         width: 70%;
         padding-top: 5%;
@@ -281,11 +264,9 @@
         height: 90%;
         left: 47%;
     }
-
     #header #welcome-container{
         position: relative;
         top: 65vh;
-        /* font-size: 20px; */
         width: 100%;
         height: 150px; 
         padding: 0 5px;
@@ -295,21 +276,17 @@
         font-size: 22px; 
         text-align: center;
         line-height: 30px;
-        /* transform: translateY(-100%); */
     }
     #header #welcome-container span{
         font-size: 28px;
     }
-
      /*ABOUT SECTION*/
     #about {
         padding: 20px 3% 40px 3%;
     }
-
     #about .about-content {
         flex: 1 100%;
     }
-
     .about-right div {
         font-size: 16px;
         padding: 0;
@@ -319,7 +296,6 @@
     .about-right div br{
         display: none;
     }
-
     #about .about-content.about-left {
         padding: 1em 3em 3em 3em;
     }
@@ -344,43 +320,39 @@
     /*SKILL SECTION*/
      #icons-container .img-icons{
     width: 60px;  
-}
-#icons-container .icons{
-    padding: 0;
-    margin: 0;
-    flex: 1 100%;
-    height: auto;
-    font-size: 0.8em;
-    /* width: auto; */
-}
-    /* PROJECT SECTION */
-    #projects{
-        padding: 20px 2%;
     }
-.fig-project{
-    height: 200px;
-    width: 140px;
-    margin: 5px 5px;
-}
-.fig-project h3{
-    font-size: 0.8em;   
-}
-.fig-project p{
-    display: none;   
-}
-.fig-project a{
-    font-size: 14px;
-}
-.project-container button{
-    width: 60px;
-    height: 35px;
-    background-color: transparent;
-    border: 1px solid #dfdfdf;
-    
-    margin: 6px 2px 2px 2px;
-    
-}
-
+    #icons-container .icons{
+        padding: 0;
+        margin: 0;
+        flex: 1 100%;
+        height: auto;
+        font-size: 0.8em;
+    }
+        /* PROJECT SECTION */
+        #projects{
+            padding: 20px 2%;
+        }
+    .fig-project{
+        height: 200px;
+        width: 140px;
+        margin: 5px 5px;
+    }
+    .fig-project h3{
+        font-size: 0.8em;   
+    }
+    .fig-project p{
+        display: none;   
+    }
+    .fig-project a{
+        font-size: 14px;
+    }
+    .project-container button{
+        width: 60px;
+        height: 35px;
+        background-color: transparent;
+        border: 1px solid #dfdfdf;
+        margin: 6px 2px 2px 2px;  
+    }
 }
 @media only screen and (max-width : 350px) {
     #header #welcome-container p,
@@ -392,6 +364,4 @@
     #header #welcome-container span{
         font-size: 20px;
     }
-
-
 }
