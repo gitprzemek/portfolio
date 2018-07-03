@@ -244,7 +244,7 @@
     }
     #header #name-container{
         display: inline-block;
-        height: 100px;
+        height: auto;
         width: 70%;
         text-align: center;
     }
@@ -256,8 +256,14 @@
         margin: 0;
     }
     #header figure{
-        width: 70%;
+        height: 55vh;
+        width: 100%;
         padding-top: 5%;
+    }
+    #header figure img{
+        top: 52%;
+        height: 100%;
+        width: auto;
     }
     #header::before{
         width: 90%;
@@ -266,7 +272,7 @@
     }
     #header #welcome-container{
         position: relative;
-        top: 65vh;
+        top: 63vh;
         width: 100%;
         height: 150px; 
         padding: 0 5px;
