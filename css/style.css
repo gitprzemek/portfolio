@@ -699,14 +699,15 @@ box-shadow: -0px 11px 13px 0px rgba(0,0,0,0.15);
     justify-content: center;
     align-items: center;
     position: relative;
-    background: #0F2027;
-    background: #232526;
-    background: -webkit-linear-gradient(to bottom, #414345, #232526);
-    background: linear-gradient(to bottom, #414345, #232526);   
+    background-image: url(../img/footer-bg2.png),url(../img/footer-bg1.png);
+    background-position: right bottom, left bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 75% 90%, 80% 70%;
 }
 #contact > * {
     margin: 0;
     color: #fff;
+    color: #2e3d49;
 }
 #contact h3{
     font-weight: 300;
@@ -719,7 +720,7 @@ box-shadow: -0px 11px 13px 0px rgba(0,0,0,0.15);
 }
 #contact address p a{
     font-style: normal;
-    color: #ffffff;
+    color: var(--main-color);
 }
 #contact .social-icons{
     width: 180px;
@@ -730,7 +731,7 @@ box-shadow: -0px 11px 13px 0px rgba(0,0,0,0.15);
     line-height: 1em;
 }
 #contact .social-icons a{
-    color: #ffffff;
+    color: #2e3d49;
     padding: 0;  
     transition: all 0.5s;
 }
@@ -766,11 +767,15 @@ form textarea {
 #contact form input, #contact form textarea{
     background-color: #ffffff;
     border: 0;
+    border-left: 1px solid #414345;
+    border-top: 1px solid #414345;
+    border-right: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
     color: rgb(0, 0, 0);
     padding: 15px;
 }
 #contact form>*:focus {
-    border-bottom: 1px solid var(--main-color);
+    background-color: #e2e2e2;
 }
 #contact input[type="submit"] {
     width: 250px;
@@ -786,17 +791,15 @@ form textarea {
 #contact input[type="submit"]:hover {
 	cursor: pointer;
 	color: var(--main-color);
-    background-color: #fff;
+    background-color: #414345;
     border: 2px solid var(--main-color);
-    -webkit-box-shadow: 0px 0px 39px -6px rgba(255, 255, 255, 0.75);
--moz-box-shadow: 0px 0px 39px -6px rgba(255, 255, 255, 0.75);
-box-shadow: 0px 0px 39px -6px rgba(255, 255, 255, 0.75);
 }
 #contact hr{
-    background-color: #fff;
+    background-color: #414345;
     width: 600px;
     margin: 25px 0; 
 }
+
 
 /*-----FOOTER COPYRIGHTS*/
 .copyrights{
