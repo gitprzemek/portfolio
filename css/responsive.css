@@ -91,7 +91,12 @@
         font-size: 0.8em;  
     }
     .fig-project a{
-        font-size: 1.6em;
+        font-size: 14px;
+        width: 60px;
+        height: 26px;
+        line-height: 26px;
+        background-color: transparent;
+        margin-top: 10px;  
     }
     /* SKILL SECTION */
     #icons-container .img-icons{
@@ -227,6 +232,7 @@
    #icons-container .img-icons{
     width: 90px;   
     }
+    
 }
 
 /* Extra Small Devices, Phones */ 
@@ -348,16 +354,6 @@
     }
     .fig-project p{
         display: none;   
-    }
-    .fig-project a{
-        font-size: 14px;
-    }
-    .project-container a{
-        width: 60px;
-        height: 32px;
-        background-color: transparent;
-        border: 1px solid #dfdfdf;
-        margin: 5px 2px 0px 2px;  
     }
 }
 @media only screen and (max-width : 350px) {

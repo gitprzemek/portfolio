@@ -43,7 +43,7 @@ body{
     background: -webkit-linear-gradient(left, rgba(242,242,242,1) 0%, rgba(250,250,250,1) 23%, rgba(250,250,250,1) 79%, rgba(242,242,242,1) 100%);
     background: -o-linear-gradient(left, rgba(242,242,242,1) 0%, rgba(250,250,250,1) 23%, rgba(250,250,250,1) 79%, rgba(242,242,242,1) 100%);
     background: -ms-linear-gradient(left, rgba(242,242,242,1) 0%, rgba(250,250,250,1) 23%, rgba(250,250,250,1) 79%, rgba(242,242,242,1) 100%);
-    background: linear-gradient(to right, rgba(242,242,242,1) 0%, rgba(250,250,250,1) 23%, rgba(250,250,250,1) 79%, rgba(242,242,242,1) 100%);
+    background: linear-gradient(to right, rgb(238, 236, 236) 0%, rgba(250,250,250,1) 23%, rgba(250,250,250,1) 79%, rgb(238, 236, 236) 100%);
     -webkit-font-smoothing: antialiased
 }
 h2 {
@@ -652,9 +652,9 @@ box-shadow: -0px 11px 13px 0px rgba(0,0,0,0.15);
 .fig-project figcaption{
     height: 40%;
     background-color: rgb(255, 255, 255);
+    border-top: 2px solid var(--main-color);
 }
-.fig-project h3{
-    color: var(--main-color);
+.fig-project h3{ 
     margin: 0;
     padding: 1em 0 0 0;
 }
@@ -664,25 +664,31 @@ box-shadow: -0px 11px 13px 0px rgba(0,0,0,0.15);
     padding: 0 7px;
     line-height: 1.3; 
 }
-.project-container a{
+.fig-project a{
     display: inline-block;
     text-decoration: none;
     width: 90px;
     height: 35px;
     line-height: 35px;
     background-color: transparent;
-    border: 1px solid #dfdfdf;
+    border: 1px solid transparent;
     cursor: pointer;
     transition: all 0.3s linear;
-    margin: 5px;
+    margin: 5px 0px;
     font-weight: 400;
     cursor: pointer;
-    color: #6e6e6e;
+    color: var(--main-color);
 }
-.project-container a:hover{
+.fig-project .code-link{
+    border-right: 1px solid var(--main-color);
+}
+.fig-project .demo-link{
+    margin-left: -6px;
+}
+.fig-project a:hover{
     color: white;
     background-color: #15c26b;
-    border: 2px solid white;   
+    border: 1px solid white;   
 }
 
 /*---------------------CONTACT*/
@@ -781,7 +787,7 @@ form textarea {
 	cursor: pointer;
 	color: var(--main-color);
     background-color: #fff;
-    border: 2px solid #fff;
+    border: 2px solid var(--main-color);
     -webkit-box-shadow: 0px 0px 39px -6px rgba(255, 255, 255, 0.75);
 -moz-box-shadow: 0px 0px 39px -6px rgba(255, 255, 255, 0.75);
 box-shadow: 0px 0px 39px -6px rgba(255, 255, 255, 0.75);
