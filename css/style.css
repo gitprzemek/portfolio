@@ -458,7 +458,7 @@ box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.41);
     width: 240px;
     transition: transform 1s;
     z-index: 2;
-    cursor: zoom-in;
+    /* cursor: zoom-in; */
     position: relative;
     display: flex;
     justify-content: center;
