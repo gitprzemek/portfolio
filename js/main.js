@@ -229,7 +229,7 @@ articles.push("<h3>Szkoła programowania</h3><br><p>Kurs bootcamp Front-end deve
 articles.push("<h3>Kurs JavaScript</h3><br><p>Kurs Javascript od podstaw do poziomu zawansowanego.</p>");
 articles.push("<h3>Kurs Front-end</h3><br><p>Kurs tworzenia stron z technologiami CSS3 i Bootstrap.</p>");
 articles.push("<h3>Kurs PSD do HTML</h3><br><p>Kurs tworzenia stron na podstawie szablonów PSD.</p>");
-articles.push("<h3>Kurs Git w Virtual Studio Code</h3><br><p>Kurs obsługi Git w edytorze VS Code</p>");
+articles.push("<h3>Kurs Git w Visual Studio Code</h3><br><p>Kurs obsługi Git w edytorze VS Code</p>");
 articles.push("<h3>Kurs języka angielskiego</h3><br><p>Ukończenie kursu języka angielskiego poziom B1+</p>");
 articles.push("<h3>Certyfikat MTM-UAS</h3><br><p>Uzyskanie kwalifikacji do zastosowania systemu modułów MTM-UAS</p>");
 articles.push("<h3>MTM-1</h3><br><p>Uzyskanie kwalifikacji do zastosowania bloków procesowych MTM</p>");
