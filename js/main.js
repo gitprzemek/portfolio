@@ -32,7 +32,7 @@ $(window).scroll(function(){
 
         // get how far we've scrolled from the top of our screen
         var offset = $(window).scrollTop();
-        offset     = offset * 1;
+        offset     = offset / 8;
 
         // apply the offset as a css transform to our buttons
         $('#img-scroll').css({
@@ -155,15 +155,50 @@ $(document).ready(function(){
   }, { offset: '70%' });
 });
 // PROJECTS EFFECT
-$(document).ready(function(){
-    // hide our element on page load
-    $('.projects').css('opacity', 0);
+// $(document).ready(function(){
+//     $('.projects').css('opacity', 0);
    
-    $('.projects').waypoint(function() {
-        $('.projects').addClass('fadeInUp');
-    }, { offset: '70%' });
-  });
+//     $('.projects').waypoint(function() {
+//         $('.projects').addClass('fadeInUp');
+//     }, { offset: '70%' });
+//   });
+$(document).ready(function(){
+    $('.avengers').css('opacity', 0);
 
+    $('.avengers').waypoint(function() {
+        $('.avengers').addClass('fadeIn');
+        $('.avengers').css('opacity', 1);
+    }, { offset: '70%' });
+});
+
+$(document).ready(function(){
+    var widthS = $(window).width();
+    if (widthS > 768){
+        $('.destroyer').css('opacity', 0);
+    
+        $('.destroyer').waypoint(function() {
+            $('.destroyer').addClass('animate-ship');
+            $('.destroyer').css('opacity', 1);
+    }, { offset: '70%' });
+    }else{
+        $('.destroyer').css('opacity', 0);
+    
+        $('.destroyer').waypoint(function() {
+            $('.destroyer').addClass('zoomIn');
+            $('.destroyer').css('opacity', 1);
+    }, { offset: '70%' })
+    };
+});
+$(document).ready(function(){
+    $('.myportfolio').css('opacity', 0);
+
+    
+        $('.myportfolio').waypoint(function() {
+        $('.myportfolio').addClass('slideInRight');
+        $('.myportfolio').css('opacity', 1);
+    }, { offset: '70%' });
+    
+});
 /*SLIDER IN CERT S4ECTION*/
 
 

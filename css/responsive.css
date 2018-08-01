@@ -44,10 +44,18 @@
     /* PROJECT SECTION */
     .project-container{
         width: auto;
+        margin-left: 2%;
+        margin-right: 2%;
     }
-    .fig-project{
-        margin: 15px 15px;
+    .destroyer{
+        display: flex;
+        flex-direction: column;
+
     }
+    .destroyer img{
+        align-self: center;
+    }
+   
 }
  
 /* Medium Devices, Desktops */
@@ -79,25 +87,7 @@
     .project-container{
         width: auto;
     }
-    .fig-project{
-        height: 330px;
-        width: 220px;
-        /* margin: 15px 15px; */
-    }
-    .fig-project h3{
-        font-size: 0.9em;   
-    }
-    .fig-project p{
-        font-size: 0.8em;  
-    }
-    .fig-project a{
-        font-size: 14px;
-        width: 60px;
-        height: 26px;
-        line-height: 26px;
-        background-color: transparent;
-        margin-top: 10px;  
-    }
+    
     /* SKILL SECTION */
     #icons-container .img-icons{
         margin: 0 auto;
@@ -232,7 +222,51 @@
    #icons-container .img-icons{
     width: 90px;   
     }
-    
+    /* PROJECT SECTION */
+    .template{
+        flex-direction: column;
+    }
+    .about-project,
+    .img-project{
+        flex: 0 1 100%;
+        text-align: center;
+    }
+    .about-project{
+        order: 2;
+    }
+    .img-project{
+        order: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        min-height: auto;
+    }
+    .img-project img{
+        width: 70%;
+    }
+    .destroyer{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .destroyer img{
+        /* top: 50%; */
+        right: none;
+        width: 70%;
+        /* transform: scale(1) translate(0%,-50%); */
+        position: relative;
+        align-self: center;
+    }
+    .second-project-container{
+        flex-direction: column;
+    }
+    .card .card-image{
+        display: none;
+    }
+    .card:hover .card-image{
+        top: none;
+    }
 }
 
 /* Extra Small Devices, Phones */ 
@@ -344,17 +378,7 @@
         #projects{
             padding: 20px 2%;
         }
-    .fig-project{
-        height: 200px;
-        width: 140px;
-        margin: 5px 5px;
-    }
-    .fig-project h3{
-        font-size: 0.8em;   
-    }
-    .fig-project p{
-        display: none;   
-    }
+        
     /* CONTACT SECTION */
     #contact{
         background-size: 140% 40%, 110% 50%;

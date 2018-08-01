@@ -44,7 +44,8 @@ body{
     background: -o-linear-gradient(left, rgba(242,242,242,1) 0%, rgba(250,250,250,1) 23%, rgba(250,250,250,1) 79%, rgba(242,242,242,1) 100%);
     background: -ms-linear-gradient(left, rgba(242,242,242,1) 0%, rgba(250,250,250,1) 23%, rgba(250,250,250,1) 79%, rgba(242,242,242,1) 100%);
     background: linear-gradient(to right, rgb(238, 236, 236) 0%, rgba(250,250,250,1) 23%, rgba(250,250,250,1) 79%, rgb(238, 236, 236) 100%);
-    -webkit-font-smoothing: antialiased
+    -webkit-font-smoothing: antialiased;
+    
 }
 h2 {
     font-size: 2.5em;
@@ -588,6 +589,12 @@ box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.41);
 -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.41);
 box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.41);
 }
+#projects hr{
+    width: 50%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    align-self: center;
+}
 .project-container{
     width: 1040px;
     margin: auto;
@@ -597,8 +604,182 @@ box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.41);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;	
+    text-align: center;
+    flex-direction: column;
+    	
 }
+.template{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.about-project{
+    flex: 0 1 50%;
+    text-align: left;
+}
+.about-project h3{
+    color: var(--main-color);
+}
+.about-project ul,
+.card .card-about ul{
+    list-style: none;
+    padding: 0;
+    font-weight: 300;
+}
+.about-project ul li,
+.card .card-about ul li{
+    display: inline-block;
+    margin-bottom: 5px;
+    width: auto;
+    height: 25px;
+    line-height: 25px;
+    font-size: 15px;
+    padding: 0 5px;
+    /* background-color: var(--main-color); */
+    /* color: rgb(255, 255, 255); */
+    /* border: 1px solid var(--main-color); */
+    background-color: white;
+    color: #414e58;
+    border: 1px solid #b7b8b9;
+    border-radius: 5px;
+}
+.about-project div a,
+.card .card-about div a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    margin-right: 10px;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    color: white;
+    background-color: #15c26b;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.38);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.38);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.38);
+    transition: all 0.3s linear;
+}
+.about-project div a:hover,
+.card .card-about div a:hover{
+    color: var(--main-color);
+    background-color: white;
+    border: 1px solid var(--main-color);
+}
+.img-project,
+.about-project{
+    align-self: center;
+}
+.img-project{
+    flex: 0 1 50%;
+    min-height: 350px;
+    position: relative;
+    display: flex;
+}
+.img-project img{
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.avengers{
+    /* animation-timing-function: cubic-bezier(.38,.88,.67,1.01);  */
+    animation-duration: 3s;
+}
+.destroyer{
+    align-self: flex-start;
+    
+}
+.destroyer img{
+    top: 0;
+    right: 0;
+    width: 10px;
+    
+    transform: scale(1);
+    transition: all 8s cubic-bezier(0,1.06,.09,.98);
+    position: absolute;
+}
+.animate-ship img{
+    width: 100%;
+}
+.second-project-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    z-index: 0;
+}
+.card{
+    flex: 0 1 33.3%;
+    min-height: 300px;;
+    border: 1px solid rgb(246, 246, 246);
+    padding: 10px;
+    position: relative;
+    margin: 10px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.38);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.38);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.28);
+    border-radius: 10px;
+    /* z-index: 1; */
+    background-color: white;
+    
+}
+
+.card .card-about{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+.card .card-about h3{
+    color:var(--main-color);
+}
+.card .card-about p{
+    margin: 5px 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+.card .card-about ul{
+    margin: 15px 0 15px 0;
+    
+}
+.card .card-about div a{
+    margin: 5px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.38);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.38);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.38);
+}
+.card .card-image{
+    position: absolute;
+    z-index: -1;
+    width: 80%;
+    height: 250px;
+    left: 50%;
+    top: 5px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.38);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.38);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.38);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    
+}
+.card:hover .card-image{
+    top: -200px;
+}
+.clock{
+    background-image: url(../img/warcraft-clock.JPG);    
+}
+.merkury{
+    background-image: url(../img/merkury.JPG);    
+}
+.charity{
+    background-image: url(../img/opencharity.JPG);    
+}
+/*
 .fig-project{
     position: relative;
     height: 400px;
@@ -690,7 +871,7 @@ box-shadow: -0px 11px 13px 0px rgba(0,0,0,0.15);
     background-color: #15c26b;
     border: 1px solid white;   
 }
-
+*/
 /*---------------------CONTACT*/
 #contact{
     height: auto;
