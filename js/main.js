@@ -200,9 +200,22 @@ $(document).ready(function(){
     
 });
 /*SLIDER IN CERT S4ECTION*/
-
-
-var images = [];
+if (document.documentElement.lang == "en"){
+    var images = [];
+images.push("<img src ='../img/dyploms/Akademia108.jpg' class = 'opacImg'>");
+images.push("<img src ='../img/dyploms/javascript.jpg' class = 'opacImg'>");
+images.push("<img src ='../img/dyploms/front-end.jpg' class = 'opacImg'>");
+images.push("<img src ='../img/dyploms/PSDtoHTML.jpg' class = 'opacImg'>");
+images.push("<img src ='../img/dyploms/gitvsc.jpg' class = 'opacImg'>");
+images.push("<img src ='../img/dyploms/angielski.jpg' class = 'opacImg'>");
+images.push("<img src ='../img/dyploms/MTM-UAS1.jpg' class = 'opacImg'>");
+images.push("<img src ='../img/dyploms/MTM-UAS2.jpg' class = 'opacImg'>");
+images.push("<img src ='../img/dyploms/award4.jpg' class = 'opacImg'>");
+images.push("<img src ='../img/dyploms/award1.jpg' class = 'opacImg'>");
+images.push("<img src ='../img/dyploms/award2.jpg' class = 'opacImg'>");
+images.push("<img src ='../img/dyploms/award3.jpg' class = 'opacImg'>");
+}else{
+    var images = [];
 images.push("<img src ='img/dyploms/Akademia108.jpg' class = 'opacImg'>");
 images.push("<img src ='img/dyploms/javascript.jpg' class = 'opacImg'>");
 images.push("<img src ='img/dyploms/front-end.jpg' class = 'opacImg'>");
@@ -215,6 +228,9 @@ images.push("<img src ='img/dyploms/award4.jpg' class = 'opacImg'>");
 images.push("<img src ='img/dyploms/award1.jpg' class = 'opacImg'>");
 images.push("<img src ='img/dyploms/award2.jpg' class = 'opacImg'>");
 images.push("<img src ='img/dyploms/award3.jpg' class = 'opacImg'>");
+}
+
+
 
 
 var curIndex = 0 ;
@@ -258,20 +274,36 @@ prevBtn.addEventListener("click", function () {
 });
 
 /* ARTICLE TO SLIDER*/
+if (document.documentElement.lang == "en"){
+    var articles = [];
+    articles.push("<h3>Programming school</h3><br><p>Bootcamp course Front-end developer at Akademia 108</p>");
+    articles.push("<h3>JavaScript course</h3><br><p>Javascript course from the basics to the advanced level.</p>");
+    articles.push("<h3>Front-end course</h3><br><p>Website creation course with CSS3 and Bootstrap technologies.</p>");
+    articles.push("<h3>PSD to HTML course</h3><br><p>Website creation course based on PSD templates.</p>");
+    articles.push("<h3>Git w Visual Studio Code course</h3><br><p>Git course use VS code editor.</p>");
+    articles.push("<h3>English language course</h3><br><p>Completing the B1 + level English language course.</p>");
+    articles.push("<h3>Certificate MTM-UAS</h3><br><p>Obtaining qualifications to use the MTM-UAS module system.</p>");
+    articles.push("<h3>MTM-1</h3><br><p>Obtaining qualifications for the use of MTM process blocks.</p>");
+    articles.push("<h3>Best project</h3><br><p>I place in the competition for the best project of the year 'Optimization of the logistics window'.</p>");
+    articles.push("<h3>Best project</h3><br><p>Second place in the competition for the best project of the year. 'Application for delivering parts for production'.</p>");
+    articles.push("<h3>Best project</h3><br><p>3rd place in the competition for the best project of the year 'Implementation FIFO system in the warehouse'.</p>");
+    articles.push("<h3>Best project</h3><br><p>Distinction in the competition for the best project of the year 'Rack for parts'.</p>");
+}else{
+    var articles = [];
+    articles.push("<h3>Szkoła programowania</h3><br><p>Kurs bootcamp Front-end developer w szkole Akademia 108</p>");
+    articles.push("<h3>Kurs Javascript</h3><br><p>Kurs Javascript od podstaw do poziomu zawansowanego.</p>");
+    articles.push("<h3>Kurs Front-end</h3><br><p>Kurs tworzenia stron z technologiami CSS3 i Bootstrap.</p>");
+    articles.push("<h3>Kurs PSD do HTML</h3><br><p>Kurs tworzenia stron na podstawie szablonów PSD.</p>");
+    articles.push("<h3>Kurs Git w Visual Studio Code</h3><br><p>Kurs obsługi Git w edytorze VS Code</p>");
+    articles.push("<h3>Kurs języka angielskiego</h3><br><p>Ukończenie kursu języka angielskiego poziom B1+</p>");
+    articles.push("<h3>Certyfikat MTM-UAS</h3><br><p>Uzyskanie kwalifikacji do zastosowania systemu modułów MTM-UAS</p>");
+    articles.push("<h3>MTM-1</h3><br><p>Uzyskanie kwalifikacji do zastosowania bloków procesowych MTM</p>");
+    articles.push("<h3>Najlepszy projekt</h3><br><p>I miejsce w konkursie na najlepszy projekt roku 'Optymalizacja okna logistycznego'</p>");
+    articles.push("<h3>Najlepszy projekt</h3><br><p>II miejsce w konkursie na najlepszy projekt roku 'Aplikacja dotowarowania segmentu GFT20'</p>");
+    articles.push("<h3>Najlepszy projekt</h3><br><p>III miejsce w konkursie na najlepszy projekt roku 'Wprowadzenie FIFO na magazynie'</p>");
+    articles.push("<h3>Najlepszy projekt</h3><br><p>Wyróżnienie w konkursie na najlepszy projekt roku 'Stojak na części'</p>");
+}
 
-var articles = [];
-articles.push("<h3>Szkoła programowania</h3><br><p>Kurs bootcamp Front-end developer w szkole Akademia 108</p>");
-articles.push("<h3>Kurs JavaScript</h3><br><p>Kurs Javascript od podstaw do poziomu zawansowanego.</p>");
-articles.push("<h3>Kurs Front-end</h3><br><p>Kurs tworzenia stron z technologiami CSS3 i Bootstrap.</p>");
-articles.push("<h3>Kurs PSD do HTML</h3><br><p>Kurs tworzenia stron na podstawie szablonów PSD.</p>");
-articles.push("<h3>Kurs Git w Visual Studio Code</h3><br><p>Kurs obsługi Git w edytorze VS Code</p>");
-articles.push("<h3>Kurs języka angielskiego</h3><br><p>Ukończenie kursu języka angielskiego poziom B1+</p>");
-articles.push("<h3>Certyfikat MTM-UAS</h3><br><p>Uzyskanie kwalifikacji do zastosowania systemu modułów MTM-UAS</p>");
-articles.push("<h3>MTM-1</h3><br><p>Uzyskanie kwalifikacji do zastosowania bloków procesowych MTM</p>");
-articles.push("<h3>MTM-USA</h3><br><p>I miejsce w konkursie na najlepszy projekt roku 'Optymalizacja okna logistycznego'</p>");
-articles.push("<h3>Najlepszy projekt</h3><br><p>II miejsce w konkursie na najlepszy projekt roku 'Aplikacja dotowarowania segmentu GFT20'</p>");
-articles.push("<h3>MTM-USA</h3><br><p>III miejsce w konkursie na najlepszy projekt roku 'Wprowadzenie FIFO na magazynie'</p>");
-articles.push("<h3>MTM-USA</h3><br><p>Wyróżnienie w konkursie na najlepszy projekt roku 'Stojak na części'</p>");
 
 
 var curIndexArt = 0 ;

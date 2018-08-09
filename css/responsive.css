@@ -105,7 +105,7 @@
         float: right;
         display: block;
     }
-    nav ul li:last-child {
+    nav>ul li:last-child {
         display: block;
         order: -1;
     }
