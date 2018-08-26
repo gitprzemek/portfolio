@@ -52,7 +52,7 @@
         </div>
         <ul class="topnav" id="myTopnav">
             <li><a href="#header" id="start">Start</a></li>
-            <li><a href="#about" id="omnie">O mnie</a></li>
+            <li><a href="#header" id="omnie">O mnie</a></li>
             <li><a href="#cert" id="kursy">Kursy</a></li>
             <li><a href="#skills" id="umiejetnosci">Umiejętności</a></li>
             <li><a href="#projects" id="projekty">Projekty</a></li>
@@ -61,7 +61,44 @@
         </ul>
     </nav>
     <!-- HEADER SECTION -->
-    <header id="header">
+    <!-- NEW HEADER CURTAIN -->
+    <header class="cd-section" id="header">
+            
+             
+        <div class="cd-block">
+                    
+                <div class="cd-half-block cd-half-left">
+                        <div id="name-container" class="sides-containers header-text-display">
+                                <div id="text-slider" class="first_col">
+                                 <ul>
+                                     <li>Cześć !</li>
+                                     <li>Hello !</li>
+                                     <li>Salut !</li>
+                                     <li>Ciao !</li>
+                                     <li>Priwiet !</li>
+                                 </ul>
+                                </div>
+                                <h1 class="sec_col">Jestem <br><span>Przemek</span></h1>
+                        </div>
+                        <figure class="figure-one">
+                                <img src="img/me-code3.png" alt="head-with-code">
+                        </figure>
+                </div>
+    
+                <div class="cd-half-block cd-half-right">
+                        <div id="welcome-container" class="sides-containers header-text-display">
+                                <p><span>Zapraszam<br></span>do obejrzenia mojej strony oraz <br>projektów!</p>
+                        </div>
+                        <figure class="figure-two">
+                                <img src="img/me-code3.png" alt="head-with-code">
+                        </figure>
+                </div>
+
+                
+        </div>
+    </header> <!-- .cd-section -->
+    <!-- END NEW HEADER CURTAIN -->
+    <!-- <header id="header">
             
            <div id="name-container">
                    <div id="text-slider" class="first_col">
@@ -83,8 +120,9 @@
             </div>
             
 
-    </header>
+    </header> -->
     <!-- ABOUT ME SECTION -->
+
     <section id="about" class="animated about">
         <h2>O mnie</h2>
         <figure class="about-content about-left">
@@ -202,9 +240,9 @@
                         <a href="https://gitprzemek.github.io/avengers-memory-card/" target="_blank">DEMO</a>
                     </div>
                 </div>    
-                <div class="img-project animated avengers"><img src="img/vision2.jpg" alt="vision"></div>
+                <div class="img-project avengers"><img src="img/thanos111.png" alt="vision"></div>
             </div>
-            <hr>
+            
             <div class="template sec-project">
                 <div class="about-project">
                     <h3>Star Wars Team</h3>
@@ -214,6 +252,7 @@
                         <li>HTML5</li>
                         <li>CSS3</li>
                         <li>JavaScript</li>
+                        <li>SASS</li>
                         <li>JQuery</li>
                         <li>Photoshop</li>
                         <li>Bootstrap</li>
@@ -227,13 +266,13 @@
                         <a href="http://star-wars-team.bitballoon.com/" target="_blank">DEMO</a>
                     </div>
                 </div>    
-                <div class="img-project animated destroyer"><img src="img/destroyer.png" alt="destroyer"></div>
+                <div class="img-project"><img src="img/deathstar.png" alt="destroyer"></div>
             </div>
-            <hr>
+            
             <div class="template th-project">
                 <div class="about-project">
                     <h3>Potfolio</h3>
-                    <p>Projekt, a jednocześnie moja strona portfolio. Tworzony najdłużej i najczęściej zmieniany.</p>
+                    <p>Projekt, a jednocześnie moja strona portfolio. Tworzony najdłużej i najczęściej aktualizowany.</p>
                     <p>Wykorzystane technologie i optymalizacje:</p>
                     <ul>
                         <li>HTML5</li>
@@ -254,7 +293,7 @@
                         <a href="https://gitprzemek.github.io/portfolio/" target="_blank">DEMO</a>
                     </div>
                 </div>    
-                <div class="img-project animated myportfolio"><img src="img/mockup.png" alt="destroyer"></div>
+                <div class="img-project myportfolio"><img src="img/mockup.png" alt="destroyer"></div>
             </div>
             <div class="second-project-container">
                         <div class="card">
@@ -289,6 +328,7 @@
                                     <li>HTML5</li>
                                     <li>CSS3</li>
                                     <li>JavaScript</li>
+                                    <li>SASS</li>
                                     <li>JQuery</li>
                                     <li>Photoshop</li>
                                     <li>Bootstrap</li>
@@ -311,6 +351,7 @@
                                     <li>HTML5</li>
                                     <li>CSS3</li>
                                     <li>JavaScript</li>
+                                    <li>SASS</li>
                                     <li>JQuery</li>
                                     <li>Photoshop</li>
                                     <li>Bootstrap</li>
@@ -326,9 +367,7 @@
             </div>
             
         </div>
-    </section>
-    <!-- CONTACT SECTION -->
-    <section id="contact">
+        <section id="contact">
         	<h2>Kontakt</h2>
 				<h3>Masz pytanie? Napisz do mnie.</h3>
 				<address>
@@ -348,11 +387,14 @@
                 <input id="submit" name="submit" type="submit" value="Wyślij">
             </form>
         
+        </section>
     </section>
+    <!-- CONTACT SECTION -->
+    
     <footer class="copyrights">
         Copyright &#169; Przemysław Szczepański
     </footer>
-    
+  
 
 
 <script src="js/jquery-3.3.1.min.js"></script>

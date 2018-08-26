@@ -65,6 +65,12 @@
         padding: 0 5%;
         
     }
+    #header #welcome-container p{
+        font-size: 26px;
+    }
+    #header #welcome-container span{
+        font-size: 32px;
+    }
     /*SKILLS SECTION*/
     #skills {
     padding: 40px 5%; 
@@ -145,6 +151,7 @@
     }
     #header #name-container {
         position: relative;
+        margin-left: 5%;
         display: block;
         flex-direction: column;
         text-align: left;
@@ -157,26 +164,31 @@
         left: 0;
     }
     #header figure{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 70%;
+        height: 100%;
+    }
+    #header figure::before{
+        width: 170%;
+    }
+    #header figure img{
+        width: 90%;
     }
     #header #welcome-container{
         position: relative;
-        width: 50%;
+        left: 0;
+        width: 70%;
         display: block;
         text-align: right;
-        top: 80vh;   
+        top: 70vh;
+        margin-right: 5%;
+        margin-left: auto;
     }
     #header #welcome-container p>br{
         display: none;
     }
-    #header::before{
+    /* #header::before{
         width: 85%;
         height: 85%;
-    }
+    } */
     /*ABOUT SECTION*/
     #about {
         padding: 40px 5% 60px 5%;
@@ -283,10 +295,13 @@
         display: block;
     }
     #header #name-container{
+        top: 10%;
+        margin: 0;
         display: inline-block;
         height: auto;
-        width: 70%;
+        width: 80%;
         text-align: center;
+        
     }
     #header #name-container h1{
         display: none;
@@ -300,27 +315,31 @@
         width: 100%;
         padding-top: 5%;
     }
+    #header figure::before{
+        /* height: 55vh; */
+        width: 200%;
+    }
     #header figure img{
         top: 52%;
         height: 100%;
         width: auto;
     }
-    #header::before{
+    /* #header::before{
         width: 90%;
         height: 90%;
         left: 47%;
-    }
+    } */
     #header #welcome-container{
         position: relative;
-        top: 63vh;
+        top: 90vh;
+        transform: translateY(-60%);
         width: 100%;
         height: 150px; 
         padding: 0 5px;
     }
     #header #welcome-container p,
     #header #welcome-container span{
-        font-size: 22px; 
-        text-align: center;
+        font-size: 17px;
         line-height: 30px;
     }
     #header #welcome-container span{
@@ -383,6 +402,7 @@
     #contact{
         background-size: 140% 40%, 110% 50%;
     }
+    
 }
 @media only screen and (max-width : 350px) {
     #header #welcome-container p,
