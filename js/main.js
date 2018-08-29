@@ -3,10 +3,12 @@
 window.onbeforeunload = function(){ 
     window.scrollTo(0,0); 
 }
+
 // REFERESH PAGE AFTER CLICK START
 document.getElementById("start").addEventListener("click", function(){
+    // window.location.reload();
+    // window.scrollTo(0,0);
     window.location.reload();
-    window.scrollTo(0,0);
 })
 /* SMOOTH SCROOLING*/
 $(document).ready(function() { 
@@ -421,7 +423,7 @@ function updateCurrent(event) {
   }
   let enebleScrolling = enableScrolling();
 //   FIX BUG WITH SCROLLING BODY WHEN BLOCKS DONT REACH 50%
-if (current >= 60){
+if (current >= 50){
     
     enableScrolling();
 } else {
@@ -479,7 +481,7 @@ $('body').on('wheel', function(event){
     current += deltaNewY * 5;
     console.log(current);
     console.log(event.originalEvent.deltaY);
-    // position bounded between 0 and 50
+    // position bounded between 0 and 60
     updateCurrent(event);
 });
 let initialClientY = 0;
