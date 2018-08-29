@@ -6,9 +6,9 @@ window.onbeforeunload = function(){
 
 // REFERESH PAGE AFTER CLICK START
 document.getElementById("start").addEventListener("click", function(){
-    // window.location.reload();
-    // window.scrollTo(0,0);
     window.location.reload();
+    window.scrollTo(0,0);
+    
 })
 /* SMOOTH SCROOLING*/
 $(document).ready(function() { 
