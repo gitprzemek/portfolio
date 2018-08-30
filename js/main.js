@@ -486,14 +486,17 @@ $('body').on('wheel', function(event){
 });
 let initialClientY = 0;
 $('body').bind('touchstart', function (event) {
-	initialClientY = event.originalEvent.touches[0].clientY;
+    initialClientY = event.originalEvent.touches[0].clientY;
+    console.log(initialClientY);
 });
+console.log(initialClientY);
 $('body').bind('touchmove', function (event) {
 		// left and right should not move when we're not on top
 		if ($(window).scrollTop() > 0) {
     	return;
     }
-    current = -(event.originalEvent.touches[0].clientY - initialClientY) / 4;
+    current += -(event.originalEvent.touches[0].clientY - initialClientY) / 4;
+    console.log(current);
     // position bounded between 0 and 50
     updateCurrent(event);
 });
