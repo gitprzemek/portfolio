@@ -487,6 +487,7 @@ $('body').on('wheel', function(event){
 let initialClientY = 0;
 $('body').bind('touchstart', function (event) {
     initialClientY = event.originalEvent.touches[0].clientY;
+    
     console.log(initialClientY);
 });
 console.log(initialClientY);
@@ -495,7 +496,14 @@ $('body').bind('touchmove', function (event) {
 		if ($(window).scrollTop() > 0) {
     	return;
     }
-    current += -(event.originalEvent.touches[0].clientY - initialClientY) / 4;
+    
+    current += -(event.originalEvent.touches[0].clientY - initialClientY) / 100;
+    // if (current >= 1){
+    //     current = 1;
+    // }else {
+    //     current = -1;
+    // }
+    
     console.log(current);
     // position bounded between 0 and 50
     updateCurrent(event);
