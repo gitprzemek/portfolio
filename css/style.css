@@ -799,10 +799,7 @@ box-shadow: 0px -4px 61px 5px rgba(0,0,0,0.64);
 -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.41);
 box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.41); */
 z-index: 1;
-background: linear-gradient(
-    rgba(0, 22, 1, 0.0), 
-    rgba(0, 22, 1, 0.0)
-  ),url(../img/forestxc.jpg);
+background:url(../img/forestxc.jpg);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;

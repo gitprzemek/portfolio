@@ -243,21 +243,21 @@
     }
     /*SLIDER SECTION*/
     #cert{
-        background: none;
-        background-attachment: none;
-        
+        /* background: none;
+        background-attachment: none; */
+        background-size: auto 100%;
     }
-    #cert::after{
+    /* #cert::after{
         content:"";
         position: fixed;
-        z-index:-1;
+        z-index:-2;
         left:0;
         top:0;
         height:100vh;
         width:100%;
         background:url(../img/forest-floor.jpg) center top no-repeat;
         background-size:cover;
-    }
+    } */
     #cert .slider-side {
         flex: 1 100%;
     }
@@ -276,7 +276,20 @@
     width: 90px;   
     }
     /* PROJECT SECTION */
-    
+    #projects{
+        background-size: auto 100%;
+    }
+    /* #projects::after{
+        content:"";
+        position: fixed;
+        z-index:-3;
+        left:0;
+        top:0;
+        height:100vh;
+        width:100%;
+        background:url(../img/forestxc.jpg) center top no-repeat;
+        background-size:cover;
+    } */
     .template{
         flex-direction: column;
         height: auto;
