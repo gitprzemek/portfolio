@@ -220,6 +220,7 @@
     /*ABOUT SECTION*/
     #about {
         padding: 20px 3% 40px 3%;
+        
     }
     #about .about-content {
         flex: 1 100%;
@@ -241,6 +242,22 @@
         padding: 1em 3em 3em 3em;
     }
     /*SLIDER SECTION*/
+    #cert{
+        background: none;
+        background-attachment: none;
+        
+    }
+    .cert-block::after{
+        content:"";
+        position: fixed;
+        z-index:-1;
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        background:url(../img/forest-floor.jpg) center center no-repeat;
+        background-size:cover;
+    }
     #cert .slider-side {
         flex: 1 100%;
     }
