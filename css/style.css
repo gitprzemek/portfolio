@@ -582,7 +582,7 @@ box-shadow: 0px 4px 61px 5px rgba(0,0,0,0.64);
 /* ---------------------COURSES CERT SECTION*/
 #cert{
     position: relative;
-    height: auto;
+    height: 100%;
     z-index: 1;
     /* background-color: white; */
     /* -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.41);

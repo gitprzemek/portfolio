@@ -446,9 +446,14 @@ if(current < 50){
         }
 
     let aboutSec = document.getElementById("about");
-    let aboutSecBlur = (50 - current) / 5;
-    aboutSec.style.filter = "blur("+aboutSecBlur+"px)";
     
+    // BLUR HEADER AFTER SCROLL BLOCKS
+        let aboutSecBlur = (50 - current) / 5;
+        let widthWindow= window.innerWidth;
+        if(widthWindow > 758) {
+            aboutSec.style.filter = "blur("+aboutSecBlur+"px)";
+        };
+
   eleLeft.css({left:"-"+current+'%'});
   eleRight.css({right:"-"+current+'%'});
 }
@@ -497,7 +502,7 @@ $('body').bind('touchmove', function (event) {
     	return;
     }
     
-    current += -(event.originalEvent.touches[0].clientY - initialClientY) / 100;
+    current += -(event.originalEvent.touches[0].clientY - initialClientY) / 4;
     // if (current >= 1){
     //     current = 1;
     // }else {
