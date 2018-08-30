@@ -209,6 +209,10 @@
     #header #welcome-container p>br{
         display: none;
     }
+    .cd-half-block {
+        
+        transition: all 0.8s linear;
+      }
     /* #header::before{
         width: 85%;
         height: 85%;

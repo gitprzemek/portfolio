@@ -588,10 +588,7 @@ box-shadow: 0px 4px 61px 5px rgba(0,0,0,0.64);
     /* -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.41);
 -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.41);
 box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.41);  */
-background: linear-gradient(
-    rgba(0, 0, 0, 0.0), 
-    rgba(0, 0, 0, 0.0)
-  ),url(../img/forest-floor.jpg);
+background: url(../img/forest-floor.jpg);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;

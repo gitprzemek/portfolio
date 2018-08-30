@@ -502,7 +502,7 @@ $('body').bind('touchmove', function (event) {
     	return;
     }
     
-    current += -(event.originalEvent.touches[0].clientY - initialClientY) / 4;
+    current += -(event.originalEvent.touches[0].clientY - initialClientY) / 2;
     // if (current >= 1){
     //     current = 1;
     // }else {
