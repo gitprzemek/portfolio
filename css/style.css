@@ -581,7 +581,7 @@ box-shadow: 0px 4px 61px 5px rgba(0,0,0,0.64);
 
 /* ---------------------COURSES CERT SECTION*/
 #cert{
-    position: relative;
+    position: static;
     height: 100%;
     z-index: 1;
     /* background-color: white; */
@@ -591,7 +591,7 @@ box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.41);  */
 background: url(../img/forest-floor.jpg);
 background-size: cover;
 background-position: center;
-background-repeat: no-repeat;
+/* background-repeat: no-repeat; */
 background-attachment: fixed;
 transition: all 0.7s linear;
 }
