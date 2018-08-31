@@ -515,12 +515,22 @@ $('body').bind('touchmove', function (event) {
 });
 
 
-
-
-
-
-
-
+// change bg after section projects is visible on window
+  var projectSec = document.getElementById("projects");
+  var isInViewport = function (elem) {
+    var bounding = projectSec.getBoundingClientRect();
+    return (
+        bounding.top <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+};
+  
+  window.addEventListener('scroll', function (event) {
+      if (isInViewport(projectSec)) {
+        projectSec.classList.add("bg-fixed")
+      } else{
+        projectSec.classList.remove("bg-fixed")
+      }
+  }, false);
 
 
 

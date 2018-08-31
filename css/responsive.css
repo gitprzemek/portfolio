@@ -127,6 +127,11 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
     /*NAVIGATION*/
+    nav {
+        position: absolute;
+        transition: all 0.3s linear;
+        
+    }
     .topnav li:not(:last-child) {
         display: none;
         padding: 0;
@@ -243,11 +248,11 @@
     }
     /*SLIDER SECTION*/
     #cert{
-        /* background: none;
-        background-attachment: none; */
-        background-size: auto 100%;
+        background: none;
+        background-attachment: none;
+        /* background-size: auto 100%; */
     }
-    /* #cert::after{
+    #cert::after{
         content:"";
         position: fixed;
         z-index:-2;
@@ -255,9 +260,9 @@
         top:0;
         height:100vh;
         width:100%;
-        background:url(../img/forest-floor.jpg) center top no-repeat;
+        background:url(../img/forest-floor.jpg) center center no-repeat;
         background-size:cover;
-    } */
+    }
     #cert .slider-side {
         flex: 1 100%;
     }
@@ -279,7 +284,7 @@
     #projects{
         background-size: auto 100%;
     }
-    /* #projects::after{
+    .bg-fixed::after{
         content:"";
         position: fixed;
         z-index:-3;
@@ -289,7 +294,7 @@
         width:100%;
         background:url(../img/forestxc.jpg) center top no-repeat;
         background-size:cover;
-    } */
+    }
     .template{
         flex-direction: column;
         height: auto;
