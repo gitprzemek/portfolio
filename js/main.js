@@ -520,7 +520,7 @@ $('body').bind('touchmove', function (event) {
   var isInViewport = function (elem) {
     var bounding = projectSec.getBoundingClientRect();
     return (
-        bounding.top <= (window.innerHeight || document.documentElement.clientHeight)
+        bounding.top - 900 <= (window.innerHeight || document.documentElement.clientHeight)
     );
 };
   

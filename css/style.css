@@ -190,7 +190,7 @@ nav #logonav{
     display: inline-block;
     position: relative;
     height: 40px;
-    transition: all .5s linear;
+    
 }
 #logonav>ul li a img{
     height: 40px;
