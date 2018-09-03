@@ -48,7 +48,7 @@
         padding: 0 2em 0 0;
     }
     /* CERTFICATE SECTION */
-    #cert .cert-container{
+    .cert__slider{
         width: 100%;
     }
     /* SKILLS SECTION */
@@ -108,7 +108,10 @@
     max-height: 100%;
     border: 20px solid white;
     }
-    
+    /* CERTIFICATE SECTION */
+    .cert__slider{
+        max-width: 900px;
+    }
     /*CONTACT LINE*/
     #contact hr{
     max-width: 100%; 
@@ -246,13 +249,12 @@
     #about .about-content.about-left {
         padding: 1em 3em 3em 3em;
     }
-    /*SLIDER SECTION*/
-    #cert{
+    /*CERTIFICATE SLIDER SECTION*/
+    .cert{
         background: none;
         background-attachment: none;
-        /* background-size: auto 100%; */
     }
-    #cert::after{
+    .cert::after{
         content:"";
         position: fixed;
         z-index:-2;
@@ -263,17 +265,20 @@
         background:url(../img/forest-floor.jpg) center center no-repeat;
         background-size:cover;
     }
-    #cert .slider-side {
+    .cert__slider{
+        flex-wrap: wrap;
+    }
+    .slider__slider-img {
         flex: 1 100%;
     }
-    #cert #slider-article {
-        height: 210px;
+    .slider__slider-article {
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         padding: 0 1em 1em 1em;
     }
-    #cert #slider-article>*{
+    .list-art{
         margin: 0.5em 0;
     }
     /*SKILLS SECTION*/
