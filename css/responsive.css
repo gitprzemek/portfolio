@@ -365,7 +365,7 @@
         height: auto;
         width: 90%;
         text-align: center;
-        
+        /* visibility: hidden; */
     }
     #header #name-container h1{
         display: none;
@@ -400,8 +400,8 @@
         transform: translateY(-60%);
         width: 100%;
         height: 150px; 
-        padding: 0 5px;
-        text-align: center;
+        padding: 0;
+        text-align: left;
     }
     #welcome-container p{
         display: none;
@@ -420,8 +420,9 @@
         display: inline-block;
         height: 60px;
         width: 60px;
-        margin: 20% 0 0 30%;
+        margin: 20% 0 0 0;
         animation: click 1.5s linear infinite;
+        text-align: left;
         /* transition: all 1.5s; */
     }
     .click-btn img{
@@ -431,19 +432,19 @@
     }
     @keyframes click {
         0%{
-            height: 60px;
-            width: 60px; 
-            margin: 20% 0 0 30%;
+            height: 50px;
+            width: 50px; 
+            margin: 20% 0 0 0;
         }
         50%{
-            height: 50px;
-            width: 50px;
-            margin: 15% 0 0 25%;
-        }
-        100%{
             height: 60px;
             width: 60px;
-            margin: 20% 0 0 30%;
+            margin: 23% 0 0 3%;
+        }
+        100%{
+            height: 50px;
+            width: 50px;
+            margin: 20% 0 0 0;
         }
     }
      /*ABOUT SECTION*/
