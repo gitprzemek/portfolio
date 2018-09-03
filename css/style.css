@@ -329,6 +329,9 @@ nav.scrolling-two{
     font-weight: 500;
     color: var(--main-color);
 }
+.click-btn{
+    visibility: hidden;
+}
 /* ----------------------TEXT SLIDER*/
 #header #name-container #text-slider{
     box-sizing: border-box;

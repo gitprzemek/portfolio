@@ -397,11 +397,6 @@ $('body').bind('touchmove', function (event) {
     }
     
     current += -(event.originalEvent.touches[0].clientY - initialClientY) / 1.2;
-    // if (current >= 1){
-    //     current = 1;
-    // }else {
-    //     current = -1;
-    // }
     
     console.log(current);
     // position bounded between 0 and 50
