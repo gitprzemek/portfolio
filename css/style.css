@@ -331,6 +331,7 @@ nav.scrolling-two{
 }
 .click-btn{
     visibility: hidden;
+    height: 0;
 }
 /* ----------------------TEXT SLIDER*/
 #header #name-container #text-slider{

@@ -450,6 +450,17 @@ $('.first_col').vTicker({
     height: "70px",
     direction: 'down'
  });
+
+// REFRESH PAGE AFTER RESIZE WINDOW <1000 px
+ $(document).ready(function(){
+    var initialSize = $(window).width();
+    //otherwise continue
+    $(window).on('resize',function(){
+        if ($(window).width() < 800 ) {   
+          location.reload();  // refresh page 
+        }
+    }); 
+});
 // DELETE TEXT FROM THE HEADER AFTER SCROLL
 // $(window).scroll(function(){
 //     if($(document).scrollTop() > $(window).height()){
