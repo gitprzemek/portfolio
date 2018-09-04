@@ -358,6 +358,9 @@
         padding: 0;
         display: block;
     }
+    .cd-half-block #name-container{
+        visibility: hidden;
+    }
     #header #name-container{
         top: 4%;
         margin: 0;
@@ -365,7 +368,8 @@
         height: auto;
         width: 90%;
         text-align: center;
-        /* visibility: hidden; */
+        overflow: visible;
+        
     }
     #header #name-container h1{
         display: none;
@@ -378,6 +382,7 @@
         height: 55vh;
         width: 100%;
         padding-top: 5%;
+        top: 48%;
     }
     #header figure::before{
         /* height: 55vh; */
@@ -475,13 +480,13 @@
         font-size: 17px;
     }
     /* CERT */
-    #cert .cert-container{
+    .cert__slider{
         padding: 0 5%;
     }
-    #cert article > h3{
+    .list-art__header{
         font-size: 20px;
     }
-    #cert article > p {
+    .list-art__par {
         font-size: 17px;
         line-height: 26px;
     }

@@ -337,7 +337,17 @@ if(current < 50){
         }else{
             halfBlock.removeClass("block-shadow");
         }
-
+        if(current > 0){
+                $(".header-text-display").css({
+                    "opacity": "0",
+                    "transition": "all 0.1s linear",
+                });
+            } else {
+                $(".header-text-display").css({
+                    "opacity": "1",
+                    "transition": "all 0.1s linear"
+                });
+            } 
     let aboutSec = document.getElementById("about");
     
     // BLUR HEADER AFTER SCROLL BLOCKS
@@ -421,8 +431,25 @@ $('body').bind('touchmove', function (event) {
       }
   }, false);
 
-
-
+//   HEADER CLONE TEXT SLIDER OUTSIDE PARENT
+function cloneFn() {
+    var itm = document.getElementById("name-container");
+    var cln = itm.cloneNode(true);
+    document.getElementById("header").appendChild(cln);
+}  
+if(window.innerWidth < 480) {
+    cloneFn();
+}
+/*SETTINGS FOR vTICKER*/
+$('.first_col').vTicker({
+    speed: 300,
+    pause: 3000,
+    showItems: 1,
+    animation: 'fade',
+    mousePause: false,
+    height: "70px",
+    direction: 'down'
+ });
 // DELETE TEXT FROM THE HEADER AFTER SCROLL
 // $(window).scroll(function(){
 //     if($(document).scrollTop() > $(window).height()){
