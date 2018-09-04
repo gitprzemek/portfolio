@@ -481,7 +481,8 @@
     }
     /* CERT */
     .cert__slider{
-        padding: 0 5%;
+        padding: 5% 5%;
+        height: auto;
     }
     .list-art__header{
         font-size: 20px;
@@ -490,6 +491,10 @@
         font-size: 17px;
         line-height: 26px;
     }
+    .slider__slider-img{
+        margin-top: 40px;
+    }
+    
     /*SKILL SECTION*/
      #icons-container .img-icons{
     width: 60px;  
