@@ -345,7 +345,7 @@ if(current < 50){
             } else {
                 $(".header-text-display").css({
                     "opacity": "1",
-                    "transition": "all 0.1s linear"
+                    "transition": "all 1.2s ease-in"
                 });
             } 
     let aboutSec = document.getElementById("about");
