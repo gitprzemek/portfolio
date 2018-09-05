@@ -1,12 +1,11 @@
-<!-- For better optymalization I created min.css / min.js files but currently in use files are not minificated.(for easier reading code) -->
-
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123757620-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
@@ -19,82 +18,101 @@
     <meta name="keywords" content="przemysław, szczepański, przemysław szczepański, web design, front-end developer, websites, freelance, developer, junior" />
     <meta property="og:image" content="img/me_og.JPG" />
     <meta property="og:image:alt" content="Przemysław Szczepański - header" />
-    
+
     <meta name="robots" content="index, follow" />
     <title>Przemysław Szczepański Front-end Developer</title>
     <link rel="alternate" hreflang="en" href="https://przmek-szczepanski.pl/en">
     <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
-    
+
     <!-- <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!-- <link rel="stylesheet" href="css/style.min.css"> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    
 
 </head>
 
 <body>
     <!-- NAVIGATION SECTION -->
-    <nav id="nav">
-        <div id="logonav">
-            <div>
-                <img src="img/gear.png" alt="gear-icon" id="img-scroll">
-                <a class="logonav" href="#header">P</a>
+    <nav id="nav" class="nav">
+        <div id="icon-nav" class="icon-nav">
+            <div class="icon-nav__logo">
+                <img src="img/gear.png" alt="gear-icon" id="img-scroll" class="logo__img">
+                <a class="logo__link" href="#header">P</a>
             </div>
-            <ul>
-                <li><a class="button-nav" href="https://www.linkedin.com/in/przemyslaw-szczepanski-in/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li> 
-                <li><a class="button-nav" href="https://github.com/gitprzemek?tab=repositories" target="_blank"><i class="fab fa-github-alt"></i></a></li>
-                <li><a class="button-nav" href="en" hreflang="en"><img src="img/united-kingdom.png" alt="united-kingdom-icon"><div>EN</div></a> </li>
+            <ul class="icon-nav__list-nav">
+                <li class="icon-nav__item"><a class="icon-nav__btn" href="https://www.linkedin.com/in/przemyslaw-szczepanski-in/" target="_blank"><i
+                            class="icon-nav__icon fab fa-linkedin-in"></i></a></li>
+                <li class="icon-nav__item"><a class="list-nav__btn" href="https://github.com/gitprzemek?tab=repositories" target="_blank"><i
+                            class="icon-nav__icon fab fa-github-alt"></i></a></li>
+                <li class="icon-nav__item">
+                    <a class="icon-nav__btn" href="en" hreflang="en">
+                    <img src="img/united-kingdom.png" alt="united-kingdom-icon" class="icon-nav__img"><div class="icon-nav__txt">EN</div></a>
+                </li>
             </ul>
         </div>
         <ul class="topnav" id="myTopnav">
-            <li><a href="#header" id="start">Start</a></li>
-            <li><a href="#header" id="omnie">O mnie</a></li>
-            <li><a href="#cert" id="kursy">Kursy</a></li>
-            <li><a href="#skills" id="umiejetnosci">Umiejętności</a></li>
-            <li><a href="#projects" id="projekty">Projekty</a></li>
-            <li><a href="#contact" id="kontakt">Kontakt</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+            <li class="topnav__item topnav__item--color"><a class="topnav__link" href="#header" id="start">Start</a></li>
+            <li class="topnav__item topnav__item--color"><a class="topnav__link" href="#header" id="omnie">O mnie</a></li>
+            <li class="topnav__item topnav__item--color"><a class="topnav__link" href="#cert" id="kursy">Kursy</a></li>
+            <li class="topnav__item topnav__item--color"><a class="topnav__link" href="#skills" id="umiejetnosci">Umiejętności</a></li>
+            <li class="topnav__item topnav__item--color"><a class="topnav__link" href="#projects" id="projekty">Projekty</a></li>
+            <li class="topnav__item topnav__item--color"><a class="topnav__link" href="#contact" id="kontakt">Kontakt</a></li>
+            <li class="topnav__item topnav__item--btn"><a class="topnav__link topnav__link--corner topnav__link--size" href="javascript:void(0);" onclick="myFunction()"><i class="topnav__icon fas fa-bars"></i></a></li>
         </ul>
     </nav>
     <!-- HEADER SECTION -->
     <!-- NEW HEADER CURTAIN -->
     <header class="cd-section" id="header">
-        <div class="cd-block">   
-                <div class="cd-half-block cd-half-left">
-                        <div id="name-container" class="sides-containers header-text-display">
-                                <div id="text-slider" class="first_col">
-                                 <ul>
-                                     <li>Cześć !</li>
-                                     <li>Hello !</li>
-                                     <li>Salut !</li>
-                                     <li>Ciao !</li>
-                                     <li>Priwiet !</li>
-                                 </ul>
-                                </div>
-                                <h1 class="sec_col">Jestem <br><span>Przemek</span></h1>
-                        </div>
-                        <figure class="figure-one">
-                                <img src="img/me-code3.png" alt="head-with-code">
-                        </figure>
+        <div class="cd-block">
+            <div class="cd-half-block cd-half-left">
+                <div id="name-container" class="name-container name-container--desktop sides-containers header-text-display">
+                    <div id="text-slider" class="first_col">
+                        <ul>
+                            <li>Cześć !</li>
+                            <li>Hello !</li>
+                            <li>Salut !</li>
+                            <li>Ciao !</li>
+                            <li>Priwiet !</li>
+                        </ul>
+                    </div>
+                    <h1 class="sec_col">Jestem <br><span>Przemek</span></h1>
                 </div>
-    
-                <div class="cd-half-block cd-half-right">
-                        <div id="welcome-container" class="sides-containers header-text-display">
-                                <p><span>Zapraszam<br></span>do obejrzenia mojej strony oraz <br>projektów!</p>
-                                <div class="click-btn"><img src="img/click2.png" alt="click-btn"></div>
-                        </div>
-                        <figure class="figure-two">
-                                <img src="img/me-code3.png" alt="head-with-code">
-                        </figure>
-                </div>    
+                <figure class="figure-one">
+                    <img src="img/me-code3.png" alt="head-with-code">
+                </figure>
+            </div>
+
+            <div class="cd-half-block cd-half-right">
+                <div id="welcome-container" class="sides-containers header-text-display">
+                    <p><span>Zapraszam<br></span>do obejrzenia mojej strony oraz <br>projektów!</p>
+                    <div class="click-btn"><img src="img/click2.png" alt="click-btn"></div>
+                </div>
+                <figure class="figure-two">
+                    <img src="img/me-code3.png" alt="head-with-code">
+                </figure>
+            </div>
+            <div id="name-container" class="name-container name-container--mobile sides-containers header-text-display">
+                <div id="text-slider" class="first_col">
+                    <ul>
+                        <li>Cześć !</li>
+                        <li>Hello !</li>
+                        <li>Salut !</li>
+                        <li>Ciao !</li>
+                        <li>Priwiet !</li>
+                    </ul>
+                </div>
+                <h1 class="sec_col">Jestem <br><span>Przemek</span></h1>
+            </div>
         </div>
     </header> <!-- .cd-section -->
     <!-- END NEW HEADER CURTAIN -->
-    
+
     <!-- ABOUT ME SECTION -->
     <section id="about" class="about">
         <h2>O mnie</h2>
@@ -109,7 +127,13 @@
         </figure>
         <div class="about-content about-right">
             <div>
-                <p>CZEŚĆ! Nazywam się PRZEMYSŁAW SZCZEPAŃSKI i jestem front-end developerem. <br>Absolwent Politechniki Świętokrzyskiej I stopnia.  Zawsze chciałem zajmować się tym co lubię, a zatem robię wszystko by to robić! W wolnej chwili relaksuję się przy oglądaniu komedii np. z <span class="secret-slide" id="jim">Jimem Carreyem</span> lub dbam o to by ciało nadal wyglądało i pasowało do moich starych ubrań. Oprócz tego wielki fan firmy <span class="secret-slide" id="blizzard">Blizzard</span>, a w szczególności ich klasycznych tytułów.</p></div>      
+                <p>CZEŚĆ! Nazywam się PRZEMYSŁAW SZCZEPAŃSKI i jestem front-end developerem. <br>Absolwent Politechniki
+                    Świętokrzyskiej I stopnia. Zawsze chciałem zajmować się tym co lubię, a zatem robię wszystko by to
+                    robić! W wolnej chwili relaksuję się przy oglądaniu komedii np. z <span class="secret-slide" id="jim">Jimem
+                        Carreyem</span> lub dbam o to by ciało nadal wyglądało i pasowało do moich starych ubrań.
+                    Oprócz tego wielki fan firmy <span class="secret-slide" id="blizzard">Blizzard</span>, a w
+                    szczególności ich klasycznych tytułów.</p>
+            </div>
         </div>
     </section>
     <!-- <hr> -->
@@ -120,74 +144,77 @@
             <figure class="slider__slider-side slider__slider-img">
                 <button id="prev" class="slider__btn slider__btn--prev"></button>
                 <ul class="list list-img">
-                    <li class="list__item--fade list-img__item"><img src ='img/dyploms/Akademia108.jpg' class = 'list-img__img'></li>
-                    <li class="list__item--fade  list-img__item"><img src ='img/dyploms/javascript.jpg' class = 'list-img__img'></li>
-                    <li class="list__item--fade list-img__item"><img src ='img/dyploms/front-end.jpg' class = 'list-img__img'></li>
-                    <li class="list__item--fade list-img__item"><img src ='img/dyploms/PSDtoHTML.jpg' class = 'list-img__img'></li>
-                    <li class="list__item--fade list-img__item"><img src ='img/dyploms/gitvsc.jpg' class = 'list-img__img'></li>
-                    <li class="list__item--fade list-img__item"><img src ='img/dyploms/angielski.jpg' class = 'list-img__img'></li>
-                    <li class="list__item--fade list-img__item"><img src ='img/dyploms/MTM-UAS1.jpg' class = 'list-img__img'></li>
-                    <li class="list__item--fade list-img__item"><img src ='img/dyploms/MTM-UAS2.jpg' class = 'list-img__img'></li>
-                    <li class="list__item--fade list-img__item"><img src ='img/dyploms/award4.jpg' class = 'list-img__img'></li>
-                    <li class="list__item--fade list-img__item"><img src ='img/dyploms/award1.jpg' class = 'list-img__img'></li>
-                    <li class="list__item--fade list-img__item"><img src ='img/dyploms/award2.jpg' class = 'list-img__img'></li>
-                    <li class="list__item--fade list-img__item"><img src ='img/dyploms/award3.jpg' class = 'list-img__img'></li>
+                    <li class="list__item--fade list-img__item"><img src='img/dyploms/Akademia108.jpg' class='list-img__img'></li>
+                    <li class="list__item--fade  list-img__item"><img src='img/dyploms/javascript.jpg' class='list-img__img'></li>
+                    <li class="list__item--fade list-img__item"><img src='img/dyploms/front-end.jpg' class='list-img__img'></li>
+                    <li class="list__item--fade list-img__item"><img src='img/dyploms/PSDtoHTML.jpg' class='list-img__img'></li>
+                    <li class="list__item--fade list-img__item"><img src='img/dyploms/gitvsc.jpg' class='list-img__img'></li>
+                    <li class="list__item--fade list-img__item"><img src='img/dyploms/angielski.jpg' class='list-img__img'></li>
+                    <li class="list__item--fade list-img__item"><img src='img/dyploms/MTM-UAS1.jpg' class='list-img__img'></li>
+                    <li class="list__item--fade list-img__item"><img src='img/dyploms/MTM-UAS2.jpg' class='list-img__img'></li>
+                    <li class="list__item--fade list-img__item"><img src='img/dyploms/award4.jpg' class='list-img__img'></li>
+                    <li class="list__item--fade list-img__item"><img src='img/dyploms/award1.jpg' class='list-img__img'></li>
+                    <li class="list__item--fade list-img__item"><img src='img/dyploms/award2.jpg' class='list-img__img'></li>
+                    <li class="list__item--fade list-img__item"><img src='img/dyploms/award3.jpg' class='list-img__img'></li>
                 </ul>
-               <button id="next" class="slider__btn slider__btn--next"></button>
+                <button id="next" class="slider__btn slider__btn--next"></button>
             </figure>
             <article class="slider__slider-side slider__slider-article" id="slider-article">
-               <ul class="list list-art">
-                   <li class="list__item--fade list-art__item">
+                <ul class="list list-art">
+                    <li class="list__item--fade list-art__item">
                         <h3 class="list-art__header">Szkoła programowania</h3>
                         <p class="list-art__par">Kurs bootcamp Front-end developer w szkole Akademia 108</p>
-                   </li>
-                   <li class="list__item--fade list-art__item">
+                    </li>
+                    <li class="list__item--fade list-art__item">
                         <h3 class="list-art__header">Kurs Javascript</h3>
                         <p class="list-art__par">Kurs Javascript od podstaw do poziomu zawansowanego.</p>
-                   </li>
-                   <li class="list__item--fade list-art__item">
+                    </li>
+                    <li class="list__item--fade list-art__item">
                         <h3 class="list-art__header">Kurs Front-end</h3>
                         <p class="list-art__par">Kurs tworzenia stron z technologiami CSS3 i Bootstrap.</p>
-                   </li>
-                   <li class="list__item--fade list-art__item">
+                    </li>
+                    <li class="list__item--fade list-art__item">
                         <h3 class="list-art__header">Kurs PSD do HTML</h3>
                         <p class="list-art__par">Kurs tworzenia stron na podstawie szablonów PSD.</p>
-                   </li>
-                   <li class="list__item--fade list-art__item">
+                    </li>
+                    <li class="list__item--fade list-art__item">
                         <h3 class="list-art__header">Kurs Git w Visual Studio Code</h3>
                         <p class="list-art__par">Kurs obsługi Git w edytorze VS Code</p>
-                   </li>
-                   <li class="list__item--fade list-art__item">
+                    </li>
+                    <li class="list__item--fade list-art__item">
                         <h3 class="list-art__header">Kurs języka angielskiego</h3>
                         <p class="list-art__par">Ukończenie kursu języka angielskiego poziom B1+</p>
-                   </li>
-                   <li class="list__item--fade list-art__item">
+                    </li>
+                    <li class="list__item--fade list-art__item">
                         <h3 class="list-art__header">Certyfikat MTM-UAS</h3>
                         <p class="list-art__par">Uzyskanie kwalifikacji do zastosowania systemu modułów MTM-UAS</p>
-                   </li>
-                   <li class="list__item--fade list-art__item">
+                    </li>
+                    <li class="list__item--fade list-art__item">
                         <h3 class="list-art__header">MTM-1</h3>
                         <p class="list-art__par">Uzyskanie kwalifikacji do zastosowania bloków procesowych MTM</p>
-                   </li>
-                   <li class="list__item--fade list-art__item">
+                    </li>
+                    <li class="list__item--fade list-art__item">
                         <h3 class="list-art__header">Najlepszy projekt</h3>
-                        <p class="list-art__par">I miejsce w konkursie na najlepszy projekt roku 'Optymalizacja okna logistycznego'</p>
-                   </li>
-                   <li class="list__item--fad list-art__item">
+                        <p class="list-art__par">I miejsce w konkursie na najlepszy projekt roku 'Optymalizacja okna
+                            logistycznego'</p>
+                    </li>
+                    <li class="list__item--fad list-art__item">
                         <h3 class="list-art__header">Najlepszy projekt</h3>
-                        <p class="list-art__par">II miejsce w konkursie na najlepszy projekt roku 'Aplikacja dotowarowania segmentu GFT20'</p>
-                   </li>
-                   <li class="list__item--fad list-art__item">
+                        <p class="list-art__par">II miejsce w konkursie na najlepszy projekt roku 'Aplikacja
+                            dotowarowania segmentu GFT20'</p>
+                    </li>
+                    <li class="list__item--fad list-art__item">
                         <h3 class="list-art__header">Najlepszy projekt</h3>
-                        <p class="list-art__par">III miejsce w konkursie na najlepszy projekt roku 'Wprowadzenie FIFO na magazynie'</p>
-                   </li>
-                   <li class="list__item--fad list-art__item">
+                        <p class="list-art__par">III miejsce w konkursie na najlepszy projekt roku 'Wprowadzenie FIFO
+                            na magazynie'</p>
+                    </li>
+                    <li class="list__item--fad list-art__item">
                         <h3 class="list-art__header">Najlepszy projekt</h3>
                         <p class="list-art__par">Wyróżnienie w konkursie na najlepszy projekt roku 'Stojak na części'</p>
-                   </li>
-               </ul>
+                    </li>
+                </ul>
             </article>
-            </div>
+        </div>
     </section>
     <!-- <hr> -->
     <!-- SKILL SECTION -->
@@ -195,59 +222,63 @@
         <h2>Umiejętności</h2>
         <div id="icons-container">
             <div class="icons">
-            <div class="div-icon">
-                <img class="img-icons" src="img/HTML5_badge.png" alt="html5_badge">
-                <img class="img-icons" src="img/CSS_badge.png" alt="css_badge">
-                <img class="img-icons" src="img/JS-logo.png" alt="js_badge">
+                <div class="div-icon">
+                    <img class="img-icons" src="img/HTML5_badge.png" alt="html5_badge">
+                    <img class="img-icons" src="img/CSS_badge.png" alt="css_badge">
+                    <img class="img-icons" src="img/JS-logo.png" alt="js_badge">
+                </div>
+                <div class="about-icon">
+                    <h3>HTML5 | CSS3 | JavaScript</h3>
+                    <p>Dobra znajomość języków i technologii umożliwiające tworzenie interaktywnych i świetnie
+                        wyglądających stron w standardzie HTML5</p>
+                </div>
             </div>
-            <div class="about-icon">
-                <h3>HTML5 | CSS3 | JavaScript</h3>
-                <p>Dobra znajomość języków i technologii umożliwiające tworzenie interaktywnych i świetnie wyglądających stron w standardzie HTML5</p>
+            <hr>
+            <div class="icons">
+                <div class="div-icon">
+                    <img class="img-icons" src="img/jquery-badge.png" alt="jquery_badge">
+                    <img class="img-icons" src="img/bootstrap-logo.png" alt="bootstrap_badge">
+                    <img class="img-icons" src="img/gulp.png" alt="gulp_badge">
+                    <img class="img-icons" src="img/sass-logo.png" alt="sass_badge">
+                    <img class="img-icons" src="img/nodejs-npm.png" alt="node_npm_badge">
+                </div>
+                <div class="about-icon">
+                    <h3>JQuery | Bootstrap | Gulp | SASS | Node.js+npm</h3>
+                    <p>Znajomość solidnych podstaw technologii ułatwiających i usprawniających tworzenie stron.</p>
+                </div>
             </div>
-        </div>
-       <hr>
-        <div class="icons">
-            <div class="div-icon">
-                <img class="img-icons" src="img/jquery-badge.png" alt="jquery_badge">
-                <img class="img-icons" src="img/bootstrap-logo.png" alt="bootstrap_badge">
-                <img class="img-icons" src="img/gulp.png" alt="gulp_badge">
-                <img class="img-icons" src="img/sass-logo.png" alt="sass_badge">
-                <img class="img-icons" src="img/nodejs-npm.png" alt="node_npm_badge">
+            <hr>
+            <div class="icons">
+                <div class="div-icon">
+                    <img class="img-icons" src="img/git-logo.png" alt="git_badge">
+                    <img class="img-icons" src="img/trello.png" alt="trello-logo">
+                    <img class="img-icons" src="img/jira-blue.png" alt="jira-logo">
+
+                </div>
+                <div class="about-icon">
+                    <h3>Git | Trello | JIRA</h3>
+                    <p>Praca ze zdalnym repozytorium, a także korzystanie z aplikacji i narzędzi usprawniających
+                        zarządzanie zadaniami i projektami.</p>
+                </div>
             </div>
-            <div class="about-icon">
-                <h3>JQuery | Bootstrap | Gulp | SASS | Node.js+npm</h3>
-                <p>Znajomość solidnych podstaw technologii ułatwiających i usprawniających tworzenie stron.</p>
+            <hr>
+            <div class="icons">
+                <div class="div-icon">
+                    <img class="img-icons" src="img/wordpress-logo.png" alt="wp_badge">
+                    <img class="img-icons" src="img/Photoshop_CC_icon.png" alt="photoshop_logo">
+                    <img class="img-icons" src="img/raect.png" alt="react_logo">
+                </div>
+                <div class="about-icon">
+                    <h3>Worpress | Photoshop | React</h3>
+                    <p>Podstawowa znajomość tworzenia stron przy pomocy WordPress | Praca w PS umożliwiająca
+                        modyfikacje grafik oraz kodowanie plików PSD do HTML | W trakcie poznawania frameworków takich
+                        jak React</p>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="icons">
-            <div class="div-icon">
-                <img class="img-icons" src="img/git-logo.png" alt="git_badge">
-                <img class="img-icons" src="img/trello.png" alt="trello-logo">
-                <img class="img-icons" src="img/jira-blue.png" alt="jira-logo">
-                
-            </div>
-            <div class="about-icon">
-                <h3>Git | Trello | JIRA</h3>
-                <p>Praca ze zdalnym repozytorium, a także korzystanie z aplikacji i narzędzi usprawniających zarządzanie zadaniami i projektami.</p>
-            </div>
-        </div>
-        <hr>
-        <div class="icons">
-            <div class="div-icon">
-                <img class="img-icons" src="img/wordpress-logo.png" alt="wp_badge">
-                <img class="img-icons" src="img/Photoshop_CC_icon.png" alt="photoshop_logo">
-                <img class="img-icons" src="img/raect.png" alt="react_logo">
-            </div>
-            <div class="about-icon">
-                <h3>Worpress | Photoshop | React</h3>
-                <p>Podstawowa znajomość tworzenia stron przy pomocy WordPress | Praca w PS umożliwiająca modyfikacje grafik oraz kodowanie plików PSD do HTML | W trakcie poznawania frameworków takich jak React</p>
-            </div>
-        </div>
         </div>
     </section>
-   <!-- <hr> -->
-   <!-- PROJECTS SECTION -->
+    <!-- <hr> -->
+    <!-- PROJECTS SECTION -->
     <section id="projects" class="projects">
         <h2>Projekty</h2>
         <div class="project-container">
@@ -271,10 +302,10 @@
                         <a href="https://github.com/gitprzemek/avengers-memory-card" target="_blank">CODE</a>
                         <a href="https://gitprzemek.github.io/avengers-memory-card/" target="_blank">DEMO</a>
                     </div>
-                </div>    
+                </div>
                 <div class="img-project avengers"><img src="img/thanos111.png" alt="thanos"></div>
             </div>
-            
+
             <div class="template sec-project">
                 <div class="about-project">
                     <h3>Star Wars Team</h3>
@@ -297,10 +328,10 @@
                         <a href="https://github.com/gitprzemek/star_wars_team" target="_blank">CODE</a>
                         <a href="http://star-wars-team.bitballoon.com/" target="_blank">DEMO</a>
                     </div>
-                </div>    
+                </div>
                 <div class="img-project"><img src="img/deathstar.png" alt="destroyer"></div>
             </div>
-            
+
             <div class="template th-project">
                 <div class="about-project">
                     <h3>Potfolio</h3>
@@ -324,114 +355,115 @@
                         <a href="https://github.com/gitprzemek/portfolio" target="_blank">CODE</a>
                         <a href="https://gitprzemek.github.io/portfolio/" target="_blank">DEMO</a>
                     </div>
-                </div>    
+                </div>
                 <div class="img-project myportfolio"><img src="img/mockup.png" alt="destroyer"></div>
             </div>
             <div class="second-project-container">
-                        <div class="card">
-                            <div class="card-about">
-                                <h3>Warcraft clock</h3>
-                                <p>Zegar tarczowy w stylu gry World of Warcraft.</p>
-                                <p>Użyte technologie:</p>
-                                <ul>
-                                    <li>HTML5</li>
-                                    <li>CSS3</li>
-                                    <li>JavaScript</li>
-                                    <li>ES6</li>
-                                    <li>Photoshop</li>
-                                    <li>RWD</li>
-                                    <li>Flex</li>
-                                </ul>
-                                <div>
-                                    <a class="code-link" href="https://github.com/gitprzemek/wow-horde-clock" target="_blank">CODE</a>
-                                    <a class="demo-link" href="https://gitprzemek.github.io/wow-horde-clock/" target="_blank">DEMO</a>
-                                </div>
-                                
-                            </div>
+                <div class="card">
+                    <div class="card-about">
+                        <h3>Warcraft clock</h3>
+                        <p>Zegar tarczowy w stylu gry World of Warcraft.</p>
+                        <p>Użyte technologie:</p>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>ES6</li>
+                            <li>Photoshop</li>
+                            <li>RWD</li>
+                            <li>Flex</li>
+                        </ul>
+                        <div>
+                            <a class="code-link" href="https://github.com/gitprzemek/wow-horde-clock" target="_blank">CODE</a>
+                            <a class="demo-link" href="https://gitprzemek.github.io/wow-horde-clock/" target="_blank">DEMO</a>
                         </div>
-                        <div class="card">
-                            <div class="card-about">
-                                <h3>Merkury</h3>
-                                <p>Strona stworzona na podstawie pliku PSD.</p>
-                                <p>Użyte technologie:</p>
-                                <ul>
-                                    <li>HTML5</li>
-                                    <li>CSS3</li>
-                                    <li>JavaScript</li>
-                                    <li>SASS</li>
-                                    <li>JQuery</li>
-                                    <li>Photoshop</li>
-                                    <li>Bootstrap</li>
-                                    <li>RWD</li>
-                                </ul>
-                                <div>
-                                    <a class="code-link" href="https://github.com/gitprzemek/Merkury_site" target="_blank">CODE</a>
-                                    <a class="demo-link" href="https://gitprzemek.github.io/Merkury_site/" target="_blank">DEMO</a>
-                                </div>
-                                
-                            </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-about">
+                        <h3>Merkury</h3>
+                        <p>Strona stworzona na podstawie pliku PSD.</p>
+                        <p>Użyte technologie:</p>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>SASS</li>
+                            <li>JQuery</li>
+                            <li>Photoshop</li>
+                            <li>Bootstrap</li>
+                            <li>RWD</li>
+                        </ul>
+                        <div>
+                            <a class="code-link" href="https://github.com/gitprzemek/Merkury_site" target="_blank">CODE</a>
+                            <a class="demo-link" href="https://gitprzemek.github.io/Merkury_site/" target="_blank">DEMO</a>
                         </div>
-                        <div class="card">
-                            <div class="card-about">
-                                <h3>Open Charity</h3>
-                                <p>Strona stworzona na podstawie pliku PSD.</p>
-                                <p>Użyte technologie:</p>
-                                <ul>
-                                    <li>HTML5</li>
-                                    <li>CSS3</li>
-                                    <li>JavaScript</li>
-                                    <li>SASS</li>
-                                    <li>JQuery</li>
-                                    <li>Photoshop</li>
-                                    <li>Bootstrap</li>
-                                    <li>RWD</li>
-                                </ul>
-                                <div>
-                                    <a class="code-link" href="https://github.com/gitprzemek/PSD_to_HTML_page" target="_blank">CODE</a>
-                                    <a class="demo-link" href="https://gitprzemek.github.io/PSD_to_HTML_page/" target="_blank">DEMO</a>
-                                </div>
-                                
-                            </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-about">
+                        <h3>Open Charity</h3>
+                        <p>Strona stworzona na podstawie pliku PSD.</p>
+                        <p>Użyte technologie:</p>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>SASS</li>
+                            <li>JQuery</li>
+                            <li>Photoshop</li>
+                            <li>Bootstrap</li>
+                            <li>RWD</li>
+                        </ul>
+                        <div>
+                            <a class="code-link" href="https://github.com/gitprzemek/PSD_to_HTML_page" target="_blank">CODE</a>
+                            <a class="demo-link" href="https://gitprzemek.github.io/PSD_to_HTML_page/" target="_blank">DEMO</a>
                         </div>
+
+                    </div>
+                </div>
             </div>
-            
+
         </div>
         <!-- CONTACT SECTION -->
         <section id="contact">
-        	<h2>Kontakt</h2>
-				<h3>Masz pytanie? Napisz do mnie.</h3>
-				<address>
-				<p><a href="mailto:przemekorn@gmail.com">przemekorn@gmail.com</a></p>
-			</address>
-			<hr>
-			<div class="social-icons">
-				<a href="https://www.linkedin.com/in/przemyslaw-szczepanski-in/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-				<a href="https://github.com/gitprzemek?tab=repositories" target="_blank" class="social-icon"><i class="fab fa-github-square"></i></a>
-			</div>
-			<hr>
-			<p>Lub skontaktuj się bezpośrednio przez formularz kontaktowy:</p>
+            <h2>Kontakt</h2>
+            <h3>Masz pytanie? Napisz do mnie.</h3>
+            <address>
+                <p><a href="mailto:przemekorn@gmail.com">przemekorn@gmail.com</a></p>
+            </address>
+            <hr>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/przemyslaw-szczepanski-in/" target="_blank" class="social-icon"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/gitprzemek?tab=repositories" target="_blank" class="social-icon"><i class="fab fa-github-square"></i></a>
+            </div>
+            <hr>
+            <p>Lub skontaktuj się bezpośrednio przez formularz kontaktowy:</p>
             <form method="post" action="https://usebasin.com/f/8bfa23353632" class="form">
                 <input name="name" type="text" placeholder="Imię i nazwisko" maxlength="50" required>
                 <input name="email" type="email" placeholder="Adres email" maxlength="50" required>
                 <textarea name="message" placeholder="Wiadomość" maxlength="350" required></textarea>
                 <input id="submit" name="submit" type="submit" value="Wyślij">
             </form>
-        
+
         </section>
     </section>
-    
+
     <footer class="copyrights">
         Copyright &#169; Przemysław Szczepański
     </footer>
-  
 
 
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/jquery.vticker-min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/main.js"></script>
 
-<!-- <script src="js/main.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.vticker-min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- <script src="js/main.min.js"></script>
 <script src="js/jquery.waypoints.js"></script> -->
 
 
