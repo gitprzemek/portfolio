@@ -138,7 +138,7 @@ $(document).ready(function () {
     });
 });
 
-// ADD SCROLL ON MOBILE TO PHOTO
+// ADD SCROLL AFTER CLICK TEXT LINK ON MOBILE TO PHOTO
 
 
 $(".secret-slide").click(function () {

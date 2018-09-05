@@ -27,49 +27,52 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <!-- <link rel="stylesheet" href="css/style.min.css"> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
-        crossorigin="anonymous">
+    
 
 </head>
 
 <body>
     <!-- NAVIGATION SECTION -->
-    <nav id="nav">
-        <div id="logonav">
-            <div>
-                <img src="../img/gear.png" alt="gear-icon" id="img-scroll">
-                <a class="logonav" href="#header">P</a>
+    <nav id="nav" class="nav">
+        <div id="icon-nav" class="icon-nav">
+            <div class="icon-nav__logo">
+                <img src="../img/gear.png" alt="gear-icon" id="img-scroll" class="logo__img">
+                <a class="logo__link" href="#header">P</a>
             </div>
-            <ul>
-                <li><a class="button-nav" href="https://www.linkedin.com/in/przemyslaw-szczepanski-in/" target="_blank"><i
-                            class="fab fa-linkedin-in"></i></a></li>
-                <li><a class="button-nav" href="https://github.com/gitprzemek?tab=repositories" target="_blank"><i
-                            class="fab fa-github-alt"></i></a></li>
-                <li><a class="button-nav" href="/" hreflang="pl"><img src="../img/poland.png" alt="united-kingdom-icon">
-                        <div>PL</div>
-                    </a> </li>
+            <ul class="icon-nav__list-nav">
+                <li class="icon-nav__item"><a class="icon-nav__btn" href="https://www.linkedin.com/in/przemyslaw-szczepanski-in/" target="_blank"><i
+                            class="icon-nav__icon fab fa-linkedin-in"></i></a></li>
+                <li class="icon-nav__item"><a class="list-nav__btn" href="https://github.com/gitprzemek?tab=repositories" target="_blank"><i
+                            class="icon-nav__icon fab fa-github-alt"></i></a></li>
+                <li class="icon-nav__item">
+                    <a class="icon-nav__btn" href="../" hreflang="en">
+                    <img src="../img/poland.png" alt="poland-icon" class="icon-nav__img"><div class="icon-nav__txt">PL</div></a>
+                </li>
             </ul>
         </div>
         <ul class="topnav" id="myTopnav">
-            <li><a href="#header" id="start">Start</a></li>
-            <li><a href="#header" id="omnie">About me</a></li>
-            <li><a href="#cert" id="kursy">Courses</a></li>
-            <li><a href="#skills" id="umiejetnosci">Skills</a></li>
-            <li><a href="#projects" id="projekty">Projects</a></li>
-            <li><a href="#contact" id="kontakt">Contact</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+            <li class="topnav__item topnav__item--color"><a class="topnav__link" href="#header" id="start">Start</a></li>
+            <li class="topnav__item topnav__item--color"><a class="topnav__link" href="#header" id="omnie">About me</a></li>
+            <li class="topnav__item topnav__item--color"><a class="topnav__link" href="#cert" id="kursy">Courses</a></li>
+            <li class="topnav__item topnav__item--color"><a class="topnav__link" href="#skills" id="umiejetnosci">Skills</a></li>
+            <li class="topnav__item topnav__item--color"><a class="topnav__link" href="#projects" id="projekty">Projects</a></li>
+            <li class="topnav__item topnav__item--color"><a class="topnav__link" href="#contact" id="kontakt">Contact</a></li>
+            <li class="topnav__item topnav__item--btn"><a class="topnav__link topnav__link--corner topnav__link--size" href="javascript:void(0);" onclick="myFunction()"><i class="topnav__icon fas fa-bars"></i></a></li>
         </ul>
     </nav>
+    
     <!-- HEADER SECTION -->
     <!-- NEW HEADER CURTAIN -->
     <header class="cd-section" id="header">
         <div class="cd-block">
             <div class="cd-half-block cd-half-left">
-                <div id="name-container" class="sides-containers header-text-display">
+                <div id="name-container" class="name-container name-container--desktop sides-containers header-text-display">
                     <div id="text-slider" class="first_col">
                         <ul>
                             <li>Cześć !</li>
@@ -89,15 +92,25 @@
             <div class="cd-half-block cd-half-right">
                 <div id="welcome-container" class="sides-containers header-text-display">
                     <p><span>I invite you<br></span>to view my websites<br> and projects!</p>
-                    <div class="click-btn"><img src="../img/click2.png" alt="click-btn"></div>
+                    <div class="click-btn"><img src="img/click2.png" alt="click-btn"></div>
                 </div>
                 <figure class="figure-two">
                     <img src="../img/me-code3.png" alt="head-with-code">
                 </figure>
             </div>
+            <div id="name-container" class="name-container name-container--mobile sides-containers header-text-display">
+                <div id="text-slider" class="first_col">
+                    <ul>
+                        <li>Cześć !</li>
+                        <li>Hello !</li>
+                        <li>Salut !</li>
+                        <li>Ciao !</li>
+                        <li>Priwiet !</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header> <!-- .cd-section -->
-    <!-- END NEW HEADER CURTAIN -->
 
     <!-- ABOUT ME SECTION -->
     <section id="about" class="animated about">

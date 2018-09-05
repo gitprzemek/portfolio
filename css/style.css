@@ -78,25 +78,18 @@ hr {
     margin: 25px 0;
 }
 
-/* .header-h2__first-letter--green{
-    color: var(--main-color);
-    font-weight: 800;
-} */
 /*-------------navigation styles*/
-nav {
+.nav {
     width: 100%;
     z-index: 6;
     font-weight: 300;
     transition: all 0.3s;
     height: auto;
     top: 0;
-    position: fixed;
+    position: absolute;
     transition: all .5s linear;
 }
 
-/* #myTopnav{
-    visibility: hidden;
-} */
 .topnav {
     list-style: none;
     display: flex;
