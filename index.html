@@ -68,46 +68,46 @@
     </nav>
     <!-- HEADER SECTION -->
     <!-- NEW HEADER CURTAIN -->
-    <header class="cd-section" id="header">
-        <div class="cd-block">
-            <div class="cd-half-block cd-half-left">
-                <div id="name-container" class="name-container name-container--desktop sides-containers header-text-display">
-                    <div id="text-slider" class="first_col">
-                        <ul>
-                            <li>Cześć !</li>
-                            <li>Hello !</li>
-                            <li>Salut !</li>
-                            <li>Ciao !</li>
-                            <li>Priwiet !</li>
+    <header class="header" id="header">
+        <div class="curtain">
+            <div class="curtain__half curtain__half--left">
+                <div id="name-container" class="curtain__name-container curtain__name-container--desktop curtain__container--sides">
+                    <div id="text-slider" class="curtain__first_col">
+                        <ul class="curtain__list">
+                            <li class="curtain__li-items">Cześć !</li>
+                            <li class="curtain__li-items">Hello !</li>
+                            <li class="curtain__li-items">Salut !</li>
+                            <li class="curtain__li-items">Ciao !</li>
+                            <li class="curtain__li-items">Priwiet !</li>
                         </ul>
                     </div>
-                    <h1 class="sec_col">Jestem <br><span>Przemek</span></h1>
+                    <h1 class="curtain__sec_col">Jestem <br><span>Przemek</span></h1>
                 </div>
-                <figure class="figure-one">
-                    <img src="img/me-code3.png" alt="head-with-code">
+                <figure class="curtain__figure curtain__figure--left">
+                    <img src="img/me-code3.png" alt="head-with-code" class="curtain__figure-img">
                 </figure>
             </div>
 
-            <div class="cd-half-block cd-half-right">
-                <div id="welcome-container" class="sides-containers header-text-display">
-                    <p><span>Zapraszam<br></span>do obejrzenia mojej strony oraz <br>projektów!</p>
+            <div class="curtain__half curtain__half--right">
+                <div id="welcome-container" class="curtain__welcome-container curtain__container--sides">
+                    <p class="curtain__wc-par"><span class="curtain__wc-span">Zapraszam<br></span>do obejrzenia mojej strony oraz <br>projektów!</p>
                     <div class="click-btn"><img src="img/click2.png" alt="click-btn"></div>
                 </div>
-                <figure class="figure-two">
-                    <img src="img/me-code3.png" alt="head-with-code">
+                <figure class="curtain__figure curtain__figure--right">
+                    <img src="img/me-code3.png" alt="head-with-code" class="curtain__figure-img curtain__figure-img--right">
                 </figure>
             </div>
-            <div id="name-container" class="name-container name-container--mobile sides-containers header-text-display">
-                <div id="text-slider" class="first_col">
-                    <ul>
-                        <li>Cześć !</li>
-                        <li>Hello !</li>
-                        <li>Salut !</li>
-                        <li>Ciao !</li>
-                        <li>Priwiet !</li>
+            <div id="name-container" class="curtain__name-container name-container--mobile curtain__container--sides">
+                <div id="text-slider" class="curtain__first_col">
+                    <ul class="curtain__list">
+                        <li class="curtain__li-items">Cześć !</li>
+                        <li class="curtain__li-items">Hello !</li>
+                        <li class="curtain__li-items">Salut !</li>
+                        <li class="curtain__li-items">Ciao !</li>
+                        <li class="curtain__li-items">Priwiet !</li>
                     </ul>
                 </div>
-                <h1 class="sec_col">Jestem <br><span>Przemek</span></h1>
+                <h1 class="curtain__sec_col">Jestem <br><span>Przemek</span></h1>
             </div>
         </div>
     </header> <!-- .cd-section -->
@@ -115,23 +115,23 @@
 
     <!-- ABOUT ME SECTION -->
     <section id="about" class="about">
-        <h2>O mnie</h2>
-        <figure class="about-content about-left">
-            <div class="rotate-div">
-                <div id="img-slide1" class="hidden-images position1"></div>
-                <div id="img-slide2" class="hidden-images position1"></div>
-                <div id="img-slide3" class="hidden-images"></div>
-                <div id="img-slide4" class="hidden-images"></div>
-                <img src="img/Przemek-Szczepanski1.jpg" alt="Przemysław Szczepański">
+        <h2 class="about__header">O mnie</h2>
+        <figure class="about__content about__content--left">
+            <div class="about__rotate-div">
+                <div id="img-slide1" class="about__hidden-images about__hidden-images--position about__hidden-images--slide1"></div>
+                <div id="img-slide2" class="about__hidden-images about__hidden-images--position about__hidden-images--slide2"></div>
+                <div id="img-slide3" class="about__hidden-images about__hidden-images--slide3"></div>
+                <div id="img-slide4" class="about__hidden-images about__hidden-images--slide4"></div>
+                <img src="img/Przemek-Szczepanski1.jpg" alt="Przemysław Szczepański" class="about__my-img">
             </div>
         </figure>
-        <div class="about-content about-right">
-            <div>
-                <p>CZEŚĆ! Nazywam się PRZEMYSŁAW SZCZEPAŃSKI i jestem front-end developerem. <br>Absolwent Politechniki
+        <div class="about__content about__content--right">
+            <div class="about__text">
+                <p class="about__text-par">CZEŚĆ! Nazywam się PRZEMYSŁAW SZCZEPAŃSKI i jestem front-end developerem. <br>Absolwent Politechniki
                     Świętokrzyskiej I stopnia. Zawsze chciałem zajmować się tym co lubię, a zatem robię wszystko by to
-                    robić! W wolnej chwili relaksuję się przy oglądaniu komedii np. z <span class="secret-slide" id="jim">Jimem
+                    robić! W wolnej chwili relaksuję się przy oglądaniu komedii np. z <span class="about__secret-slide" id="jim">Jimem
                         Carreyem</span> lub dbam o to by ciało nadal wyglądało i pasowało do moich starych ubrań.
-                    Oprócz tego wielki fan firmy <span class="secret-slide" id="blizzard">Blizzard</span>, a w
+                    Oprócz tego wielki fan firmy <span class="about__secret-slide" id="blizzard">Blizzard</span>, a w
                     szczególności ich klasycznych tytułów.</p>
             </div>
         </div>
@@ -218,59 +218,59 @@
     </section>
     <!-- <hr> -->
     <!-- SKILL SECTION -->
-    <section id="skills" class="animated skills">
-        <h2>Umiejętności</h2>
-        <div id="icons-container">
-            <div class="icons">
-                <div class="div-icon">
-                    <img class="img-icons" src="img/HTML5_badge.png" alt="html5_badge">
-                    <img class="img-icons" src="img/CSS_badge.png" alt="css_badge">
-                    <img class="img-icons" src="img/JS-logo.png" alt="js_badge">
+    <section id="skills" class="skills">
+        <h2 class="skills__header">Umiejętności</h2>
+        <div id="skills-container" class="skills-cont">
+            <div class="skills-cont__row">
+                <div class="skills-cont__icons">
+                    <img class="skills-cont__img-icons" src="img/HTML5_badge.png" alt="html5_badge">
+                    <img class="skills-cont__img-icons" src="img/CSS_badge.png" alt="css_badge">
+                    <img class="skills-cont__img-icons" src="img/JS-logo.png" alt="js_badge">
                 </div>
-                <div class="about-icon">
-                    <h3>HTML5 | CSS3 | JavaScript</h3>
-                    <p>Dobra znajomość języków i technologii umożliwiające tworzenie interaktywnych i świetnie
+                <div class="skills-cont__about">
+                    <h3 class="skills-cont__header">HTML5 | CSS3 | JavaScript</h3>
+                    <p class="skills-cont__par">Dobra znajomość języków i technologii umożliwiające tworzenie interaktywnych i świetnie
                         wyglądających stron w standardzie HTML5</p>
                 </div>
             </div>
             <hr>
-            <div class="icons">
-                <div class="div-icon">
-                    <img class="img-icons" src="img/jquery-badge.png" alt="jquery_badge">
-                    <img class="img-icons" src="img/bootstrap-logo.png" alt="bootstrap_badge">
-                    <img class="img-icons" src="img/gulp.png" alt="gulp_badge">
-                    <img class="img-icons" src="img/sass-logo.png" alt="sass_badge">
-                    <img class="img-icons" src="img/nodejs-npm.png" alt="node_npm_badge">
+            <div class="skills-cont__row">
+                <div class="skills-cont__icons">
+                    <img class="skills-cont__img-icons" src="img/jquery-badge.png" alt="jquery_badge">
+                    <img class="skills-cont__img-icons" src="img/bootstrap-logo.png" alt="bootstrap_badge">
+                    <img class="skills-cont__img-icons" src="img/gulp.png" alt="gulp_badge">
+                    <img class="skills-cont__img-icons" src="img/sass-logo.png" alt="sass_badge">
+                    <img class="skills-cont__img-icons" src="img/nodejs-npm.png" alt="node_npm_badge">
                 </div>
-                <div class="about-icon">
-                    <h3>JQuery | Bootstrap | Gulp | SASS | Node.js+npm</h3>
-                    <p>Znajomość solidnych podstaw technologii ułatwiających i usprawniających tworzenie stron.</p>
+                <div class="skills-cont__about">
+                    <h3 class="skills-cont__header">JQuery | Bootstrap | Gulp | SASS | Node.js+npm</h3>
+                    <p class="skills-cont__par">Znajomość solidnych podstaw technologii ułatwiających i usprawniających tworzenie stron.</p>
                 </div>
             </div>
             <hr>
-            <div class="icons">
-                <div class="div-icon">
-                    <img class="img-icons" src="img/git-logo.png" alt="git_badge">
-                    <img class="img-icons" src="img/trello.png" alt="trello-logo">
-                    <img class="img-icons" src="img/jira-blue.png" alt="jira-logo">
+            <div class="skills-cont__row">
+                <div class="skills-cont__icons">
+                    <img class="skills-cont__img-icons" src="img/git-logo.png" alt="git_badge">
+                    <img class="skills-cont__img-icons" src="img/trello.png" alt="trello-logo">
+                    <img class="skills-cont__img-icons" src="img/jira-blue.png" alt="jira-logo">
 
                 </div>
-                <div class="about-icon">
-                    <h3>Git | Trello | JIRA</h3>
-                    <p>Praca ze zdalnym repozytorium, a także korzystanie z aplikacji i narzędzi usprawniających
+                <div class="skills-cont__about">
+                    <h3 class="skills-cont__header">Git | Trello | JIRA</h3>
+                    <p class="skills-cont__par">Praca ze zdalnym repozytorium, a także korzystanie z aplikacji i narzędzi usprawniających
                         zarządzanie zadaniami i projektami.</p>
                 </div>
             </div>
             <hr>
-            <div class="icons">
-                <div class="div-icon">
-                    <img class="img-icons" src="img/wordpress-logo.png" alt="wp_badge">
-                    <img class="img-icons" src="img/Photoshop_CC_icon.png" alt="photoshop_logo">
-                    <img class="img-icons" src="img/raect.png" alt="react_logo">
+            <div class="skills-cont__row">
+                <div class="skills-cont__icons">
+                    <img class="skills-cont__img-icons" src="img/wordpress-logo.png" alt="wp_badge">
+                    <img class="skills-cont__img-icons" src="img/Photoshop_CC_icon.png" alt="photoshop_logo">
+                    <img class="skills-cont__img-icons" src="img/raect.png" alt="react_logo">
                 </div>
-                <div class="about-icon">
-                    <h3>Worpress | Photoshop | React</h3>
-                    <p>Podstawowa znajomość tworzenia stron przy pomocy WordPress | Praca w PS umożliwiająca
+                <div class="skills-cont__about">
+                    <h3 class="skills-cont__header">Worpress | Photoshop | React</h3>
+                    <p class="skills-cont__par">Podstawowa znajomość tworzenia stron przy pomocy WordPress | Praca w PS umożliwiająca
                         modyfikacje grafik oraz kodowanie plików PSD do HTML | W trakcie poznawania frameworków takich
                         jak React</p>
                 </div>

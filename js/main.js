@@ -89,7 +89,7 @@ $link.click(function () {
 })
 
 /*SETTINGS FOR vTICKER*/
-$('.first_col').vTicker({
+$('.curtain__first_col').vTicker({
     speed: 300,
     pause: 3000,
     showItems: 1,
@@ -141,7 +141,7 @@ $(document).ready(function () {
 // ADD SCROLL AFTER CLICK TEXT LINK ON MOBILE TO PHOTO
 
 
-$(".secret-slide").click(function () {
+$(".about__secret-slide").click(function () {
     if (window.innerWidth < 500) {
         $('html, body').animate({
             scrollTop: $("#about").offset().top
@@ -227,19 +227,19 @@ console.log(current);
 let windowHeight = $(window).height();
 // console.log(windowHeight);
 let total = $(window).height() - current;
-let eleLeft = $(".cd-half-left");
-let eleRight = $(".cd-half-right");
-let eleBlock = $(".cd-block");
+let eleLeft = $(".curtain__half--left");
+let eleRight = $(".curtain__half--right");
+let eleBlock = $(".curtain");
 
 let currPositionLeft = eleLeft.position().left;
 let currPositionRight = eleRight.position().right;
 let trackLength = 70;
-let headerHeaight = $(".cd-section").height();
-let halfBlockWidth = $(".cd-half-block").width();
+let headerHeaight = $("#header").height();
+let halfBlockWidth = $(".curtain__half").width();
 let windowWidth = $(window).width();
 
 let navRight = $("#myTopnav");
-let halfBlock = $(".cd-half-block");
+let halfBlock = $(".curtain__half");
 
 let distance = windowWidth / windowHeight;
 // console.log(distance);
@@ -292,12 +292,12 @@ function updateCurrent(event) {
         halfBlock.removeClass("block-shadow");
     }
     if (current > 0) {
-        $(".header-text-display").css({
+        $(".curtain__container--sides").css({
             "opacity": "0",
             "transition": "all 0.1s linear",
         });
     } else {
-        $(".header-text-display").css({
+        $(".curtain__container--sides").css({
             "opacity": "1",
             "transition": "all 1.2s ease-in"
         });
@@ -402,7 +402,7 @@ window.addEventListener('scroll', function (event) {
 //     cloneFn();
 // } 
 
-// $('.first_col').vTicker({
+// $('.curtain__first_col').vTicker({
 //     speed: 300,
 //     pause: 3000,
 //     showItems: 1,
