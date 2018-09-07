@@ -1,5 +1,4 @@
 /*BACK TO TOP AFTER REFRESH PAGE*/
-
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 }
@@ -8,70 +7,46 @@ window.onbeforeunload = function () {
 document.getElementById("start").addEventListener("click", function () {
     window.location.reload();
     window.scrollTo(0, 0);
-
 })
+
 /* SMOOTH SCROOLING*/
-$(document).ready(function () {
-
-    $('a[href^="#"]').on('click', function (event) {
-
-        var target = $($(this).attr('href'));
-
-        if (target.length) {
-            event.preventDefault();
-            $('html, body').animate({
-                scrollTop: target.offset().top
-            }, 1000);
-        }
-    });
-
-});
-/*NAVBAR AFTER SCROLL*/
-
-/*$(window).scroll(function(){
-    let winHeight = $(window).height();
-    if($(document).scrollTop() >= 0){
-        $("nav").addClass("scrolling-one");
-        $("#myTopnav").css({visibility: "visible"});
-    } else if ($(document).scrollTop() > winHeight){
-        $("nav").addClass("scrolling-two");
-        $("#myTopnav").css({visibility: "visible"});
-        
-    } else {
-        $("nav").removeClass("scrolling-one scrolling-two");
-        $("#myTopnav").css({visibility: "hidden"});
+$('a[href^="#"]').on('click', function (event) {
+    let target = $($(this).attr('href'));
+    if (target.length) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
     }
-    // if($(document).scrollTop() > winHeight){
-    //     $("nav").addClass("scrolling-two");
-    //     $("#myTopnav").css({visibility: "visible"});
-    // } else {
-    //     $("nav").removeClass("scrolling-two");
-    //     $("#myTopnav").css({visibility: "hidden"});
-    // }    
-}); */
-
-// ROTATE LOGO AFTER SCROLLING
-$(window).scroll(function () {
-
-    // get how far we've scrolled from the top of our screen
-    var offset = $(window).scrollTop();
-    offset = offset / 8;
-
-    // apply the offset as a css transform to our buttons
-    $('#img-scroll').css({
-        '-moz-transform': 'rotate(' + offset + 'deg)',
-        '-webkit-transform': 'rotate(' + offset + 'deg)',
-        '-o-transform': 'rotate(' + offset + 'deg)',
-        '-ms-transform': 'rotate(' + offset + 'deg)',
-        'transform': 'rotate(' + offset + 'deg)',
-    });
-
 });
 
-/*RESPONSIVE NAVIGATION- show li block after click*/
 
+// ROTATE LOGO IN NAV AFTER SCROLLING
+window.addEventListener('scroll', function(e) {
+    // get how far we've scrolled from the top of our screen
+    let offset = $(window).scrollTop();
+    let imgScroll = document.getElementById("img-scroll");
+    offset = offset / 8;
+    // apply the offset as a css transform to our buttons
+    imgScroll.style.transform = "rotate(" + offset + "deg)";
+});
+
+// SHOW NAV AFTER SCROLL
+window.addEventListener('scroll', function(e) {
+    let scrollOnTop = document.documentElement.scrollTop;
+    let nav = document.getElementById("nav");
+    let myTopnav = document.getElementById("myTopnav");
+    if ( scrollOnTop >= 100) {
+        nav.classList.add("scrolling-two");
+        myTopnav.style.visibility = "visible";
+    } else {
+        nav.classList.remove("scrolling-two");
+    }
+});
+
+/*RESPONSIVE NAVIGATION- HAMBURGER show li block after click*/
 function myFunction() {
-    var x = document.getElementById("myTopnav");
+    let x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
     } else {
@@ -80,15 +55,14 @@ function myFunction() {
 }
 
 /* remove class after click li(hide nav) */
-
-var $link = $(".topnav li:not(:last-child)");
+let $link = $(".topnav li:not(:last-child)");
 $link.click(function () {
     if ($("#myTopnav").hasClass("responsive")) {
         $("#myTopnav").removeClass("responsive");
     }
 })
 
-/*SETTINGS FOR vTICKER*/
+/*****SETTINGS FOR vTICKER*****/
 $('.curtain__first_col').vTicker({
     speed: 300,
     pause: 3000,
@@ -99,48 +73,49 @@ $('.curtain__first_col').vTicker({
     direction: 'down'
 });
 
-/*-----------HOVER ON TEXT in ABOUT SECTION*/
+/*****HOVER ON TEXT in ABOUT SECTION*****/
 /*JIM CAREY*/
 $(document).ready(function () {
-    $("#jim").click(function () {
-        $("#img-slide1").addClass("jimcarey");
+    let jim = document.getElementById("jim");
+    let jimImg = document.getElementById("img-slide1");
+    let kaboomImg = document.getElementById("img-slide2");
+    let blizz = document.getElementById("blizzard");
+    let orcImg = document.getElementById("img-slide3");
+    let taurenImg = document.getElementById("img-slide4");
+
+    jim.addEventListener('click', function (e) {
+        jimImg.classList.add("jimcarey");
         setTimeout(function () {
-            $("#img-slide1").removeClass("jimcarey");
+            jimImg.classList.remove("jimcarey");
         }, 6000);
     });
-});
-/*KABOM*/
-$(document).ready(function () {
-    $("#jim").click(function () {
-        $("#img-slide2").addClass("kabom");
+    /*KABOM*/
+    jim.addEventListener('click', function (e) {
+        kaboomImg.classList.add("kabom");
         setTimeout(function () {
-            $("#img-slide2").removeClass("kabom");
+            kaboomImg.classList.remove("kabom");
         }, 2000);
     });
-});
-/*BLIZZARD*/
-/*orc*/
-$(document).ready(function () {
-    $("#blizzard").click(function () {
-        $("#img-slide3").addClass("dance_orc");
+    /*orc*/
+    blizz.addEventListener('click', function (e) {
+        orcImg.classList.add("dance_orc");
         setTimeout(function () {
-            $("#img-slide3").removeClass("dance_orc");
+            orcImg.classList.remove("dance_orc");
         }, 10000);
     });
-});
-/*tauren*/
-$(document).ready(function () {
-    $("#blizzard").click(function () {
-        $("#img-slide4").addClass("dance_tauren");
+    /*tauren*/
+    blizz.addEventListener('click', function (e) {
+        taurenImg.classList.add("dance_tauren");
         setTimeout(function () {
-            $("#img-slide4").removeClass("dance_tauren");
+            taurenImg.classList.remove("dance_tauren");
         }, 10000);
     });
+
+    
 });
+
 
 // ADD SCROLL AFTER CLICK TEXT LINK ON MOBILE TO PHOTO
-
-
 $(".about__secret-slide").click(function () {
     if (window.innerWidth < 500) {
         $('html, body').animate({
@@ -149,41 +124,19 @@ $(".about__secret-slide").click(function () {
     }
 });
 
-// WAYPOINT EFFECTS
-/*ABOUT EFFECT*/
-// $(document).ready(function(){
-//     // hide our element on page load
-//     $('.about').css('opacity', 0);
 
-//     $('.about').waypoint(function() {
-//         $('.about').addClass('fadeInUp');
-//     }, { offset: '70%' });
-//   });
-
-// $(document).ready(function () {
-//     $('.myportfolio').css('opacity', 0);
-
-
-//     $('.myportfolio').waypoint(function () {
-//         $('.myportfolio').addClass('slideInRight');
-//         $('.myportfolio').css('opacity', 1);
-//     }, {
-//         offset: '70%'
-//     });
-
-// });
-/*SLIDER IN CERT S4ECTION*/
+/*****SLIDER IN CERTIFICATE SECTION*****/
 
 let prevBtn = document.getElementById("prev");
 let nextBtn = document.getElementById("next");
 let listImg = document.getElementsByClassName("list-img__item");
 let listArt = document.getElementsByClassName("list-art__item");
-
 let currentSlide = 1;
-showSlide(currentSlide);
 let currentArticle = 1;
+showSlide(currentSlide);
 showArticle(currentArticle);
 
+// SHOW NEXT ONE OR PREV IMG
 function showSlide() {
     let i;
     if (currentSlide > listImg.length) {
@@ -198,6 +151,7 @@ function showSlide() {
     listImg[currentSlide - 1].style.display = "block";
 }
 
+// SHOW NEXT ONE OR PREV ARTICLE
 function showArticle() {
     let i;
     if (currentArticle > listArt.length) {
@@ -225,26 +179,20 @@ prevBtn.addEventListener("click", function () {
 let current = $(window).scrollTop();
 console.log(current);
 let windowHeight = $(window).height();
-// console.log(windowHeight);
 let total = $(window).height() - current;
 let eleLeft = $(".curtain__half--left");
 let eleRight = $(".curtain__half--right");
 let eleBlock = $(".curtain");
-
 let currPositionLeft = eleLeft.position().left;
 let currPositionRight = eleRight.position().right;
 let trackLength = 70;
 let headerHeaight = $("#header").height();
 let halfBlockWidth = $(".curtain__half").width();
 let windowWidth = $(window).width();
-
 let navRight = $("#myTopnav");
 let halfBlock = $(".curtain__half");
-
 let distance = windowWidth / windowHeight;
-// console.log(distance);
-
-// vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+let aboutSec = document.getElementById("about");
 
 function disableScrolling() {
     var x = window.scrollX;
@@ -291,6 +239,7 @@ function updateCurrent(event) {
     } else {
         halfBlock.removeClass("block-shadow");
     }
+    // hide shadows when is 0
     if (current > 0) {
         $(".curtain__container--sides").css({
             "opacity": "0",
@@ -302,7 +251,7 @@ function updateCurrent(event) {
             "transition": "all 1.2s ease-in"
         });
     }
-    let aboutSec = document.getElementById("about");
+
 
     // BLUR HEADER AFTER SCROLL BLOCKS
     let aboutSecBlur = (50 - current) / 5;
@@ -311,6 +260,7 @@ function updateCurrent(event) {
         aboutSec.style.filter = "blur(" + aboutSecBlur + "px)";
     };
 
+    // SCROLL BLOCKS TO SIDE
     eleLeft.css({
         left: "-" + current + '%'
     });
@@ -319,19 +269,7 @@ function updateCurrent(event) {
     });
 }
 
-// SHOW NAV AFTER SCROLL
-$(window).scroll(function () {
-    let winHeight = ($(window).height()) * 0.9;
-    if ($(document).scrollTop() >= 100) {
-        $("nav").addClass("scrolling-two");
-        $("#myTopnav").css({
-            visibility: "visible"
-        });
-    } else {
-        $("nav").removeClass("scrolling-two");
-    }
 
-});
 
 $('body').on('wheel', function (event) {
     // left and right should not move when we're not on top
@@ -345,14 +283,14 @@ $('body').on('wheel', function (event) {
     } else {
         deltaNewY = -1;
     }
-    console.log(deltaNewY);
+
     current += deltaNewY * 5;
-    console.log(current);
-    console.log(event.originalEvent.deltaY);
     // position bounded between 0 and 60
     updateCurrent(event);
 });
 let initialClientY = 0;
+
+// EVENT FOR TOUCH SCREEN
 $('body').bind('touchstart', function (event) {
     initialClientY = event.originalEvent.touches[0].clientY;
     current = 60;
@@ -365,16 +303,14 @@ $('body').bind('touchmove', function (event) {
     if ($(window).scrollTop() > 0) {
         return;
     }
-
     current += -(event.originalEvent.touches[0].clientY - initialClientY) / 1.2;
-
     console.log(current);
     // position bounded between 0 and 50
     updateCurrent(event);
 });
 
 
-// change bg after section projects is visible on window
+// PARALLAX BG change bg after section projects is visible on window **********************************
 var projectSec = document.getElementById("projects");
 var isInViewport = function (elem) {
     var bounding = projectSec.getBoundingClientRect();
@@ -390,6 +326,10 @@ window.addEventListener('scroll', function (event) {
         projectSec.classList.remove("bg-fixed")
     }
 }, false);
+
+// END
+
+
 
 //   HEADER CLONE TEXT SLIDER OUTSIDE PARENT
 
@@ -448,3 +388,26 @@ window.addEventListener('scroll', function (event) {
 //     }    
 // });
 // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+/*NAVBAR AFTER SCROLL*/
+
+/*$(window).scroll(function(){
+    let winHeight = $(window).height();
+    if($(document).scrollTop() >= 0){
+        $("nav").addClass("scrolling-one");
+        $("#myTopnav").css({visibility: "visible"});
+    } else if ($(document).scrollTop() > winHeight){
+        $("nav").addClass("scrolling-two");
+        $("#myTopnav").css({visibility: "visible"});
+        
+    } else {
+        $("nav").removeClass("scrolling-one scrolling-two");
+        $("#myTopnav").css({visibility: "hidden"});
+    }
+    // if($(document).scrollTop() > winHeight){
+    //     $("nav").addClass("scrolling-two");
+    //     $("#myTopnav").css({visibility: "visible"});
+    // } else {
+    //     $("nav").removeClass("scrolling-two");
+    //     $("#myTopnav").css({visibility: "hidden"});
+    // }    
+}); */
