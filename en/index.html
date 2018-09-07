@@ -69,72 +69,74 @@
     
     <!-- HEADER SECTION -->
     <!-- NEW HEADER CURTAIN -->
-    <header class="cd-section" id="header">
-        <div class="cd-block">
-            <div class="cd-half-block cd-half-left">
-                <div id="name-container" class="name-container name-container--desktop sides-containers header-text-display">
-                    <div id="text-slider" class="first_col">
-                        <ul>
-                            <li>Cześć !</li>
-                            <li>Hello !</li>
-                            <li>Salut !</li>
-                            <li>Ciao !</li>
-                            <li>Priwiet !</li>
+    <header class="header" id="header">
+        <div class="curtain">
+            <div class="curtain__half curtain__half--left">
+                <div id="name-container" class="curtain__name-container curtain__name-container--desktop curtain__container--sides">
+                    <div id="text-slider" class="curtain__first_col">
+                        <ul class="curtain__list">
+                            <li class="curtain__li-items">Cześć !</li>
+                            <li class="curtain__li-items">Hello !</li>
+                            <li class="curtain__li-items">Salut !</li>
+                            <li class="curtain__li-items">Ciao !</li>
+                            <li class="curtain__li-items">Priwiet !</li>
                         </ul>
                     </div>
-                    <h1 class="sec_col">I'm <br><span>Przemek</span></h1>
+                    <h1 class="curtain__sec_col">I'm <br><span>Przemek</span></h1>
                 </div>
-                <figure class="figure-one">
-                    <img src="../img/me-code3.png" alt="head-with-code">
+                <figure class="curtain__figure curtain__figure--left">
+                    <img src="../img/me-code3.png" alt="head-with-code" class="curtain__figure-img">
                 </figure>
             </div>
 
-            <div class="cd-half-block cd-half-right">
-                <div id="welcome-container" class="sides-containers header-text-display">
-                    <p><span>I invite you<br></span>to view my websites<br> and projects!</p>
+            <div class="curtain__half curtain__half--right">
+                <div id="welcome-container" class="curtain__welcome-container curtain__container--sides">
+                    <p class="curtain__wc-par"><span class="curtain__wc-span">I invite you<br></span>to view my websites <br>and projects!</p>
                     <div class="click-btn"><img src="../img/click2.png" alt="click-btn"></div>
                 </div>
-                <figure class="figure-two">
-                    <img src="../img/me-code3.png" alt="head-with-code">
+                <figure class="curtain__figure curtain__figure--right">
+                    <img src="../img/me-code3.png" alt="head-with-code" class="curtain__figure-img curtain__figure-img--right">
                 </figure>
             </div>
-            <div id="name-container" class="name-container name-container--mobile sides-containers header-text-display">
-                <div id="text-slider" class="first_col">
-                    <ul>
-                        <li>Cześć !</li>
-                        <li>Hello !</li>
-                        <li>Salut !</li>
-                        <li>Ciao !</li>
-                        <li>Priwiet !</li>
+            <div id="name-container" class="curtain__name-container name-container--mobile curtain__container--sides">
+                <div id="text-slider" class="curtain__first_col">
+                    <ul class="curtain__list">
+                        <li class="curtain__li-items">Cześć !</li>
+                        <li class="curtain__li-items">Hello !</li>
+                        <li class="curtain__li-items">Salut !</li>
+                        <li class="curtain__li-items">Ciao !</li>
+                        <li class="curtain__li-items">Priwiet !</li>
                     </ul>
                 </div>
+                <h1 class="curtain__sec_col">I'm <br><span>Przemek</span></h1>
             </div>
         </div>
-    </header> <!-- .cd-section -->
+    </header>
 
     <!-- ABOUT ME SECTION -->
-    <section id="about" class="animated about">
-        <h2>About me</h2>
-        <figure class="about-content about-left">
-            <div class="rotate-div">
-                <div id="img-slide1" class="hidden-images position1"></div>
-                <div id="img-slide2" class="hidden-images position1"></div>
-                <div id="img-slide3" class="hidden-images"></div>
-                <div id="img-slide4" class="hidden-images"></div>
-                <img src="../img/Przemek-Szczepanski1.jpg" alt="Przemysław Szczepański">
+    <section id="about" class="about">
+        <h2 class="about__header">About me</h2>
+        <figure class="about__content about__content--left">
+            <div class="about__rotate-div">
+                <div id="img-slide1" class="about__hidden-images about__hidden-images--position about__hidden-images--slide1"></div>
+                <div id="img-slide2" class="about__hidden-images about__hidden-images--position about__hidden-images--slide2"></div>
+                <div id="img-slide3" class="about__hidden-images about__hidden-images--slide3"></div>
+                <div id="img-slide4" class="about__hidden-images about__hidden-images--slide4"></div>
+                <img src="../img/Przemek-Szczepanski1.jpg" alt="Przemysław Szczepański" class="about__my-img">
             </div>
         </figure>
-        <div class="about-content about-right">
-            <div>
-                <p>Hello! My name is PRZEMYSŁAW SZCZEPAŃSKI and I am a front-end developer. <br>A graduate of the
+        <div class="about__content about__content--right">
+            <div class="about__text">
+                <p class="about__text-par">Hello! My name is PRZEMYSŁAW SZCZEPAŃSKI and I am a front-end developer. <br>A graduate of the
                     Kielce University of Technology. I've always wanted to do what I like, so I do everything to do it!
-                    In my free time I relax while watching a comedy, for example with <span class="secret-slide" id="jim">Jim
+                    In my free time I relax while watching a comedy, for example with <span class="about__secret-slide" id="jim">Jim
                         Carrey</span> or I care that my body will still look and fit my old clothes. In addition, a
-                    great fan of <span class="secret-slide" id="blizzard">Blizzard</span>, in particular their classic
-                    titles. </p>
+                        great fan of <span class="about__secret-slide" id="blizzard">Blizzard</span>, in particular their classic
+                        titles. </p>
             </div>
         </div>
     </section>
+
     <!-- <hr> -->
     <!-- CERTIFICATE SECTION -->
     <section id="cert" class="cert">
@@ -218,234 +220,238 @@
     </section>
     <!-- <hr> -->
     <!-- SKILL SECTION -->
-    <section id="skills" class="animated skills">
-        <h2>Skills</h2>
-        <div id="icons-container">
-            <div class="icons">
-                <div class="div-icon">
-                    <img class="img-icons" src="../img/HTML5_badge.png" alt="html5_badge">
-                    <img class="img-icons" src="../img/CSS_badge.png" alt="css_badge">
-                    <img class="img-icons" src="../img/JS-logo.png" alt="js_badge">
+    <section id="skills" class="skills">
+        <h2 class="skills__header">Skills</h2>
+        <div id="skills-container" class="skills-cont">
+            <div class="skills-cont__row">
+                <div class="skills-cont__icons">
+                    <img class="skills-cont__img-icons" src="../img/HTML5_badge.png" alt="html5_badge">
+                    <img class="skills-cont__img-icons" src="../img/CSS_badge.png" alt="css_badge">
+                    <img class="skills-cont__img-icons" src="../img/JS-logo.png" alt="js_badge">
                 </div>
-                <div class="about-icon">
-                    <h3>HTML5 | CSS3 | JavaScript</h3>
-                    <p> Good knowledge of languages and technologies allowing to create interactive and great-looking
+                <div class="skills-cont__about">
+                    <h3 class="skills-cont__header">HTML5 | CSS3 | JavaScript</h3>
+                    <p class="skills-cont__par">Good knowledge of languages and technologies allowing to create interactive and great-looking
                         HTML5 websites.</p>
                 </div>
             </div>
             <hr>
-            <div class="animated icons">
-                <div class="div-icon">
-                    <img class="img-icons" src="../img/jquery-badge.png" alt="jquery_badge">
-                    <img class="img-icons" src="../img/bootstrap-logo.png" alt="bootstrap_badge">
-                    <img class="img-icons" src="../img/gulp.png" alt="gulp_badge">
-                    <img class="img-icons" src="../img/sass-logo.png" alt="sass_badge">
-                    <img class="img-icons" src="../img/nodejs-npm.png" alt="node_npm_badge">
+            <div class="skills-cont__row">
+                <div class="skills-cont__icons">
+                    <img class="skills-cont__img-icons" src="../img/jquery-badge.png" alt="jquery_badge">
+                    <img class="skills-cont__img-icons" src="../img/bootstrap-logo.png" alt="bootstrap_badge">
+                    <img class="skills-cont__img-icons" src="../img/gulp.png" alt="gulp_badge">
+                    <img class="skills-cont__img-icons" src="../img/sass-logo.png" alt="sass_badge">
+                    <img class="skills-cont__img-icons" src="../img/nodejs-npm.png" alt="node_npm_badge">
                 </div>
-                <div class="about-icon">
-                    <h3>JQuery | Bootstrap | Gulp | SASS | Node.js+npm</h3>
-                    <p> Knowledge of solid basic technologies that facilitate and improve the creation of websites.</p>
+                <div class="skills-cont__about">
+                    <h3 class="skills-cont__header">JQuery | Bootstrap | Gulp | SASS | Node.js+npm</h3>
+                    <p class="skills-cont__par">Knowledge of solid basic technologies that facilitate and improve the creation of websites.</p>
                 </div>
             </div>
             <hr>
-            <div class="animated icons">
-                <div class="div-icon">
-                    <img class="img-icons" src="../img/git-logo.png" alt="git_badge">
-                    <img class="img-icons" src="../img/trello.png" alt="trello-logo">
-                    <img class="img-icons" src="../img/jira-blue.png" alt="jira-logo">
+            <div class="skills-cont__row">
+                <div class="skills-cont__icons">
+                    <img class="skills-cont__img-icons" src="../img/git-logo.png" alt="git_badge">
+                    <img class="skills-cont__img-icons" src="../img/trello.png" alt="trello-logo">
+                    <img class="skills-cont__img-icons" src="../img/jira-blue.png" alt="jira-logo">
 
                 </div>
-                <div class="about-icon">
-                    <h3>Git | Trello | JIRA</h3>
-                    <p>Working with a remote repository, as well as using applications and tools to improve the
+                <div class="skills-cont__about">
+                    <h3 class="skills-cont__header">Git | Trello | JIRA</h3>
+                    <p class="skills-cont__par">Working with a remote repository, as well as using applications and tools to improve the
                         management of tasks and projects.</p>
                 </div>
             </div>
             <hr>
-            <div class="animated icons">
-                <div class="div-icon">
-                    <img class="img-icons" src="../img/wordpress-logo.png" alt="wp_badge">
-                    <img class="img-icons" src="../img/Photoshop_CC_icon.png" alt="photoshop_logo">
-                    <img class="img-icons" src="../img/raect.png" alt="react_logo">
+            <div class="skills-cont__row">
+                <div class="skills-cont__icons">
+                    <img class="skills-cont__img-icons" src="../img/wordpress-logo.png" alt="wp_badge">
+                    <img class="skills-cont__img-icons" src="../img/Photoshop_CC_icon.png" alt="photoshop_logo">
+                    <img class="skills-cont__img-icons" src="../img/raect.png" alt="react_logo">
                 </div>
-                <div class="about-icon">
-                    <h3>Worpress | Photoshop | React</h3>
-                    <p>Basic knowledge of creating websites using WordPress | Work with PS that allows to modify
+                <div class="skills-cont__about">
+                    <h3 class="skills-cont__header">Worpress | Photoshop | React</h3>
+                    <p class="skills-cont__par">Basic knowledge of creating websites using WordPress | Work with PS that allows to modify
                         graphics and encode PSD files to HTML | Learning a React library.</p>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- <hr> -->
     <!-- PROJECTS SECTION -->
     <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
+        <h2 class="projects_header">Projects</h2>
+        <div class="projects__container">
+            <div class="card card--long card--first-project">
+                <div class="card__about">
+                    <h3 class="card__header">Avengers vs Thanos</h3>
+                    <p class="card_par">Memory card game, inspired by the theme of the movie Avengers: Infinity War.</p>
+                    <p class="card_par">Used technologies and optimization:</p>
+                    <ul class="card__list">
+                        <li class="card__li-item">HTML5</li>
+                        <li class="card__li-item">CSS3</li>
+                        <li class="card__li-item">JavaScript</li>
+                        <li class="card__li-item">ES6</li>
+                        <li class="card__li-item">JQuery</li>
+                        <li class="card__li-item">Photoshop</li>
+                        <li class="card__li-item">RWD</li>
+                        <li class="card__li-item">Flex</li>
+                    </ul>
+                    <div class="card__links">
+                        <a class="card__btn" href="https://github.com/gitprzemek/avengers-memory-card" target="_blank">CODE</a>
+                        <a class="card__btn" href="https://gitprzemek.github.io/avengers-memory-card/" target="_blank">DEMO</a>
+                    </div>
+                </div>
+                <div class="card__img-project"><img class="card__image" src="../img/thanos111.png" alt="thanos"></div>
+            </div>
 
-            <div class="template first-project">
-                <div class="about-project">
-                    <h3>Avengers vs Thanos</h3>
-                    <p>Memory card game, inspired by the theme of the movie Avengers: Infinity War.</p>
-                    <p>Used technologies and optimization:</p>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>ES6</li>
-                        <li>JQuery</li>
-                        <li>Photoshop</li>
-                        <li>RWD</li>
-                        <li>Flex</li>
+            <div class="card card--long card--sec-project">
+                <div class="card__about">
+                    <h3 class="card__header">Star Wars Team</h3>
+                    <p class="card_par">Website created on the basis of PSD file. Inspired by the movie Star Wars.</p>
+                    <p class="card_par">Used technologies and optimization:</p>
+                    <ul class="card__list">
+                        <li class="card__li-item">HTML5</li>
+                        <li class="card__li-item">CSS3</li>
+                        <li class="card__li-item">JavaScript</li>
+                        <li class="card__li-item">SASS</li>
+                        <li class="card__li-item">JQuery</li>
+                        <li class="card__li-item">Photoshop</li>
+                        <li class="card__li-item">Bootstrap</li>
+                        <li class="card__li-item">RWD</li>
+                        <li class="card__li-item">Flex</li>
+                        <li class="card__li-item">Szybkość strony: 100%(GTmetrix)</li>
+                        <li class="card__li-item">plugin OwlCarousel.js</li>
                     </ul>
-                    <div>
-                        <a href="https://github.com/gitprzemek/avengers-memory-card" target="_blank">CODE</a>
-                        <a href="https://gitprzemek.github.io/avengers-memory-card/" target="_blank">DEMO</a>
+                    <div class="card__links">
+                        <a class="card__btn" href="https://github.com/gitprzemek/star_wars_team" target="_blank">CODE</a>
+                        <a class="card__btn" href="http://star-wars-team.bitballoon.com/" target="_blank">DEMO</a>
                     </div>
                 </div>
-                <div class="img-project avengers"><img src="../img/thanos111.png" alt="thanos"></div>
+                <div class="card__img-project"><img class="card__image" src="../img/deathstar.png" alt="deathstar"></div>
             </div>
-            <div class="template sec-project">
-                <div class="about-project">
-                    <h3>Star Wars Team</h3>
-                    <p>Website created on the basis of PSD file. Inspired by the movie Star Wars.</p>
-                    <p>Used technologies and optimization:</p>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>SASS</li>
-                        <li>JQuery</li>
-                        <li>Photoshop</li>
-                        <li>Bootstrap</li>
-                        <li>RWD</li>
-                        <li>Flex</li>
-                        <li>Page speed: 100%(GTmetrix)</li>
-                        <li>plugin OwlCarousel.js</li>
-                    </ul>
-                    <div>
-                        <a href="https://github.com/gitprzemek/star_wars_team" target="_blank">CODE</a>
-                        <a href="http://star-wars-team.bitballoon.com/" target="_blank">DEMO</a>
-                    </div>
-                </div>
-                <div class="img-project"><img src="../img/deathstar.png" alt="deathstar"></div>
-            </div>
-            <div class="template th-project">
-                <div class="about-project">
-                    <h3>Potfolio</h3>
-                    <p>The project, and at the same time my portfolio page. Created the longest and most often
+
+            <div class="card card--long card--th-project">
+                <div class="card__about">
+                    <h3 class="card__header">Potfolio</h3>
+                    <p class="card_par">The project, and at the same time my portfolio page. Created the longest and most often
                         improved.</p>
-                    <p>Used technologies and optimization:</p>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>JQuery</li>
-                        <li>Node.js + npm</li>
-                        <li>Gulp</li>
-                        <li>Photoshop</li>
-                        <li>RWD</li>
-                        <li>Flex</li>
-                        <li>plugin animate.css</li>
-                        <li>plugin waypoint.js</li>
-                        <li>plugin vticker.js</li>
+                    <p class="card_par">Used technologies and optimization:</p>
+                    <ul class="card__list">
+                        <li class="card__li-item">HTML5</li>
+                        <li class="card__li-item">CSS3</li>
+                        <li class="card__li-item">JavaScript</li>
+                        <li class="card__li-item">JQuery</li>
+                        <li class="card__li-item">Node.js + npm</li>
+                        <li class="card__li-item">Gulp</li>
+                        <li class="card__li-item">Photoshop</li>
+                        <li class="card__li-item">RWD</li>
+                        <li class="card__li-item">Flex</li>
+                        <li class="card__li-item">plugin animate.css</li>
+                        <li class="card__li-item">plugin waypoint.js</li>
+                        <li class="card__li-item">plugin vticker.js</li>
                     </ul>
-                    <div>
-                        <a href="https://github.com/gitprzemek/portfolio" target="_blank">CODE</a>
-                        <a href="https://gitprzemek.github.io/portfolio/" target="_blank">DEMO</a>
+                    <div class="card__links">
+                        <a class="card__btn" href="https://github.com/gitprzemek/portfolio" target="_blank">CODE</a>
+                        <a class="card__btn" href="https://gitprzemek.github.io/portfolio/" target="_blank">DEMO</a>
                     </div>
                 </div>
-                <div class="img-project myportfolio"><img src="../img/mockup.png" alt="portfolio"></div>
+                <div class="card__img-project"><img class="card__image card__image--myportfolio" src="../img/mockup.png" alt="destroyer"></div>
             </div>
-            <div class="second-project-container">
-                <div class="card">
-                    <div class="card-about">
-                        <h3>Warcraft clock</h3>
-                        <p>Disc clock in the style of World of Warcraft game.</p>
-                        <p>Used technologies:</p>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>ES6</li>
-                            <li>Photoshop</li>
-                            <li>RWD</li>
-                            <li>Flex</li>
+            <div class="projects__container__second">
+                <div class="card card--short">
+                    <div class="cardx-about">
+                        <h3 class="card__header">Warcraft clock</h3>
+                        <p class="card_par card_par--small">Disc clock in the style of World of Warcraft game.</p>
+                        <p class="card_par card_par--small">Used technologies and optimization:</p>
+                        <ul class="card__list card__list--small">
+                            <li class="card__li-item">HTML5</li>
+                            <li class="card__li-item">CSS3</li>
+                            <li class="card__li-item">JavaScript</li>
+                            <li class="card__li-item">ES6</li>
+                            <li class="card__li-item">Photoshop</li>
+                            <li class="card__li-item">RWD</li>
+                            <li class="card__li-item">Flex</li>
                         </ul>
-                        <div>
-                            <a class="code-link" href="https://github.com/gitprzemek/wow-horde-clock" target="_blank">CODE</a>
-                            <a class="demo-link" href="https://gitprzemek.github.io/wow-horde-clock/" target="_blank">DEMO</a>
+                        <div class="card__links">
+                            <a class="card__btn code-link" href="https://github.com/gitprzemek/wow-horde-clock" target="_blank">CODE</a>
+                            <a class="card__btn demo-link" href="https://gitprzemek.github.io/wow-horde-clock/" target="_blank">DEMO</a>
                         </div>
 
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-about">
-                        <h3>Merkury</h3>
-                        <p>Website created on the basis of PSD file.</p>
-                        <p>Used technologies:</p>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>JQuery</li>
-                            <li>Photoshop</li>
-                            <li>Bootstrap</li>
-                            <li>RWD</li>
+                <div class="card card--short">
+                    <div class="cardx-about">
+                        <h3 class="card__header">Merkury</h3>
+                        <p class="card_par card_par--small">Website created on the basis of PSD file.</p>
+                        <p class="card_par card_par--small">Used technologies and optimization:</p>
+                        <ul class="card__list card__list--small">
+                            <li class="card__li-item">HTML5</li>
+                            <li class="card__li-item">CSS3</li>
+                            <li class="card__li-item">JavaScript</li>
+                            <li class="card__li-item">SASS</li>
+                            <li class="card__li-item">JQuery</li>
+                            <li class="card__li-item">Photoshop</li>
+                            <li class="card__li-item">Bootstrap</li>
+                            <li class="card__li-item">RWD</li>
                         </ul>
-                        <div>
-                            <a class="code-link" href="https://github.com/gitprzemek/Merkury_site" target="_blank">CODE</a>
-                            <a class="demo-link" href="https://gitprzemek.github.io/Merkury_site/" target="_blank">DEMO</a>
+                        <div class="card__links">
+                            <a class="card__btn code-link" href="https://github.com/gitprzemek/Merkury_site" target="_blank">CODE</a>
+                            <a class="card__btn demo-link" href="https://gitprzemek.github.io/Merkury_site/" target="_blank">DEMO</a>
                         </div>
 
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-about">
-                        <h3>Open Charity</h3>
-                        <p>Website created on the basis of PSD file.</p>
-                        <p>Used technologies:</p>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>JQuery</li>
-                            <li>Photoshop</li>
-                            <li>Bootstrap</li>
-                            <li>RWD</li>
+                <div class="card card--short">
+                    <div class="cardx-about">
+                        <h3 class="card__header">Open Charity</h3>
+                        <p class="card_par card_par--small">Website created on the basis of PSD file.</p>
+                        <p class="card_par card_par--small">Used technologies and optimization:</p>
+                        <ul class="card__list card__list--small">
+                            <li class="card__li-item">HTML5</li>
+                            <li class="card__li-item">CSS3</li>
+                            <li class="card__li-item">JavaScript</li>
+                            <li class="card__li-item">SASS</li>
+                            <li class="card__li-item">JQuery</li>
+                            <li class="card__li-item">Photoshop</li>
+                            <li class="card__li-item">Bootstrap</li>
+                            <li class="card__li-item">RWD</li>
                         </ul>
-                        <div>
-                            <a class="code-link" href="https://github.com/gitprzemek/PSD_to_HTML_page" target="_blank">CODE</a>
-                            <a class="demo-link" href="https://gitprzemek.github.io/PSD_to_HTML_page/" target="_blank">DEMO</a>
+                        <div class="card__links">
+                            <a class="card__btn code-link" href="https://github.com/gitprzemek/PSD_to_HTML_page" target="_blank">CODE</a>
+                            <a class="card__btn demo-link" href="https://gitprzemek.github.io/PSD_to_HTML_page/" target="_blank">DEMO</a>
                         </div>
 
                     </div>
                 </div>
             </div>
-
         </div>
+
         <!-- CONTACT SECTION -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <h3> Do you have a question? Write to me.</h3>
-            <address>
-                <p><a href="mailto:przemekorn@gmail.com">przemekorn@gmail.com</a></p>
+        <section id="contact" class="contact">
+            <h2 class="contact__header">Contact</h2>
+            <h3 class="contact__sec-header">Do you have a question? Write to me.</h3>
+            <address class="address">
+                <p class="address__par"><a class="address__link" href="mailto:przemekorn@gmail.com">przemekorn@gmail.com</a></p>
             </address>
             <hr>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/przemyslaw-szczepanski-in/" target="_blank" class="social-icon"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/gitprzemek?tab=repositories" target="_blank" class="social-icon"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.linkedin.com/in/przemyslaw-szczepanski-in/" target="_blank" class="social-icons__link"><i
+                        class="social-icons__ico fab fa-linkedin"></i></a>
+                <a href="https://github.com/gitprzemek?tab=repositories" target="_blank" class="social-icons__link"><i class="social-icons__ico fab fa-github-square"></i></a>
             </div>
             <hr>
-            <p>Or contact directly through the contact form:</p>
+            <p class="contact__par">Or contact directly through the contact form:</p>
             <form method="post" action="https://usebasin.com/f/8bfa23353632" class="form">
-                <input name="name" type="text" placeholder="Name and surname" maxlength="50" required>
-                <input name="email" type="email" placeholder="Email adress" maxlength="50" required>
-                <textarea name="message" placeholder="Message" maxlength="350" required></textarea>
-                <input id="submit" name="submit" type="submit" value="Send">
+                <input name="name" type="text" placeholder="Imię i nazwisko" maxlength="50" class="form__input" required>
+                <input name="email" type="email" placeholder="Adres email" maxlength="50" class="form__input" required>
+                <textarea name="message" placeholder="Wiadomość" maxlength="350" class="form__input form__input--textarea" required></textarea>
+                <input id="submit" name="submit" type="submit" value="Wyślij" class="form__input form__input--submit">
             </form>
 
-        </section>
+        </section> <!--end contact section -->
     </section>
 
     <footer class="copyrights">

@@ -160,18 +160,18 @@ $(".about__secret-slide").click(function () {
 //     }, { offset: '70%' });
 //   });
 
-$(document).ready(function () {
-    $('.myportfolio').css('opacity', 0);
+// $(document).ready(function () {
+//     $('.myportfolio').css('opacity', 0);
 
 
-    $('.myportfolio').waypoint(function () {
-        $('.myportfolio').addClass('slideInRight');
-        $('.myportfolio').css('opacity', 1);
-    }, {
-        offset: '70%'
-    });
+//     $('.myportfolio').waypoint(function () {
+//         $('.myportfolio').addClass('slideInRight');
+//         $('.myportfolio').css('opacity', 1);
+//     }, {
+//         offset: '70%'
+//     });
 
-});
+// });
 /*SLIDER IN CERT S4ECTION*/
 
 let prevBtn = document.getElementById("prev");

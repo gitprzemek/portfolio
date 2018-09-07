@@ -110,7 +110,7 @@
                 <h1 class="curtain__sec_col">Jestem <br><span>Przemek</span></h1>
             </div>
         </div>
-    </header> <!-- .cd-section -->
+    </header> 
     <!-- END NEW HEADER CURTAIN -->
 
     <!-- ABOUT ME SECTION -->
@@ -280,173 +280,171 @@
     <!-- <hr> -->
     <!-- PROJECTS SECTION -->
     <section id="projects" class="projects">
-        <h2>Projekty</h2>
-        <div class="project-container">
-
-            <div class="template first-project">
-                <div class="about-project">
-                    <h3>Avengers vs Thanos</h3>
-                    <p>Gra typu Memory card, zainspirowana motywem z filmu Avengers: Infinity War.</p>
-                    <p>Wykorzystane technologie i optymalizacje:</p>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>ES6</li>
-                        <li>JQuery</li>
-                        <li>Photoshop</li>
-                        <li>RWD</li>
-                        <li>Flex</li>
+        <h2 class="projects_header">Projekty</h2>
+        <div class="projects__container">
+            <div class="card card--long card--first-project">
+                <div class="card__about">
+                    <h3 class="card__header">Avengers vs Thanos</h3>
+                    <p class="card_par">Gra typu Memory card, zainspirowana motywem z filmu Avengers: Infinity War.</p>
+                    <p class="card_par">Wykorzystane technologie i optymalizacje:</p>
+                    <ul class="card__list">
+                        <li class="card__li-item">HTML5</li>
+                        <li class="card__li-item">CSS3</li>
+                        <li class="card__li-item">JavaScript</li>
+                        <li class="card__li-item">ES6</li>
+                        <li class="card__li-item">JQuery</li>
+                        <li class="card__li-item">Photoshop</li>
+                        <li class="card__li-item">RWD</li>
+                        <li class="card__li-item">Flex</li>
                     </ul>
-                    <div>
-                        <a href="https://github.com/gitprzemek/avengers-memory-card" target="_blank">CODE</a>
-                        <a href="https://gitprzemek.github.io/avengers-memory-card/" target="_blank">DEMO</a>
+                    <div class="card__links">
+                        <a class="card__btn" href="https://github.com/gitprzemek/avengers-memory-card" target="_blank">CODE</a>
+                        <a class="card__btn" href="https://gitprzemek.github.io/avengers-memory-card/" target="_blank">DEMO</a>
                     </div>
                 </div>
-                <div class="img-project avengers"><img src="img/thanos111.png" alt="thanos"></div>
+                <div class="card__img-project"><img class="card__image" src="img/thanos111.png" alt="thanos"></div>
             </div>
 
-            <div class="template sec-project">
-                <div class="about-project">
-                    <h3>Star Wars Team</h3>
-                    <p>Strona stworzona na podstawie pliku PSD. Zainspirowana motywem filmu Star Wars.</p>
-                    <p>Wykorzystane technologie i optymalizacje:</p>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>SASS</li>
-                        <li>JQuery</li>
-                        <li>Photoshop</li>
-                        <li>Bootstrap</li>
-                        <li>RWD</li>
-                        <li>Flex</li>
-                        <li>Szybkość strony: 100%(GTmetrix)</li>
-                        <li>plugin OwlCarousel.js</li>
+            <div class="card card--long card--sec-project">
+                <div class="card__about">
+                    <h3 class="card__header">Star Wars Team</h3>
+                    <p class="card_par">Strona stworzona na podstawie pliku PSD. Zainspirowana motywem filmu Star Wars.</p>
+                    <p class="card_par">Wykorzystane technologie i optymalizacje:</p>
+                    <ul class="card__list">
+                        <li class="card__li-item">HTML5</li>
+                        <li class="card__li-item">CSS3</li>
+                        <li class="card__li-item">JavaScript</li>
+                        <li class="card__li-item">SASS</li>
+                        <li class="card__li-item">JQuery</li>
+                        <li class="card__li-item">Photoshop</li>
+                        <li class="card__li-item">Bootstrap</li>
+                        <li class="card__li-item">RWD</li>
+                        <li class="card__li-item">Flex</li>
+                        <li class="card__li-item">Szybkość strony: 100%(GTmetrix)</li>
+                        <li class="card__li-item">plugin OwlCarousel.js</li>
                     </ul>
-                    <div>
-                        <a href="https://github.com/gitprzemek/star_wars_team" target="_blank">CODE</a>
-                        <a href="http://star-wars-team.bitballoon.com/" target="_blank">DEMO</a>
+                    <div class="card__links">
+                        <a class="card__btn" href="https://github.com/gitprzemek/star_wars_team" target="_blank">CODE</a>
+                        <a class="card__btn" href="http://star-wars-team.bitballoon.com/" target="_blank">DEMO</a>
                     </div>
                 </div>
-                <div class="img-project"><img src="img/deathstar.png" alt="destroyer"></div>
+                <div class="card__img-project"><img class="card__image" src="img/deathstar.png" alt="deathstar"></div>
             </div>
 
-            <div class="template th-project">
-                <div class="about-project">
-                    <h3>Potfolio</h3>
-                    <p>Projekt, a jednocześnie moja strona portfolio. Tworzony najdłużej i najczęściej aktualizowany.</p>
-                    <p>Wykorzystane technologie i optymalizacje:</p>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>JQuery</li>
-                        <li>Node.js + npm</li>
-                        <li>Gulp</li>
-                        <li>Photoshop</li>
-                        <li>RWD</li>
-                        <li>Flex</li>
-                        <li>plugin animate.css</li>
-                        <li>plugin waypoint.js</li>
-                        <li>plugin vticker.js</li>
+            <div class="card card--long card--th-project">
+                <div class="card__about">
+                    <h3 class="card__header">Potfolio</h3>
+                    <p class="card_par">Projekt, a jednocześnie moja strona portfolio. Tworzony najdłużej i najczęściej aktualizowany.</p>
+                    <p class="card_par">Wykorzystane technologie i optymalizacje:</p>
+                    <ul class="card__list">
+                        <li class="card__li-item">HTML5</li>
+                        <li class="card__li-item">CSS3</li>
+                        <li class="card__li-item">JavaScript</li>
+                        <li class="card__li-item">JQuery</li>
+                        <li class="card__li-item">Node.js + npm</li>
+                        <li class="card__li-item">Gulp</li>
+                        <li class="card__li-item">Photoshop</li>
+                        <li class="card__li-item">RWD</li>
+                        <li class="card__li-item">Flex</li>
+                        <li class="card__li-item">plugin animate.css</li>
+                        <li class="card__li-item">plugin waypoint.js</li>
+                        <li class="card__li-item">plugin vticker.js</li>
                     </ul>
-                    <div>
-                        <a href="https://github.com/gitprzemek/portfolio" target="_blank">CODE</a>
-                        <a href="https://gitprzemek.github.io/portfolio/" target="_blank">DEMO</a>
+                    <div class="card__links">
+                        <a class="card__btn" href="https://github.com/gitprzemek/portfolio" target="_blank">CODE</a>
+                        <a class="card__btn" href="https://gitprzemek.github.io/portfolio/" target="_blank">DEMO</a>
                     </div>
                 </div>
-                <div class="img-project myportfolio"><img src="img/mockup.png" alt="destroyer"></div>
+                <div class="card__img-project"><img class="card__image card__image--myportfolio" src="img/mockup.png" alt="destroyer"></div>
             </div>
-            <div class="second-project-container">
-                <div class="card">
-                    <div class="card-about">
-                        <h3>Warcraft clock</h3>
-                        <p>Zegar tarczowy w stylu gry World of Warcraft.</p>
-                        <p>Użyte technologie:</p>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>ES6</li>
-                            <li>Photoshop</li>
-                            <li>RWD</li>
-                            <li>Flex</li>
+            <div class="projects__container__second">
+                <div class="card card--short">
+                    <div class="cardx-about">
+                        <h3 class="card__header">Warcraft clock</h3>
+                        <p class="card_par card_par--small">Zegar tarczowy w stylu gry World of Warcraft.</p>
+                        <p class="card_par card_par--small">Użyte technologie:</p>
+                        <ul class="card__list card__list--small">
+                            <li class="card__li-item">HTML5</li>
+                            <li class="card__li-item">CSS3</li>
+                            <li class="card__li-item">JavaScript</li>
+                            <li class="card__li-item">ES6</li>
+                            <li class="card__li-item">Photoshop</li>
+                            <li class="card__li-item">RWD</li>
+                            <li class="card__li-item">Flex</li>
                         </ul>
-                        <div>
-                            <a class="code-link" href="https://github.com/gitprzemek/wow-horde-clock" target="_blank">CODE</a>
-                            <a class="demo-link" href="https://gitprzemek.github.io/wow-horde-clock/" target="_blank">DEMO</a>
+                        <div class="card__links">
+                            <a class="card__btn code-link" href="https://github.com/gitprzemek/wow-horde-clock" target="_blank">CODE</a>
+                            <a class="card__btn demo-link" href="https://gitprzemek.github.io/wow-horde-clock/" target="_blank">DEMO</a>
                         </div>
 
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-about">
-                        <h3>Merkury</h3>
-                        <p>Strona stworzona na podstawie pliku PSD.</p>
-                        <p>Użyte technologie:</p>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>SASS</li>
-                            <li>JQuery</li>
-                            <li>Photoshop</li>
-                            <li>Bootstrap</li>
-                            <li>RWD</li>
+                <div class="card card--short">
+                    <div class="cardx-about">
+                        <h3 class="card__header">Merkury</h3>
+                        <p class="card_par card_par--small">Strona stworzona na podstawie pliku PSD.</p>
+                        <p class="card_par card_par--small">Użyte technologie:</p>
+                        <ul class="card__list card__list--small">
+                            <li class="card__li-item">HTML5</li>
+                            <li class="card__li-item">CSS3</li>
+                            <li class="card__li-item">JavaScript</li>
+                            <li class="card__li-item">SASS</li>
+                            <li class="card__li-item">JQuery</li>
+                            <li class="card__li-item">Photoshop</li>
+                            <li class="card__li-item">Bootstrap</li>
+                            <li class="card__li-item">RWD</li>
                         </ul>
-                        <div>
-                            <a class="code-link" href="https://github.com/gitprzemek/Merkury_site" target="_blank">CODE</a>
-                            <a class="demo-link" href="https://gitprzemek.github.io/Merkury_site/" target="_blank">DEMO</a>
+                        <div class="card__links">
+                            <a class="card__btn code-link" href="https://github.com/gitprzemek/Merkury_site" target="_blank">CODE</a>
+                            <a class="card__btn demo-link" href="https://gitprzemek.github.io/Merkury_site/" target="_blank">DEMO</a>
                         </div>
 
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-about">
-                        <h3>Open Charity</h3>
-                        <p>Strona stworzona na podstawie pliku PSD.</p>
-                        <p>Użyte technologie:</p>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>SASS</li>
-                            <li>JQuery</li>
-                            <li>Photoshop</li>
-                            <li>Bootstrap</li>
-                            <li>RWD</li>
+                <div class="card card--short">
+                    <div class="cardx-about">
+                        <h3 class="card__header">Open Charity</h3>
+                        <p class="card_par card_par--small">Strona stworzona na podstawie pliku PSD.</p>
+                        <p class="card_par card_par--small">Użyte technologie:</p>
+                        <ul class="card__list card__list--small">
+                            <li class="card__li-item">HTML5</li>
+                            <li class="card__li-item">CSS3</li>
+                            <li class="card__li-item">JavaScript</li>
+                            <li class="card__li-item">SASS</li>
+                            <li class="card__li-item">JQuery</li>
+                            <li class="card__li-item">Photoshop</li>
+                            <li class="card__li-item">Bootstrap</li>
+                            <li class="card__li-item">RWD</li>
                         </ul>
-                        <div>
-                            <a class="code-link" href="https://github.com/gitprzemek/PSD_to_HTML_page" target="_blank">CODE</a>
-                            <a class="demo-link" href="https://gitprzemek.github.io/PSD_to_HTML_page/" target="_blank">DEMO</a>
+                        <div class="card__links">
+                            <a class="card__btn code-link" href="https://github.com/gitprzemek/PSD_to_HTML_page" target="_blank">CODE</a>
+                            <a class="card__btn demo-link" href="https://gitprzemek.github.io/PSD_to_HTML_page/" target="_blank">DEMO</a>
                         </div>
 
                     </div>
                 </div>
             </div>
-
         </div>
         <!-- CONTACT SECTION -->
-        <section id="contact">
-            <h2>Kontakt</h2>
-            <h3>Masz pytanie? Napisz do mnie.</h3>
-            <address>
-                <p><a href="mailto:przemekorn@gmail.com">przemekorn@gmail.com</a></p>
+        <section id="contact" class="contact">
+            <h2 class="contact__header">Kontakt</h2>
+            <h3 class="contact__sec-header">Masz pytanie? Napisz do mnie.</h3>
+            <address class="address">
+                <p class="address__par"><a class="address__link" href="mailto:przemekorn@gmail.com">przemekorn@gmail.com</a></p>
             </address>
             <hr>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/przemyslaw-szczepanski-in/" target="_blank" class="social-icon"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/gitprzemek?tab=repositories" target="_blank" class="social-icon"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.linkedin.com/in/przemyslaw-szczepanski-in/" target="_blank" class="social-icons__link"><i
+                        class="social-icons__ico fab fa-linkedin"></i></a>
+                <a href="https://github.com/gitprzemek?tab=repositories" target="_blank" class="social-icons__link"><i class="social-icons__ico fab fa-github-square"></i></a>
             </div>
             <hr>
-            <p>Lub skontaktuj się bezpośrednio przez formularz kontaktowy:</p>
+            <p class="contact__par">Lub skontaktuj się bezpośrednio przez formularz kontaktowy:</p>
             <form method="post" action="https://usebasin.com/f/8bfa23353632" class="form">
-                <input name="name" type="text" placeholder="Imię i nazwisko" maxlength="50" required>
-                <input name="email" type="email" placeholder="Adres email" maxlength="50" required>
-                <textarea name="message" placeholder="Wiadomość" maxlength="350" required></textarea>
-                <input id="submit" name="submit" type="submit" value="Wyślij">
+                <input name="name" type="text" placeholder="Imię i nazwisko" maxlength="50" class="form__input" required>
+                <input name="email" type="email" placeholder="Adres email" maxlength="50" class="form__input" required>
+                <textarea name="message" placeholder="Wiadomość" maxlength="350" class="form__input form__input--textarea" required></textarea>
+                <input id="submit" name="submit" type="submit" value="Wyślij" class="form__input form__input--submit">
             </form>
 
         </section>

@@ -62,20 +62,12 @@
         width: 992px;
     } */
     /* PROJECT SECTION */
-    .project-container {
+    .projects__container {
         width: auto;
         margin-left: 2%;
         margin-right: 2%;
     }
 
-    .destroyer {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .destroyer img {
-        align-self: center;
-    }
 }
 
 /* Medium Devices, Desktops */
@@ -126,12 +118,12 @@
     }
 
     /*CONTACT LINE*/
-    #contact hr {
+    .contact hr {
         max-width: 100%;
     }
 
     /* PROJECT SECTION */
-    .project-container {
+    .projects__container {
         width: auto;
     }
 
@@ -339,7 +331,7 @@
     }
 
     /* PROJECT SECTION */
-    #projects {
+    .projects {
         background-size: auto 100%;
     }
 
@@ -355,24 +347,24 @@
         background-size: cover;
     }
 
-    .template {
+    .card {
         flex-direction: column;
         height: auto;
         margin-bottom: 20px;
         padding: 20px 10px;
     }
 
-    .about-project,
-    .img-project {
+    .card__about,
+    .card__img-project {
         flex: 0 1 100%;
         text-align: center;
     }
 
-    .about-project {
+    .card__about {
         order: 2;
     }
 
-    .img-project {
+    .card__img-project {
         order: 1;
         display: flex;
         flex-direction: row;
@@ -381,32 +373,32 @@
         width: 100%;
     }
 
-    .img-project img {
+    .card__image {
         width: auto;
         height: 100%;
         max-width: 100%;
     }
 
-    .second-project-container {
+    .projects__container__second {
         flex-direction: column;
     }
 
-    .card {
+    .card--short {
         margin-top: 0;
         margin-bottom: 20px;
     }
 
-    .card:nth-child(2) {
+    .card--short:nth-child(2) {
         margin: 0 0 20px 0;
     }
-
-    .card .card-image {
+/* 
+    .card--short .card-image {
         display: none;
     }
 
-    .card:hover .card-image {
+    .card--short:hover .card-image {
         top: none;
-    }
+    } */
 }
 
 /* Extra Small Devices, Phones */
@@ -601,12 +593,12 @@
     }
 
     /* PROJECT SECTION */
-    #projects {
+    .projects {
         padding: 20px 0 0 0;
     }
 
     /* CONTACT SECTION */
-    #contact {
+    .contact {
         background-size: 140% 40%, 110% 50%;
     }
 }
