@@ -919,6 +919,9 @@ a:focus::after {
     align-self: center;
     flex: 0 1 auto;
 }
+.skills-cont__lineone{
+    margin-bottom: 30px;
+}
 
 .skills hr {
     width: 50%;
