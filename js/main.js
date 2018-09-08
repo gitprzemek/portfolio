@@ -22,7 +22,7 @@ $('a[href^="#"]').on('click', function (event) {
 
 
 // ROTATE LOGO IN NAV AFTER SCROLLING
-window.addEventListener('scroll', function(e) {
+window.addEventListener('scroll', function (e) {
     // get how far we've scrolled from the top of our screen
     let offset = $(window).scrollTop();
     let imgScroll = document.getElementById("img-scroll");
@@ -32,11 +32,11 @@ window.addEventListener('scroll', function(e) {
 });
 
 // SHOW NAV AFTER SCROLL
-window.addEventListener('scroll', function(e) {
+window.addEventListener('scroll', function (e) {
     let scrollOnTop = document.documentElement.scrollTop;
     let nav = document.getElementById("nav");
     let myTopnav = document.getElementById("myTopnav");
-    if ( scrollOnTop >= 100) {
+    if (scrollOnTop >= 100) {
         nav.classList.add("scrolling-two");
         myTopnav.style.visibility = "visible";
     } else {
@@ -72,6 +72,23 @@ $('.curtain__first_col').vTicker({
     height: "70px",
     direction: 'down'
 });
+
+// PARALLAX BG change bg after section projects is visible on window **********************************
+const projectSec = document.getElementById("projects");
+let isInViewport = function (elem) {
+    let bounding = projectSec.getBoundingClientRect();
+    return (
+        bounding.top - 900 <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+};
+
+window.addEventListener('scroll', function (event) {
+    if (isInViewport(projectSec)) {
+        projectSec.classList.add("bg-fixed")
+    } else {
+        projectSec.classList.remove("bg-fixed")
+    }
+}, false);
 
 /*****HOVER ON TEXT in ABOUT SECTION*****/
 /*JIM CAREY*/
@@ -111,7 +128,7 @@ $(document).ready(function () {
         }, 10000);
     });
 
-    
+
 });
 
 
@@ -126,206 +143,196 @@ $(".about__secret-slide").click(function () {
 
 
 /*****SLIDER IN CERTIFICATE SECTION*****/
+function mySlider() {
+    let prevBtn = document.getElementById("prev");
+    let nextBtn = document.getElementById("next");
+    let listImg = document.getElementsByClassName("slider__img-item");
+    let listArt = document.getElementsByClassName("slider__art-item");
+    let currentSlide = 1;
+    let currentArticle = 1;
+    showSlide(currentSlide);
+    showArticle(currentArticle);
 
-let prevBtn = document.getElementById("prev");
-let nextBtn = document.getElementById("next");
-let listImg = document.getElementsByClassName("list-img__item");
-let listArt = document.getElementsByClassName("list-art__item");
-let currentSlide = 1;
-let currentArticle = 1;
-showSlide(currentSlide);
-showArticle(currentArticle);
+    // SHOW NEXT ONE OR PREV IMG
+    function showSlide() {
+        let i;
+        if (currentSlide > listImg.length) {
+            currentSlide = 1
+        }
+        if (currentSlide < 1) {
+            currentSlide = listImg.length
+        }
+        for (i = 0; i < listImg.length; i++) {
+            listImg[i].style.display = "none";
+        }
+        listImg[currentSlide - 1].style.display = "block";
+    }
 
-// SHOW NEXT ONE OR PREV IMG
-function showSlide() {
-    let i;
-    if (currentSlide > listImg.length) {
-        currentSlide = 1
+    // SHOW NEXT ONE OR PREV ARTICLE
+    function showArticle() {
+        let i;
+        if (currentArticle > listArt.length) {
+            currentArticle = 1
+        }
+        if (currentArticle < 1) {
+            currentArticle = listArt.length
+        }
+        for (i = 0; i < listArt.length; i++) {
+            listArt[i].style.display = "none";
+        }
+        listArt[currentArticle - 1].style.display = "block";
     }
-    if (currentSlide < 1) {
-        currentSlide = listImg.length
-    }
-    for (i = 0; i < listImg.length; i++) {
-        listImg[i].style.display = "none";
-    }
-    listImg[currentSlide - 1].style.display = "block";
+    nextBtn.addEventListener("click", function () {
+        showSlide(currentSlide += 1);
+        showArticle(currentArticle += 1);
+    });
+    prevBtn.addEventListener("click", function () {
+        showSlide(currentSlide += -1);
+        showArticle(currentArticle += -1);
+    });
 }
-
-// SHOW NEXT ONE OR PREV ARTICLE
-function showArticle() {
-    let i;
-    if (currentArticle > listArt.length) {
-        currentArticle = 1
-    }
-    if (currentArticle < 1) {
-        currentArticle = listArt.length
-    }
-    for (i = 0; i < listArt.length; i++) {
-        listArt[i].style.display = "none";
-    }
-    listArt[currentArticle - 1].style.display = "block";
-}
-nextBtn.addEventListener("click", function () {
-    showSlide(currentSlide += 1);
-    showArticle(currentArticle += 1);
-});
-prevBtn.addEventListener("click", function () {
-    showSlide(currentSlide += -1);
-    showArticle(currentArticle += -1);
-});
+mySlider();
 
 // HEADER SECTION CURTAIN ************************************************************************************************************
-
-let current = $(window).scrollTop();
-console.log(current);
-let windowHeight = $(window).height();
-let total = $(window).height() - current;
-let eleLeft = $(".curtain__half--left");
-let eleRight = $(".curtain__half--right");
-let eleBlock = $(".curtain");
-let currPositionLeft = eleLeft.position().left;
-let currPositionRight = eleRight.position().right;
-let trackLength = 70;
-let headerHeaight = $("#header").height();
-let halfBlockWidth = $(".curtain__half").width();
-let windowWidth = $(window).width();
-let navRight = $("#myTopnav");
-let halfBlock = $(".curtain__half");
-let distance = windowWidth / windowHeight;
-let aboutSec = document.getElementById("about");
-
-function disableScrolling() {
-    var x = window.scrollX;
-    var y = window.scrollY;
-    window.onscroll = function () {
-        window.scrollTo(x, y);
-    };
-}
-
-function enableScrolling() {
-    window.onscroll = function () {};
-}
-
-function updateCurrent(event) {
-    if (current >= 60) {
-        current = 60;
-    } else {
-        if (current <= 0) {
-            current = 0;
-        }
-        // if below 50 we cancel the event to prevent the scroll
-        event.originalEvent.preventDefault();
-    }
-    let enebleScrolling = enableScrolling();
-    //   FIX BUG WITH SCROLLING BODY WHEN BLOCKS DONT REACH 50%
-    if (current >= 50) {
-
-        enableScrolling();
-    } else {
-        disableScrolling();
-    }
-    if (current < 50) {
-        $("#header").css({
-            "pointer-events": "initial"
-        });
-    } else {
-        $("#header").css({
-            "pointer-events": "none"
-        });
-    }
-    // ADD BOX SHADOW TO SIDE BLOCKS AFTER SCROLL 1px
-    if (current > 1 && current < 50) {
-        halfBlock.addClass("block-shadow");
-    } else {
-        halfBlock.removeClass("block-shadow");
-    }
-    // hide shadows when is 0
-    if (current > 0) {
-        $(".curtain__container--sides").css({
-            "opacity": "0",
-            "transition": "all 0.1s linear",
-        });
-    } else {
-        $(".curtain__container--sides").css({
-            "opacity": "1",
-            "transition": "all 1.2s ease-in"
-        });
-    }
-
-
-    // BLUR HEADER AFTER SCROLL BLOCKS
-    let aboutSecBlur = (50 - current) / 5;
-    let widthWindow = window.innerWidth;
-    if (widthWindow > 1025) {
-        aboutSec.style.filter = "blur(" + aboutSecBlur + "px)";
-    };
-
-    // SCROLL BLOCKS TO SIDE
-    eleLeft.css({
-        left: "-" + current + '%'
-    });
-    eleRight.css({
-        right: "-" + current + '%'
-    });
-}
-
-
-
-$('body').on('wheel', function (event) {
-    // left and right should not move when we're not on top
-    if ($(window).scrollTop() > 0) {
-        return;
-    }
-    // NORMALIZE SCROLL VALUE TO 1px. SAME FOR ALL BROWSERS
-    let deltaNewY;
-    if (event.originalEvent.deltaY >= 1) {
-        deltaNewY = 1;
-    } else {
-        deltaNewY = -1;
-    }
-
-    current += deltaNewY * 5;
-    // position bounded between 0 and 60
-    updateCurrent(event);
-});
-let initialClientY = 0;
-
-// EVENT FOR TOUCH SCREEN
-$('body').bind('touchstart', function (event) {
-    initialClientY = event.originalEvent.touches[0].clientY;
-    current = 60;
-    console.log(initialClientY);
-    updateCurrent(event);
-});
-console.log(initialClientY);
-$('body').bind('touchmove', function (event) {
-    // left and right should not move when we're not on top
-    if ($(window).scrollTop() > 0) {
-        return;
-    }
-    current += -(event.originalEvent.touches[0].clientY - initialClientY) / 1.2;
+function curtain() {
+    let current = $(window).scrollTop();
     console.log(current);
-    // position bounded between 0 and 50
-    updateCurrent(event);
-});
+    let windowHeight = $(window).height();
+    let total = $(window).height() - current;
+    let eleLeft = $(".curtain__half--left");
+    let eleRight = $(".curtain__half--right");
+    let eleBlock = $(".curtain");
+    let currPositionLeft = eleLeft.position().left;
+    let currPositionRight = eleRight.position().right;
+    let trackLength = 70;
+    let headerHeaight = $("#header").height();
+    let halfBlockWidth = $(".curtain__half").width();
+    let windowWidth = $(window).width();
+    let navRight = $("#myTopnav");
+    let halfBlock = $(".curtain__half");
+    let distance = windowWidth / windowHeight;
+    let aboutSec = document.getElementById("about");
 
-
-// PARALLAX BG change bg after section projects is visible on window **********************************
-var projectSec = document.getElementById("projects");
-var isInViewport = function (elem) {
-    var bounding = projectSec.getBoundingClientRect();
-    return (
-        bounding.top - 900 <= (window.innerHeight || document.documentElement.clientHeight)
-    );
-};
-
-window.addEventListener('scroll', function (event) {
-    if (isInViewport(projectSec)) {
-        projectSec.classList.add("bg-fixed")
-    } else {
-        projectSec.classList.remove("bg-fixed")
+    function disableScrolling() {
+        var x = window.scrollX;
+        var y = window.scrollY;
+        window.onscroll = function () {
+            window.scrollTo(x, y);
+        };
     }
-}, false);
+
+    function enableScrolling() {
+        window.onscroll = function () {};
+    }
+
+    function updateCurrent(event) {
+        if (current >= 60) {
+            current = 60;
+        } else {
+            if (current <= 0) {
+                current = 0;
+            }
+            // if below 50 we cancel the event to prevent the scroll
+            event.originalEvent.preventDefault();
+        }
+        let enebleScrolling = enableScrolling();
+        //   FIX BUG WITH SCROLLING BODY WHEN BLOCKS DONT REACH 50%
+        if (current >= 50) {
+
+            enableScrolling();
+        } else {
+            disableScrolling();
+        }
+        if (current < 50) {
+            $("#header").css({
+                "pointer-events": "initial"
+            });
+        } else {
+            $("#header").css({
+                "pointer-events": "none"
+            });
+        }
+        // ADD BOX SHADOW TO SIDE BLOCKS AFTER SCROLL 1px
+        if (current > 1 && current < 50) {
+            halfBlock.addClass("block-shadow");
+        } else {
+            halfBlock.removeClass("block-shadow");
+        }
+        // hide shadows when is 0
+        if (current > 0) {
+            $(".curtain__container--sides").css({
+                "opacity": "0",
+                "transition": "all 0.1s linear",
+            });
+        } else {
+            $(".curtain__container--sides").css({
+                "opacity": "1",
+                "transition": "all 1.2s ease-in"
+            });
+        }
+
+
+        // BLUR HEADER AFTER SCROLL BLOCKS
+        let aboutSecBlur = (50 - current) / 5;
+        let widthWindow = window.innerWidth;
+        if (widthWindow > 1025) {
+            aboutSec.style.filter = "blur(" + aboutSecBlur + "px)";
+        };
+
+        // SCROLL BLOCKS TO SIDE WALL
+        eleLeft.css({
+            left: "-" + current + '%'
+        });
+        eleRight.css({
+            right: "-" + current + '%'
+        });
+    }
+
+
+
+    $('body').on('wheel', function (event) {
+        // left and right should not move when we're not on top
+        if ($(window).scrollTop() > 0) {
+            return;
+        }
+        // NORMALIZE SCROLL VALUE TO 1px. SAME FOR ALL BROWSERS
+        let deltaNewY;
+        if (event.originalEvent.deltaY >= 1) {
+            deltaNewY = 1;
+        } else {
+            deltaNewY = -1;
+        }
+
+        current += deltaNewY * 5;
+        // position bounded between 0 and 60
+        updateCurrent(event);
+    });
+    let initialClientY = 0;
+
+    // EVENT FOR TOUCH SCREEN
+    $('body').bind('touchstart', function (event) {
+        initialClientY = event.originalEvent.touches[0].clientY;
+        current = 60;
+        console.log(initialClientY);
+        updateCurrent(event);
+    });
+    console.log(initialClientY);
+    $('body').bind('touchmove', function (event) {
+        // left and right should not move when we're not on top
+        if ($(window).scrollTop() > 0) {
+            return;
+        }
+        current += -(event.originalEvent.touches[0].clientY - initialClientY) / 1.2;
+        console.log(current);
+        // position bounded between 0 and 50
+        updateCurrent(event);
+    });
+
+}
+curtain();
+
+
+
 
 // END
 
