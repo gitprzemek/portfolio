@@ -1,3 +1,4 @@
 /node_modules
-gulpfile.js
-package-lock.json
+/js/main.min.js
+/js/jquery.waypoints.min.js
+/css/style.min.css
