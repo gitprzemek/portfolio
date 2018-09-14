@@ -38,8 +38,8 @@
     /*ABOUT SECTION*/
     .about {
         padding: 40px 5% 60px 5%;
-        background: linear-gradient(to left, rgb(255, 255, 255, 0.6), rgb(255, 255, 255, 0.6)), url(../img/aboutbg-new.jpg);
-        background-size: 90%;
+        background: linear-gradient(to left, rgb(255, 255, 255, 0.99) 0%,  rgb(255, 255, 255, 0.9) 50%, rgb(255, 255, 255, 0.2)), url(../img/aboutbg-new.jpg);
+        background-size: auto 100%;
         background-position: left bottom;
         background-repeat: no-repeat;
     }
