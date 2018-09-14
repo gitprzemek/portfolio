@@ -73,22 +73,6 @@ $('.curtain__first_col').vTicker({
     direction: 'down'
 });
 
-// PARALLAX BG change bg after section projects is visible on window **********************************
-const projectSec = document.getElementById("projects");
-let isInViewport = function (elem) {
-    let bounding = projectSec.getBoundingClientRect();
-    return (
-        bounding.top - 900 <= (window.innerHeight || document.documentElement.clientHeight)
-    );
-};
-
-window.addEventListener('scroll', function (event) {
-    if (isInViewport(projectSec)) {
-        projectSec.classList.add("bg-fixed")
-    } else {
-        projectSec.classList.remove("bg-fixed")
-    }
-}, false);
 
 /*****HOVER ON TEXT in ABOUT SECTION*****/
 /*JIM CAREY*/
@@ -191,7 +175,7 @@ function mySlider() {
         showArticle(currentArticle += -1);
     });
 }
-mySlider();
+
 
 // HEADER SECTION CURTAIN ************************************************************************************************************
 function curtain() {
@@ -329,14 +313,43 @@ function curtain() {
     });
 
 }
+/***********************RUN FUNCTION*************************/
+mySlider();
 curtain();
 
-
+/***********************END RUN FUNCTION*************************/
 
 
 // END
 
 
+
+
+
+
+
+
+
+
+
+
+
+// PARALLAX BG change bg after section projects is visible on window **********************************
+// const projectSec = document.getElementById("projects");
+// let isInViewport = function (elem) {
+//     let bounding = projectSec.getBoundingClientRect();
+//     return (
+//         bounding.top - 900 <= (window.innerHeight || document.documentElement.clientHeight)
+//     );
+// };
+
+// window.addEventListener('scroll', function (event) {
+//     if (isInViewport(projectSec)) {
+//         projectSec.classList.add("bg-fixed")
+//     } else {
+//         projectSec.classList.remove("bg-fixed")
+//     }
+// }, false);
 
 //   HEADER CLONE TEXT SLIDER OUTSIDE PARENT
 

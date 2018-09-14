@@ -11,7 +11,7 @@
 @media only screen and (max-width: 1200px) {
 
     /* HEADER */
-    .curtain__wc-span  {
+    .curtain__wc-span {
         font-size: 40px;
     }
 
@@ -38,12 +38,17 @@
     /*ABOUT SECTION*/
     .about {
         padding: 40px 5% 60px 5%;
+        background: linear-gradient(to left, rgb(255, 255, 255, 0.6), rgb(255, 255, 255, 0.6)), url(../img/aboutbg-new.jpg);
+        background-size: 90%;
+        background-position: left bottom;
+        background-repeat: no-repeat;
     }
 
     .about__content {
         flex: 1 40%;
     }
-    .about__content--right > * {
+
+    .about__content--right>* {
         font-size: 0.8em;
         padding: 0 0 0 1em;
     }
@@ -58,14 +63,24 @@
     }
 
     /* SKILLS SECTION */
-    /* #skills {
-        width: 992px;
-    } */
     /* PROJECT SECTION */
+    .projects {
+        background-position: center bottom;
+        background-size: auto auto;
+    }
+
     .projects__container {
         width: auto;
         margin-left: 2%;
         margin-right: 2%;
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .contact {
+        color: rgb(255, 255, 255);
     }
 
 }
@@ -93,9 +108,9 @@
     }
 
     /* ABOUT */
-    .about__content {
+    /* .about__content {
         margin: auto;
-    }
+    } */
 
     .about__content--right {
         line-height: 1.4em;
@@ -123,6 +138,8 @@
     }
 
     /* PROJECT SECTION */
+
+
     .projects__container {
         width: auto;
     }
@@ -138,7 +155,7 @@
 
     /*NAVIGATION*/
     .nav {
-       
+
         transition: all 0.3s linear;
     }
 
@@ -146,14 +163,17 @@
         display: none;
         padding: 0;
     }
-    .topnav__item--btn{
+
+    .topnav__item--btn {
         display: block;
         order: -1;
     }
+
     .topnav__link {
         float: right;
         display: block;
     }
+
     /* .topnav__link:last-child {
         display: block;
         order: -1;
@@ -161,7 +181,7 @@
 
     .responsive {
         position: relative;
-        
+
     }
 
     .responsive .topnav__item {
@@ -178,11 +198,13 @@
         padding: 15px 0 15px 0;
         color: white;
     }
-    .responsive .topnav__link--corner{
+
+    .responsive .topnav__link--corner {
         float: right;
         display: inline-block;
         padding: 0;
     }
+
     .responsive {
         float: none;
         display: flex;
@@ -245,16 +267,18 @@
         margin-left: auto;
     }
 
-    .curtain__wc-par > br {
+    .curtain__wc-par>br {
         display: none;
     }
 
     .curtain__half {
         transition: all 0.8s linear;
     }
-    .name-container--mobile{
+
+    .name-container--mobile {
         display: none;
     }
+
     /* #header::before{
         width: 85%;
         height: 85%;
@@ -262,6 +286,10 @@
     /*ABOUT SECTION*/
     .about {
         padding: 20px 3% 40px 3%;
+        background: linear-gradient(to left, rgb(255, 255, 255, 0.3), rgb(255, 255, 255, 0.3)), url(../img/aboutbg-new.jpg);
+        background-size: 100% auto;
+        background-position: left 2%;
+        background-repeat: no-repeat;
     }
 
     .about__content {
@@ -288,12 +316,12 @@
     }
 
     /*CERTIFICATE SLIDER SECTION*/
-    .cert {
+    /* .cert {
         background: none;
         background-attachment: none;
-    }
-
-    .cert::after {
+    } */
+    /* CLASS FOR PARRALLAX FOR TWO BG ON PAGE */
+    /* .cert::after {
         content: "";
         position: fixed;
         z-index: -2;
@@ -303,7 +331,7 @@
         width: 100%;
         background: url(../img/forest-floor.jpg) center center no-repeat;
         background-size: cover;
-    }
+    } */
 
     .cert__slider {
         flex-wrap: wrap;
@@ -330,12 +358,24 @@
         width: 90px;
     }
 
-    /* PROJECT SECTION */
-    .projects {
-        background-size: auto 100%;
+    .skills__bg {
+        position: absolute;
+        /* background-size: auto 100%; */
+        /* background-position: center; */
+        background: linear-gradient(to left, rgb(255, 255, 255, 0.3), rgb(255, 255, 255, 0.3)), url(../img/skills-bg1.jpg);
+        background-size: auto 70%;
+        background-repeat: no-repeat;
+        background-position: 110% center;
+        right: 0;
     }
 
-    .bg-fixed::after {
+    /* PROJECT SECTION */
+    /* .projects {
+        background-position: center 110%;
+        background-size: auto auto;
+    } */
+    /* CLASS FOR TWO PARRALLAX BG ON PAGE */
+    /* .bg-fixed::after {
         content: "";
         position: fixed;
         z-index: -3;
@@ -345,7 +385,7 @@
         width: 100%;
         background: url(../img/forestxc.jpg) center top no-repeat;
         background-size: cover;
-    }
+    } */
 
     .card {
         flex-direction: column;
@@ -391,7 +431,8 @@
     .card--short:nth-child(2) {
         margin: 0 0 20px 0;
     }
-/* 
+
+    /* 
     .card--short .card-image {
         display: none;
     }
@@ -438,13 +479,16 @@
         text-align: center;
         margin: 0;
     }
-    .curtain__name-container--desktop{
+
+    .curtain__name-container--desktop {
         display: none;
     }
-    .name-container--mobile{
+
+    .name-container--mobile {
         display: inline-block;
     }
-    .curtain__figure  {
+
+    .curtain__figure {
         height: 55vh;
         width: 100%;
         padding-top: 5%;
@@ -496,7 +540,7 @@
         height: 60px;
         width: 60px;
         margin: 20% 0 0 0;
-        animation: click 1.5s linear infinite;
+        animation: click 1.2s linear infinite;
         text-align: left;
         /* transition: all 1.5s; */
     }
@@ -514,9 +558,9 @@
         }
 
         50% {
-            height: 60px;
-            width: 60px;
-            margin: 23% 0 0 3%;
+            height: 55px;
+            width: 55px;
+            margin: 23% 0 0 1%;
         }
 
         100% {
@@ -591,9 +635,11 @@
         height: auto;
         font-size: 0.8em;
     }
-    .skills-cont__lineone{
+
+    .skills-cont__lineone {
         margin-bottom: 5px;
     }
+
     /* PROJECT SECTION */
     .projects {
         padding: 20px 0 0 0;
