@@ -1,3 +1,11 @@
+@media only screen and (max-width: 1700px) {
+
+    .contact__sec-header {
+        color: rgb(255, 255, 255);
+    }
+}
+
+
 @media only screen and (max-width: 1400px) {
 
     /* TEXT IN ABOUT SECTION */
@@ -64,10 +72,7 @@
 
     /* SKILLS SECTION */
     /* PROJECT SECTION */
-    .projects {
-        background-position: center bottom;
-        background-size: auto auto;
-    }
+    
 
     .projects__container {
         width: auto;
@@ -79,9 +84,9 @@
         background-color: rgba(255, 255, 255, 0.8);
     }
 
-    .contact {
+    /* .contact {
         color: rgb(255, 255, 255);
-    }
+    } */
 
 }
 
@@ -390,7 +395,6 @@
     .card {
         flex-direction: column;
         height: auto;
-        margin-bottom: 20px;
         padding: 20px 10px;
     }
 
@@ -432,14 +436,7 @@
         margin: 0 0 20px 0;
     }
 
-    /* 
-    .card--short .card-image {
-        display: none;
-    }
-
-    .card--short:hover .card-image {
-        top: none;
-    } */
+    
 }
 
 /* Extra Small Devices, Phones */
@@ -644,11 +641,14 @@
     .projects {
         padding: 20px 0 0 0;
     }
-
-    /* CONTACT SECTION */
-    .contact {
-        background-size: 140% 40%, 110% 50%;
+    .projects hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
+    /* CONTACT SECTION */
+    /* .contact {
+        background-size: 140% 40%, 110% 50%;
+    } */
 }
 
 @media only screen and (max-width : 350px) {
