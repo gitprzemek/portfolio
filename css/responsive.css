@@ -44,8 +44,8 @@
     }
 
     /*ABOUT SECTION*/
-    .about {
-        padding: 40px 5% 60px 5%;
+    
+    .about::after {
         background: linear-gradient(to left, rgb(255, 255, 255, 0.99) 0%,  rgb(255, 255, 255, 0.9) 50%, rgb(255, 255, 255, 0.2)), url(../img/aboutbg-new.jpg);
         background-size: auto 100%;
         background-position: left bottom;
@@ -201,7 +201,7 @@
         float: none;
         display: block;
         padding: 15px 0 15px 0;
-        color: white;
+        color: #ffffff;
     }
 
     .responsive .topnav__link--corner {
@@ -291,9 +291,11 @@
     /*ABOUT SECTION*/
     .about {
         padding: 20px 3% 40px 3%;
-        background: linear-gradient(to left, rgb(255, 255, 255, 0.3), rgb(255, 255, 255, 0.3)), url(../img/aboutbg-new.jpg);
-        background-size: 100% auto;
-        background-position: left 2%;
+    }
+    .about::after {
+        background: linear-gradient(to top, rgb(255, 255, 255, 0.99) 0%,  rgb(255, 255, 255, 0.97) 40%, rgb(255, 255, 255, 0.2)), url(../img/aboutbg-new.jpg);
+        background-size: auto 100%;
+        background-position: left bottom;
         background-repeat: no-repeat;
     }
 
@@ -323,20 +325,20 @@
     /*CERTIFICATE SLIDER SECTION*/
     /* .cert {
         background: none;
-        background-attachment: none;
+        background-attachment: initial;
     } */
     /* CLASS FOR PARRALLAX FOR TWO BG ON PAGE */
-    /* .cert::after {
+    .cert::before {
         content: "";
         position: fixed;
-        z-index: -2;
+        z-index: -9999;
         left: 0;
         top: 0;
-        height: 100vh;
+        height: 100%;
         width: 100%;
-        background: url(../img/forest-floor.jpg) center center no-repeat;
+        background: url(../img/trees1.jpg) center center no-repeat;
         background-size: cover;
-    } */
+    }
 
     .cert__slider {
         flex-wrap: wrap;
