@@ -323,10 +323,10 @@
     }
 
     /*CERTIFICATE SLIDER SECTION*/
-    /* .cert {
+    .cert {
         background: none;
         background-attachment: initial;
-    } */
+    }
     /* CLASS FOR PARRALLAX FOR TWO BG ON PAGE */
     .cert::before {
         content: "";

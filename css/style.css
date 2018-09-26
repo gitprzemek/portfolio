@@ -699,7 +699,7 @@ hr {
     height: auto;
     z-index: 1;
     background: url(../img/trees1.jpg);
-    background-size: auto 100%;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
