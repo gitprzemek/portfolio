@@ -1,9 +1,4 @@
-@media only screen and (max-width: 1700px) {
 
-    .contact__sec-header {
-        color: rgb(255, 255, 255);
-    }
-}
 
 
 @media only screen and (max-width: 1400px) {
@@ -361,6 +356,9 @@
     }
 
     /*SKILLS SECTION*/
+    .skills{
+        color: black;
+    }
     .skills-cont__img-icons {
         width: 90px;
     }
@@ -369,7 +367,7 @@
         position: absolute;
         /* background-size: auto 100%; */
         /* background-position: center; */
-        background: linear-gradient(to left, rgb(255, 255, 255, 0.3), rgb(255, 255, 255, 0.3)), url(../img/skills-bg1.jpg);
+        background: linear-gradient(to left, rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.5)), url(../img/skills-bg1.jpg);
         background-size: auto 70%;
         background-repeat: no-repeat;
         background-position: 110% center;
