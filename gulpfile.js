@@ -3,6 +3,7 @@ var gulp = require("gulp");
 var uglify = require('gulp-uglify-es').default;
 var concat = require("gulp-concat");
 var cssMin = require("gulp-css");
+var minify = require('gulp-minifier');
 
 gulp.task("css", function(){
 
@@ -26,7 +27,11 @@ gulp.task("scripts", function(){
         "./js/main.js"
     ])
         .pipe(concat("main.min.js"))
-        .pipe(uglify())
+        .pipe(minify({
+            minifyJS: {
+                sourceMap: true
+              }
+        }))
         .pipe(gulp.dest("./js"));
 
 });
