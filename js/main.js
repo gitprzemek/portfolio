@@ -45,14 +45,16 @@ window.addEventListener('scroll', function (e) {
 });
 
 /*RESPONSIVE NAVIGATION- HAMBURGER show li block after click*/
-function myFunction() {
-    let x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+const btnBurger = document.getElementById("burger");
+function showMenuList() {
+    const navList = document.getElementById("myTopnav");
+    if (navList.className === "topnav") {
+        navList.className += " responsive";
     } else {
-        x.className = "topnav";
+        navList.className = "topnav";
     }
 }
+btnBurger.addEventListener("click", showMenuList);
 
 /* remove class after click li(hide nav) */
 let $link = $(".topnav li:not(:last-child)");
