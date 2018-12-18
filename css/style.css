@@ -298,6 +298,7 @@ hr {
     /* transform-style: preserve-3d; */
     line-height: 50px;
     /* pointer-events: initial; */
+    cursor: pointer;
 }
 
 .curtain__container--sides {

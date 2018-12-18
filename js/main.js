@@ -198,6 +198,7 @@ function curtain() {
     let halfBlock = $(".curtain__half");
     let distance = windowWidth / windowHeight;
     let aboutSec = document.getElementById("about");
+    const header = document.getElementById("header");
 
     function disableScrolling() {
         var x = window.scrollX;
@@ -223,13 +224,13 @@ function curtain() {
         }
         let enebleScrolling = enableScrolling();
         //   FIX BUG WITH SCROLLING BODY WHEN BLOCKS DONT REACH 50%
-        if (current >= 50) {
+        if (current >= 60) {
 
             enableScrolling();
         } else {
             disableScrolling();
         }
-        if (current < 50) {
+        if (current < 60) {
             $("#header").css({
                 "pointer-events": "initial"
             });
@@ -239,7 +240,7 @@ function curtain() {
             });
         }
         // ADD BOX SHADOW TO SIDE BLOCKS AFTER SCROLL 1px
-        if (current > 1 && current < 50) {
+        if (current > 1 && current < 60) {
             halfBlock.addClass("block-shadow");
         } else {
             halfBlock.removeClass("block-shadow");
@@ -259,8 +260,11 @@ function curtain() {
 
 
         // BLUR HEADER AFTER SCROLL BLOCKS
-        let aboutSecBlur = (50 - current) / 5;
-        let widthWindow = window.innerWidth;
+        const widthWindow = window.innerWidth;
+        let aboutSecBlur = Math.floor((60 - current) / 15);
+        
+        console.log(current);
+        console.log("blur "+aboutSecBlur);
         if (widthWindow > 1025) {
             aboutSec.style.filter = "blur(" + aboutSecBlur + "px)";
         };
@@ -302,7 +306,7 @@ function curtain() {
         console.log(initialClientY);
         updateCurrent(event);
     });
-    console.log(initialClientY);
+    // console.log(initialClientY);
     $('body').bind('touchmove', function (event) {
         // left and right should not move when we're not on top
         if ($(window).scrollTop() > 0) {
@@ -311,6 +315,11 @@ function curtain() {
         current += -(event.originalEvent.touches[0].clientY - initialClientY) / 1.2;
         console.log(current);
         // position bounded between 0 and 50
+        updateCurrent(event);
+    });
+    
+    header.addEventListener("click", function(event){
+        current = 60;
         updateCurrent(event);
     });
 
