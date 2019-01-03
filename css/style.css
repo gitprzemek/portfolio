@@ -1038,7 +1038,9 @@ box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.41); */
     flex: 0 1 50%;
     text-align: left;
 }
-
+.card__link-mockup{
+    color: var(--main-color);
+}
 .card__list {
     list-style: none;
     padding: 0;
